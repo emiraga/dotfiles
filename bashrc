@@ -27,7 +27,7 @@ alias ark="arc"
 
 alias grep="grep --color=auto"
 alias egrep="egrep --color=auto"
-export PATH=~/bin:$PATH:/sbin:/usr/sbin:/usr/local/sbin
+export PATH=~/bin:~/facebook_bin:$PATH:/sbin:/usr/sbin:/usr/local/sbin
 export PATH=/usr/hs/bin:$PATH
 export EDITOR=vim
 export PHABRICATOR_ENV=facebook/emir
