@@ -1,0 +1,3 @@
+#!/bin/sh
+
+git show > /tmp/emir-git; git diff >> /tmp/emir-git; cat /tmp/emir-git | sort -u | grep ^+++ | cut -d '/' -f2-

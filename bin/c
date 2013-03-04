@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [[ $1 == push* ]]; then
+  ssh hsh@"$1"
+  exit $?
+fi
+
+ssh root@"$1"

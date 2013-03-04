@@ -1,0 +1,4 @@
+#!/bin/sh
+
+git bisect reset HEAD
+git bisect start

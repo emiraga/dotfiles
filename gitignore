@@ -1,0 +1,15 @@
+.buildpath
+.project
+.settings/
+tags
+*.pyc
+.arc
+.idea
+default.conf.php
+PHP_STDLIB
+TAGS
+api/bestserver.php
+.tags
+sftp-config.json
+.tags_sorted_by_file
+sftp-config.json

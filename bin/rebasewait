@@ -1,0 +1,3 @@
+#!/bin/sh
+
+while ! rebase; do sleep 5; done

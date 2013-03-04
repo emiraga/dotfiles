@@ -1,0 +1,2 @@
+#!/bin/sh
+find . | grep -i --color=always "$@" | sed "s:^./:`pwd`/:"

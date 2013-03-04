@@ -1,0 +1,3 @@
+#!/bin/sh
+
+git stash && git co -f master && rebasewait && git co -b $1 && git stash pop
