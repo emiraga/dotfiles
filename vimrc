@@ -150,6 +150,10 @@ nnoremap k gk
 
 nnoremap <leader>l :ls<cr>:b<space>
 
+" command mode, avoid using arrows, and use C-n C-p
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
+
 " wrapping
 set wrap
 set textwidth=79
@@ -160,6 +164,13 @@ set backspace=indent,eol,start
 
 " Speed up syntax highlighting by skipping the long lines.
 set synmaxcol=100
+
+" Tab complete like bash does, plus a C-n C-p <left> and <right>
+set wildmode=longest,list
+set wildmenu
+
+" Command mode history
+set history=2000
 
 " Some abbreviations, misspellings
 abbreviate teh the
