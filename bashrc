@@ -39,7 +39,7 @@ _stopped_jobs() {
 	fi
 }
 
-export PS1='\[\033[0;32m\][\u:\w$(_dotfiles_scm_info)]$(_stopped_jobs)\$ \[\033[0;37m\]'
+export PS1='\[\033[0;32m\][\u:\w $(_dotfiles_scm_info)]$(_stopped_jobs)\$ \[\033[0;37m\]'
 
 source ~/bin/.git.bash
 unalias sc
