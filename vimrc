@@ -32,18 +32,32 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
+" Dot command, more power
+Bundle 'tpope/vim-repeat'
+" status bar
 Bundle 'Lokaltog/vim-powerline'
-" Leader <move>
+"\w move faster
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'kien/ctrlp.vim'
 Bundle 'majutsushi/tagbar'
+" auto-linting
 Bundle 'Syntastic'
 Bundle 'mileszs/ack.vim'
+" gcc comment/uncomment stuff
 Bundle 'tpope/vim-commentary'
 Bundle 'sontek/rope-vim'
 Bundle 'phleet/vim-arcanist'
 Bundle 'godlygeek/tabular'
-Bundle 'sjl/gundo.vim'
+" f<char> t<char> multi-line
+Bundle 'dahu/vim-fanfingtastic'
+" Snipets
+Bundle 'msanders/snipmate.vim'
+" Git show changes
+Bundle 'airblade/vim-gitgutter'
+" visual S, normal cs"', yss{
+Bundle 'tpope/vim-surround'
+" help abolish
+Bundle 'tpope/vim-abolish'
 
 " # style
 Bundle 'sickill/vim-sunburst'
@@ -96,6 +110,7 @@ set background=dark
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 colorscheme solarized
+highlight clear SignColumn
 
 
 "# Settings for Syntastic, "installed pyflakes"
@@ -122,6 +137,10 @@ let g:netrw_winsize=90
 
 " Settings for autohighlight
 " z/ to enable it
+
+" git gutter
+let g:gitgutter_enabled = 0
+let g:gitgutter_highlight_lines = 0
 
 """""""""""""""""""""""
 " Post-plugins-config "
@@ -188,6 +207,8 @@ au BufNewFile *.php delete; r ~/.vim/template.php
 
 " Auto open the closing brace {
 inoremap { {<CR>}<C-o><S-o>
+" Escape from input via jj
+inoremap jj <ESC>
 
 source $HOME/.vimrc.facebook
 
