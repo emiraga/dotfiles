@@ -88,6 +88,9 @@ nmap <silent> <space><space> :TagbarToggle<CR>/
 " don't paint the background, grrrr!
 " hi Normal ctermbg=NONE
 
+" Recurse tags
+set tags=./tags;
+
 syntax enable
 set background=dark
 let g:solarized_termcolors=256
@@ -182,6 +185,9 @@ highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
 au FileType python,php match OverLength /\%81v.\+/
 
 au BufNewFile *.php delete; r ~/.vim/template.php
+
+" Auto open the closing brace {
+inoremap { {<CR>}<C-o><S-o>
 
 source $HOME/.vimrc.facebook
 

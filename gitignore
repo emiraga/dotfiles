@@ -13,3 +13,5 @@ api/bestserver.php
 sftp-config.json
 .tags_sorted_by_file
 sftp-config.json
+*.swp
+.hhtoken_emir
