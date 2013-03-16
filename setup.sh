@@ -14,8 +14,7 @@ ln -nfs $dotfiles/bin ~/bin
 
 mkdir -p ~/.vim/bundle
 mkdir -p ~/.vim/plugin
-ln -nfs $dotfiles/vim/plugin/autohighlight.vim ~/.vim/plugin/autohighlight.vim
-ln -nfs $dotfiles/vim/plugin/openlinks.vim ~/.vim/plugin/openlinks.vim
+cp -fsrv $dotfiles/vim/* ~/.vim/plugin/
 
 test -d ~/.vim/bundle/vundle || git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
