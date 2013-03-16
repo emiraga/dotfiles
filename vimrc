@@ -45,22 +45,18 @@ Bundle 'Syntastic'
 Bundle 'mileszs/ack.vim'
 " gcc comment/uncomment stuff
 Bundle 'tpope/vim-commentary'
-Bundle 'sontek/rope-vim'
 Bundle 'phleet/vim-arcanist'
 Bundle 'godlygeek/tabular'
 " f<char> t<char> multi-line
 Bundle 'dahu/vim-fanfingtastic'
 " Snipets
 Bundle 'msanders/snipmate.vim'
-" Git show changes
-Bundle 'airblade/vim-gitgutter'
 " visual S, normal cs"', yss{
 Bundle 'tpope/vim-surround'
 " help abolish
 Bundle 'tpope/vim-abolish'
 
 " # style
-Bundle 'sickill/vim-sunburst'
 Bundle 'altercation/vim-colors-solarized'
 
 filetype plugin indent on " required!
@@ -115,15 +111,6 @@ highlight clear SignColumn
 
 "# Settings for Syntastic, "installed pyflakes"
 let g:syntastic_enable_highlighting=1
-"# let g:syntastic_check_on_open=1
-let g:syntastic_auto_loc_list=1
-
-"# Autosave file, helpful to syntastic
-" au CursorHold *.{py} call UpdateFile()
-" function! UpdateFile()
-"   update
-"   SyntasticCheck
-" endfunction
 
 au FocusLost * :wa
 
