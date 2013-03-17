@@ -23,10 +23,10 @@ class LinkOpenerProtocol(protocol.Protocol):
             self.factory.openLink(param)
         elif cmd == 'lol':
             if param:
-                url = 'bunnylol.facebook.com/?' \
+                url = 'http://bunnylol.facebook.com/?' \
                     + cgi.escape(param)
             else:
-                url = 'bunnylol.facebook.com/'
+                url = 'http://bunnylol.facebook.com/'
             self.factory.openLink(url)
         elif cmd == 'google':
             if param:
