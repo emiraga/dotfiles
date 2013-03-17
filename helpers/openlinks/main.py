@@ -21,6 +21,13 @@ class LinkOpenerProtocol(protocol.Protocol):
         param = parts[1] if len(parts) > 1 else None
         if cmd == 'link':
             self.factory.openLink(param)
+        elif cmd == 'lol':
+            if param:
+                url = 'bunnylol.facebook.com/?' \
+                    + cgi.escape(param)
+            else:
+                url = 'bunnylol.facebook.com/'
+            self.factory.openLink(url)
         elif cmd == 'google':
             if param:
                 url = 'https://www.google.com/search?q=' \

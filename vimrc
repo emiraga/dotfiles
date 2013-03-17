@@ -147,6 +147,7 @@ nnoremap <right> <nop>
 "imap <down> <nop>
 "imap <left> <nop>
 "imap <right> <nop>
+inoremap <esc> <nop>
 
 " navigate windows more easily
 map <C-j> <C-w>j
@@ -190,12 +191,41 @@ abbreviate adn and
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
 au FileType python,php match OverLength /\%81v.\+/
 
-au BufNewFile *.php delete; r ~/.vim/template.php
-
 " Auto open the closing brace {
 inoremap { {<CR>}<C-o><S-o>
 " Escape from input via jj
 inoremap jj <ESC>
+
+" Save -- Ctrl+S
+inoremap <C-s> <C-o>:bufdo update<CR>
+nnoremap <C-s> :bufdo update<CR>
+
+" Quit and save -- Ctrl+Q
+inoremap <C-q> <C-o>:wqall!<CR>
+nnoremap <C-q> :wqall!<CR>
+
+" :Q
+command Q q " Bind :Q to :q
+
+" Ex mode no mode
+nnoremap Q <Nop>
+
+" When at 3 spaces and I hit >>, go to 4, not 5.
+set shiftround
+
+" Say no to code folding...
+set nofoldenable
+
+" (Hopefully) removes the delay when hitting esc in insert mode
+" set noesckeys " this has some weirdness with arrow keys
+set ttimeout
+set ttimeoutlen=1
+
+" Emacs
+cnoremap <C-a> <Home>
+cnoremap <C-e> <End>
+inoremap <C-a> <Home>
+inoremap <C-e> <End>
 
 source $HOME/.vimrc.facebook
 

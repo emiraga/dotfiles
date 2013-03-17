@@ -55,3 +55,5 @@ shopt -s histappend
 
 source .bashautocomplete
 
+# Allow Ctrl+S to be passed into vim
+stty -ixon -ixoff

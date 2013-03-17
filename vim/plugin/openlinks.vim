@@ -25,6 +25,12 @@ endfunction
 command! -nargs=* HN call HN()
 command! -nargs=* Hn call HN()
 
+function! Lol(term)
+  call SendCommand('lol', term)
+endfunction
+command! -nargs=* Lol call Lol("<args>")
+command! -nargs=* LOL call Lol("<args>")
+
 function! Refresh()
   update
   call SendCommand('refresh', '')
