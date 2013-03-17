@@ -1,4 +1,4 @@
-function! SendCommand(cmd, param)
+function! OpenLinksSendCommand(cmd, param)
   let cmd = 'echo '.a:cmd.' '.shellescape(a:param).' | nc localhost 52698'
   call system(cmd)
 
@@ -9,32 +9,32 @@ function! SendCommand(cmd, param)
   return 0
 endfunction
 
-function! Google(term)
-  call SendCommand('google', a:term)
+function! OpenLinksGoogle(term)
+  call OpenLinksSendCommand('google', a:term)
 endfunction
-command! -nargs=* Google call Google("<args>")
+command! -nargs=* Google call OpenLinksGoogle("<args>")
 
-function! Youtube()
-  call SendCommand('link', 'http://www.youtube.com/feed/subscriptions')
+function! OpenLinksYoutube()
+  call OpenLinksSendCommand('link', 'http://www.youtube.com/feed/subscriptions')
 endfunction
-command! -nargs=* Youtube call Youtube()
+command! -nargs=* Youtube call OpenLinksYoutube()
 
-function! HN()
-  call SendCommand('link', 'http://news.ycombinator.com/')
+function! OpenLinksHN()
+  call OpenLinksSendCommand('link', 'http://news.ycombinator.com/')
 endfunction
-command! -nargs=* HN call HN()
-command! -nargs=* Hn call HN()
+command! -nargs=* HN call OpenLinksHN()
+command! -nargs=* Hn call OpenLinksHN()
 
-function! Lol(term)
-  call SendCommand('lol', term)
+function! OpenLinksLol(term)
+  call OpenLinksSendCommand('lol', a:term)
 endfunction
-command! -nargs=* Lol call Lol("<args>")
-command! -nargs=* LOL call Lol("<args>")
+command! -nargs=* Lol call OpenLinksLol("<args>")
+command! -nargs=* LOL call OpenLinksLol("<args>")
 
-function! Refresh()
-  update
-  call SendCommand('refresh', '')
+function! OpenLinksRefresh()
+  argdo update
+  call OpenLinksSendCommand('refresh', '')
 endfunction
-command! -nargs=* R call Refresh()
-command! -nargs=* Refresh call Refresh()
+command! -nargs=* R call OpenLinksRefresh()
+command! -nargs=* Refresh call OpenLinksRefresh()
 

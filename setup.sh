@@ -13,8 +13,7 @@ rm -f ~/bin
 ln -nfs $dotfiles/bin ~/bin
 
 mkdir -p ~/.vim/bundle
-mkdir -p ~/.vim/plugin
-cp -fsrv $dotfiles/vim/* ~/.vim/plugin/
+cp -fsrv $dotfiles/vim/* ~/.vim/
 
 test -d ~/.vim/bundle/vundle || git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
