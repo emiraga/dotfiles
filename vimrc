@@ -3,6 +3,12 @@ set errorformat+=%.%#PHP:\ %m\ \(in\ %f\ on\ line\ %l\)%.%#,
    \%E%[0-9]%#.%m:%f?rev=%.%##L%l\ %.%#,%C%.%#
 set ruler
 
+" arrows keys can get fucked
+imap OA <up>
+imap OB <down>
+imap OD <left>
+imap OC <right>
+
 "# cat-us-trophy: Vimrc
 set autoindent
 set ts=2 sw=2 st=2
@@ -197,8 +203,8 @@ inoremap { {<CR>}<C-o><S-o>
 inoremap jj <ESC>
 
 " Save -- Ctrl+S
-inoremap <C-s> <C-o>:bufdo update<CR>
-nnoremap <C-s> :bufdo update<CR>
+inoremap <C-s> <C-o>:update<CR>
+nnoremap <C-s> :update<CR>
 
 " Quit and save -- Ctrl+Q
 inoremap <C-q> <C-o>:wqall!<CR>

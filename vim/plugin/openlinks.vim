@@ -32,7 +32,7 @@ command! -nargs=* Lol call OpenLinksLol("<args>")
 command! -nargs=* LOL call OpenLinksLol("<args>")
 
 function! OpenLinksRefresh()
-  argdo update
+  update
   call OpenLinksSendCommand('refresh', '')
 endfunction
 command! -nargs=* R call OpenLinksRefresh()

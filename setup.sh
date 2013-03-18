@@ -19,4 +19,6 @@ test -d ~/.vim/bundle/vundle || git clone https://github.com/gmarik/vundle.git ~
 
 test -e ~/facebook_php.php && ln -nfs ~/facebook_php.php ~/.vim/template.php
 
+test -r ~/facebook_vim.txt && source ~/facebook_vim.txt
+
 echo Done
