@@ -23,6 +23,7 @@ set hlsearch
 set ignorecase
 set smartcase
 nmap <Space>q :nohlsearch<CR>
+nmap <leader>q :nohlsearch<CR>
 set noerrorbells
 set novisualbell
 
@@ -93,7 +94,6 @@ let g:ctrlp_dotfiles = 0
 "# Settings for TagBar
 "let g:tagbar_ctags_bin='/mnt/vol/engshare/admin/scripts/ct'
 let g:tagbar_width=30
-" autocmd BufEnter * nested :call tagbar#autoopen(0)
 let g:tagbar_autoclose=1
 let g:tagbar_indent=1
 nmap <silent> <space><space> :TagbarToggle<CR>/
@@ -153,7 +153,6 @@ nnoremap <right> <nop>
 "imap <down> <nop>
 "imap <left> <nop>
 "imap <right> <nop>
-inoremap <esc> <nop>
 
 " navigate windows more easily
 map <C-j> <C-w>j
@@ -232,6 +231,11 @@ cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 inoremap <C-a> <Home>
 inoremap <C-e> <End>
+
+augroup filetype_php
+  autocmd!
+  autocmd FileType php nnoremap  :!php %<CR>
+augroup END
 
 source $HOME/.vimrc.facebook
 
