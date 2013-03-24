@@ -198,8 +198,9 @@ au FileType python,php match OverLength /\%81v.\+/
 
 " Auto open the closing brace {
 inoremap { {<CR>}<C-o><S-o>
-" Escape from input via jj
+" Escape from input via jjS 00
 inoremap jj <ESC>
+inoremap 00 <ESC>0
 
 " Save -- Ctrl+S
 inoremap <C-s> <C-o>:update<CR>
@@ -234,7 +235,7 @@ inoremap <C-e> <End>
 
 augroup filetype_php
   autocmd!
-  autocmd FileType php nnoremap  :!php %<CR>
+  autocmd FileType php nnoremap  :echo system('php '.expand('%').' 2>&1')<CR>
 augroup END
 
 source $HOME/.vimrc.facebook
