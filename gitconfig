@@ -20,3 +20,5 @@
 
 [gc]
 	auto = 0
+[merge]
+	conflictstyle = diff3

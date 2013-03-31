@@ -55,7 +55,7 @@ let g:EasyMotion_leader_key = '\'
 Bundle 'kien/ctrlp.vim'
 "# Settings for CtrlP
 nnoremap <C-Space> :CtrlPBuffer<CR>
-nnoremap <C-@> <C-Space>
+nnoremap <C-@> :CtrlPBuffer<CR>
 let g:ctrlp_match_window_bottom = 1
 let g:ctrlp_match_window_reversed = 0
 let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp|pyc|wav|mp3|ogg|blend)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|__init__\.py'
@@ -150,10 +150,10 @@ augroup au_python_auto_complete
 augroup END
 
 " disable arrow keys
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
+" nnoremap <up> <nop>
+" nnoremap <down> <nop>
+" nnoremap <left> <nop>
+" nnoremap <right> <nop>
 
 " navigate windows more easily
 nnoremap <C-j> <C-w>j
@@ -161,8 +161,13 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
+" Visual move
 nnoremap j gj
 nnoremap k gk
+
+" Partial match stuff
+nnoremap * g*
+nnoremap # g#
 
 nnoremap <leader>l :ls<cr>:b<space>
 
@@ -203,12 +208,12 @@ augroup END
 " Auto open the closing brace {
 augroup php_brace_auto
   autocmd!
-  autocmd FileType php <buffer> inoremap { {<CR>}<C-o><S-o>
+  autocmd FileType php inoremap <buffer> { {<CR>}<C-o><S-o>
 augroup END
 
 augroup filetype_php
   autocmd!
-  autocmd FileType php <buffer> nnoremap  :echo system('php '.expand('%').' 2>&1')<CR>
+  autocmd FileType php nnoremap <buffer>  :echo system('php '.expand('%').' 2>&1')<CR>
 augroup END
 
 " Escape from input via jjS 00
@@ -246,3 +251,5 @@ cnoremap <C-e> <End>
 inoremap <C-a> <Home>
 inoremap <C-e> <End>
 
+" Shell
+let g:is_posix = 1
