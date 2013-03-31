@@ -7,7 +7,6 @@ imap OC <right>
 "# cat-us-trophy: Vimrc
 set autoindent
 set ts=2 sw=2 st=2
-syntax enable
 set autowrite
 set expandtab
 set number
@@ -21,10 +20,8 @@ set smartcase
 nmap <Space>q :nohlsearch<CR>
 nmap <leader>q :nohlsearch<CR>
 set noerrorbells
-set novisualbell
-
-set noerrorbells visualbell t_vb=
-autocmd GUIEnter * set visualbell t_vb=
+set visualbell
+set t_vb=
 
 "# Vundle: bundles for vim
 
@@ -40,7 +37,7 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-repeat'
 
 " status bar
-Bundle 'Lokaltog/vim-powerline'
+" Bundle 'Lokaltog/vim-powerline'
 "# Recommended settings from :help Powerline
 set laststatus=2
 set encoding=utf-8
@@ -104,17 +101,17 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-abolish'
 
 " style
-Bundle 'altercation/vim-colors-solarized'
-"# Settings for tomasr/molokai
+" Bundle 'altercation/vim-colors-solarized'
+" Settings for tomasr/molokai
 " colorscheme Sunburst
 " don't paint the background, grrrr!
 " hi Normal ctermbg=NONE
-syntax enable
-set background=dark
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1
-colorscheme solarized
-highlight clear SignColumn
+" syntax enable
+" set background=dark
+" let g:solarized_termcolors=256
+" let g:solarized_termtrans=1
+" colorscheme solarized
+" highlight clear SignColumn
 
 filetype plugin indent on " required!
 
@@ -136,12 +133,18 @@ source $HOME/.vimrc.facebook
 " Recurse tags
 set tags=./tags;
 
-au FocusLost * :wa
+augroup auto_write_focus_lost
+  autocmd!
+  autocmd FocusLost * :wa
+augroup END
 
 " Auto completion
 set completeopt=longest,menuone,preview
 set omnifunc=syntaxcomplete#Complete " This is overriden by syntax plugins.
-au FileType python set omnifunc=pythoncomplete#Complete
+augroup au_python_auto_complete
+  autocmd!
+  autocmd FileType python set omnifunc=pythoncomplete#Complete
+augroup END
 
 " disable arrow keys
 nnoremap <up> <nop>
@@ -239,5 +242,4 @@ cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 inoremap <C-a> <Home>
 inoremap <C-e> <End>
-
 
