@@ -1,8 +1,8 @@
 " arrows keys can get fucked
-imap OA <up>
-imap OB <down>
-imap OD <left>
-imap OC <right>
+inoremap OA <up>
+inoremap OB <down>
+inoremap OD <left>
+inoremap OC <right>
 
 "# cat-us-trophy: Vimrc
 set autoindent
@@ -17,8 +17,8 @@ set incsearch
 set hlsearch
 set ignorecase
 set smartcase
-nmap <Space>q :nohlsearch<CR>
-nmap <leader>q :nohlsearch<CR>
+nnoremap <Space>q :nohlsearch<CR>
+nnoremap <leader>q :nohlsearch<CR>
 set noerrorbells
 set visualbell
 set t_vb=
@@ -39,7 +39,7 @@ Bundle 'tpope/vim-repeat'
 " status bar
 " Bundle 'Lokaltog/vim-powerline'
 "# Recommended settings from :help Powerline
-set laststatus=2
+" set laststatus=2
 set encoding=utf-8
 set t_Co=256
 set hidden
@@ -54,8 +54,8 @@ let g:EasyMotion_leader_key = '\'
 " ctrl+space
 Bundle 'kien/ctrlp.vim'
 "# Settings for CtrlP
-nmap <C-Space> :CtrlPBuffer<CR>
-nmap <C-@> <C-Space>
+nnoremap <C-Space> :CtrlPBuffer<CR>
+nnoremap <C-@> <C-Space>
 let g:ctrlp_match_window_bottom = 1
 let g:ctrlp_match_window_reversed = 0
 let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp|pyc|wav|mp3|ogg|blend)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|__init__\.py'
@@ -69,7 +69,7 @@ Bundle 'majutsushi/tagbar'
 let g:tagbar_width=30
 let g:tagbar_autoclose=1
 let g:tagbar_indent=1
-nmap <silent> <space><space> :TagbarToggle<CR>/
+nnoremap <silent> <space><space> :TagbarToggle<CR>/
 
 " auto-linting
 " Bundle 'Syntastic'
@@ -100,18 +100,21 @@ Bundle 'tpope/vim-surround'
 " help abolish
 Bundle 'tpope/vim-abolish'
 
-" style
-" Bundle 'altercation/vim-colors-solarized'
+" {{{ style
+Bundle 'altercation/vim-colors-solarized'
+" (((
 " Settings for tomasr/molokai
 " colorscheme Sunburst
 " don't paint the background, grrrr!
 " hi Normal ctermbg=NONE
 " syntax enable
-" set background=dark
-" let g:solarized_termcolors=256
-" let g:solarized_termtrans=1
-" colorscheme solarized
-" highlight clear SignColumn
+" )))
+set background=dark
+let g:solarized_termcolors=256
+let g:solarized_termtrans=1
+colorscheme solarized
+highlight clear SignColumn
+" }}}
 
 filetype plugin indent on " required!
 
@@ -153,10 +156,10 @@ nnoremap <left> <nop>
 nnoremap <right> <nop>
 
 " navigate windows more easily
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-h> <C-w>h
-map <C-l> <C-w>l
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
 
 nnoremap j gj
 nnoremap k gk
@@ -205,7 +208,7 @@ augroup END
 
 augroup filetype_php
   autocmd!
-  autocmd FileType php nnoremap  :echo system('php '.expand('%').' 2>&1')<CR>
+  autocmd FileType php <buffer> nnoremap  :echo system('php '.expand('%').' 2>&1')<CR>
 augroup END
 
 " Escape from input via jjS 00
