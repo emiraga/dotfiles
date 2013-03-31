@@ -37,9 +37,9 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-repeat'
 
 " status bar
-" Bundle 'Lokaltog/vim-powerline'
+Bundle 'Lokaltog/vim-powerline'
+set laststatus=2
 "# Recommended settings from :help Powerline
-" set laststatus=2
 set encoding=utf-8
 set t_Co=256
 set hidden
