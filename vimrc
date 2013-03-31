@@ -1,8 +1,3 @@
-"from source /mnt/vol/engshare/admin/scripts/master.vimrc
-set errorformat+=%.%#PHP:\ %m\ \(in\ %f\ on\ line\ %l\)%.%#,
-   \%E%[0-9]%#.%m:%f?rev=%.%##L%l\ %.%#,%C%.%#
-set ruler
-
 " arrows keys can get fucked
 imap OA <up>
 imap OB <down>
@@ -16,6 +11,7 @@ syntax enable
 set autowrite
 set expandtab
 set number
+set ruler
 
 " searching
 set incsearch
@@ -39,48 +35,27 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
+
 " Dot command, more power
 Bundle 'tpope/vim-repeat'
+
 " status bar
 Bundle 'Lokaltog/vim-powerline'
-"\w move faster
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'kien/ctrlp.vim'
-Bundle 'majutsushi/tagbar'
-" auto-linting
-Bundle 'Syntastic'
-Bundle 'mileszs/ack.vim'
-" gcc comment/uncomment stuff
-Bundle 'tpope/vim-commentary'
-Bundle 'phleet/vim-arcanist'
-Bundle 'godlygeek/tabular'
-" f<char> t<char> multi-line
-Bundle 'dahu/vim-fanfingtastic'
-" Snipets
-Bundle 'msanders/snipmate.vim'
-" visual S, normal cs"', yss{
-Bundle 'tpope/vim-surround'
-" help abolish
-Bundle 'tpope/vim-abolish'
-
-" # style
-Bundle 'altercation/vim-colors-solarized'
-
-filetype plugin indent on " required!
-
 "# Recommended settings from :help Powerline
 set laststatus=2
 set encoding=utf-8
 set t_Co=256
 set hidden
 
-
+"\w move faster
+Bundle 'Lokaltog/vim-easymotion'
 "# Recommended settings for vim-easymotion
 let g:EasyMotion_leader_key = '\'
 " \w Will go to a next word of choice
 " \j will go down easily
 
-
+" ctrl+space
+Bundle 'kien/ctrlp.vim'
 "# Settings for CtrlP
 nmap <C-Space> :CtrlPBuffer<CR>
 nmap <C-@> <C-Space>
@@ -90,7 +65,8 @@ let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp|pyc|wav|mp3|ogg|blend)$|(^|[/\\])\.(
 let g:ctrlp_working_path_mode = 'a'
 let g:ctrlp_dotfiles = 0
 
-
+" space space
+Bundle 'majutsushi/tagbar'
 "# Settings for TagBar
 "let g:tagbar_ctags_bin='/mnt/vol/engshare/admin/scripts/ct'
 let g:tagbar_width=30
@@ -98,15 +74,41 @@ let g:tagbar_autoclose=1
 let g:tagbar_indent=1
 nmap <silent> <space><space> :TagbarToggle<CR>/
 
+" auto-linting
+" Bundle 'Syntastic'
+" # Settings for Syntastic, "installed pyflakes"
+" let g:syntastic_enable_highlighting=1
 
+" Ack
+Bundle 'mileszs/ack.vim'
+
+" gcc comment/uncomment stuff
+Bundle 'tpope/vim-commentary'
+
+" :Arc<tab>
+Bundle 'phleet/vim-arcanist'
+
+" :Tab<tab>
+Bundle 'godlygeek/tabular'
+
+" f<char> t<char> multi-line
+Bundle 'dahu/vim-fanfingtastic'
+
+" Snipets
+Bundle 'msanders/snipmate.vim'
+
+" visual S, normal cs"', yss{
+Bundle 'tpope/vim-surround'
+
+" help abolish
+Bundle 'tpope/vim-abolish'
+
+" style
+Bundle 'altercation/vim-colors-solarized'
 "# Settings for tomasr/molokai
 " colorscheme Sunburst
 " don't paint the background, grrrr!
 " hi Normal ctermbg=NONE
-
-" Recurse tags
-set tags=./tags;
-
 syntax enable
 set background=dark
 let g:solarized_termcolors=256
@@ -114,30 +116,27 @@ let g:solarized_termtrans=1
 colorscheme solarized
 highlight clear SignColumn
 
-
-"# Settings for Syntastic, "installed pyflakes"
-let g:syntastic_enable_highlighting=1
-
-au FocusLost * :wa
+filetype plugin indent on " required!
 
 "# Settings for fucking awesome netrw
 let g:netrw_liststyle=3
 let g:netrw_keepdir=0
 let g:netrw_winsize=90
 
-" Settings for commenter
-" gcc commenter tpope/vim-commentary
+"""""""""""""""""""
+" FACEBOOK MASTER "
+"""""""""""""""""""
 
-" Settings for autohighlight
-" z/ to enable it
-
-" git gutter
-let g:gitgutter_enabled = 0
-let g:gitgutter_highlight_lines = 0
+source $HOME/.vimrc.facebook
 
 """""""""""""""""""""""
 " Post-plugins-config "
 """""""""""""""""""""""
+
+" Recurse tags
+set tags=./tags;
+
+au FocusLost * :wa
 
 " Auto completion
 set completeopt=longest,menuone,preview
@@ -149,10 +148,6 @@ nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
 nnoremap <right> <nop>
-"imap <up> <nop>
-"imap <down> <nop>
-"imap <left> <nop>
-"imap <right> <nop>
 
 " navigate windows more easily
 map <C-j> <C-w>j
@@ -178,7 +173,7 @@ set ttyfast
 set backspace=indent,eol,start
 
 " Speed up syntax highlighting by skipping the long lines.
-set synmaxcol=100
+set synmaxcol=150
 
 " Tab complete like bash does, plus a C-n C-p <left> and <right>
 set wildmode=longest,list
@@ -194,10 +189,22 @@ abbreviate adn and
 
 " Warn me when exceeding 80 char limit
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
-au FileType python,php match OverLength /\%81v.\+/
+augroup red_over_length
+  autocmd!
+  autocmd FileType python,php match OverLength /\%81v.\+/
+augroup END
 
 " Auto open the closing brace {
-inoremap { {<CR>}<C-o><S-o>
+augroup php_brace_auto
+  autocmd!
+  autocmd FileType php <buffer> inoremap { {<CR>}<C-o><S-o>
+augroup END
+
+augroup filetype_php
+  autocmd!
+  autocmd FileType php nnoremap  :echo system('php '.expand('%').' 2>&1')<CR>
+augroup END
+
 " Escape from input via jjS 00
 inoremap jj <ESC>
 inoremap 00 <ESC>0
@@ -233,10 +240,4 @@ cnoremap <C-e> <End>
 inoremap <C-a> <Home>
 inoremap <C-e> <End>
 
-augroup filetype_php
-  autocmd!
-  autocmd FileType php nnoremap  :echo system('php '.expand('%').' 2>&1')<CR>
-augroup END
-
-source $HOME/.vimrc.facebook
 
