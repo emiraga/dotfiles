@@ -230,6 +230,8 @@ nnoremap <C-q> :wqall!<CR>
 
 " :Q
 command Q q " Bind :Q to :q
+command Wq wq " Bind :Q to :q
+command WQ wq " Bind :Q to :q
 
 " Ex mode no mode
 nnoremap Q <Nop>
