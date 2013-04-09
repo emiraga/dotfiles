@@ -1,5 +1,9 @@
 " Emir Habul <emiraga@gmail.com>
 
+let g:emir_use_style='badwolf'
+let g:emir_use_cursorline = 0
+let g:emir_folding = 0
+
 " Vundle: bundles for vim  {{{
 set nocompatible               " be iMproved
 filetype off                   " required!
@@ -83,7 +87,7 @@ Bundle 'dahu/vim-fanfingtastic'
 " }}}
 
 " [DISABLED] Snipets -- snipmate {{{
-Bundle 'msanders/snipmate.vim'
+" Bundle 'msanders/snipmate.vim'
 " }}}
 
 " visual S, normal cs"', yss<curly> {{{
@@ -94,36 +98,63 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-abolish'
 " }}}
 
-" [DISABLED] Solarized style {{{ 
-" Bundle 'altercation/vim-colors-solarized'
-" set background=dark
-" let g:solarized_termcolors=256
-" let g:solarized_termtrans=1
-" colorscheme solarized
-" highlight clear SignColumn
+" delimit mate {{{
+Bundle 'Raimondi/delimitMate'
+let delimitMate_expand_cr = 1
 " }}}
 
-" [DISABLED] Settings for tomasr/molokai {{{
-" colorscheme Sunburst
-" don't paint the background, grrrr!
-" hi Normal ctermbg=NONE
-" syntax enable
+" [DISABLED] multi cursor {{{
+" Bundle 'paradigm/vim-multicursor'
 " }}}
 
-" badwolf {{{
-Bundle 'sjl/badwolf'
-syntax on
-set background=dark
-let g:badwolf_tabline = 2
-let g:badwolf_html_link_underline = 0
-colorscheme badwolf
-
-" Reload the colorscheme whenever we write the file.
-augroup color_badwolf_dev
-  au!
-  au BufWritePost badwolf.vim color badwolf
-augroup END
+" Solarized style {{{ 
+if g:emir_use_style ==# 'solarized'
+  Bundle 'altercation/vim-colors-solarized'
+  set background=dark
+  let g:solarized_termcolors=256
+  let g:solarized_termtrans=1
+  colorscheme solarized
+  highlight clear SignColumn
+  highlight CursorLine ctermbg=234
+endif
 " }}}
+
+" Settings for tomasr/molokai {{{
+if g:emir_use_style ==# 'molokai'
+  Bundle 'tomasr/molokai'
+  colorscheme molokai
+  " don't paint the background, grrrr!
+  hi Normal ctermbg=NONE
+  syntax enable
+endif
+" }}}
+
+" Badwolf color scheme {{{
+if g:emir_use_style ==# 'badwolf'
+  Bundle 'sjl/badwolf'
+  syntax on
+  set background=dark
+  let g:badwolf_tabline = 2
+  let g:badwolf_html_link_underline = 0
+  colorscheme badwolf
+  " Cursorline just a bit darker
+  highlight CursorLine ctermbg=234
+  highlight phpStorageClass ctermfg=6
+  highlight phpVarSelector ctermfg=9
+
+  " Reload the colorscheme whenever we write the file.
+  augroup color_badwolf_dev
+    au!
+    au BufWritePost badwolf.vim color badwolf
+  augroup END
+endif
+" }}}
+
+" Sunburst color scheme
+if g:emir_use_style ==# 'sunburst'
+  Bundle 'sickill/vim-sunburst'
+  colorscheme Sunburst
+endif
 
 " Netrw {{{
 filetype plugin indent on " required!
@@ -132,6 +163,14 @@ filetype plugin indent on " required!
 let g:netrw_liststyle=3
 let g:netrw_keepdir=0
 let g:netrw_winsize=90
+" }}}
+
+" Nyancat {{{
+Bundle 'koron/nyancat-vim'
+" }}}
+
+" [DISABLED] Cute PHP {{{
+" Bundle 'laurentb/vim-cute-php'
 " }}}
 
 "  }}}
@@ -169,13 +208,16 @@ inoremap 00 <ESC>:wa<cr>0
 " (Hopefully) removes the delay when hitting esc in insert mode
 " set noesckeys " this has some weirdness with arrow keys
 set ttimeout
-set ttimeoutlen=1
+set ttimeoutlen=5
 
 " Emacs
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 inoremap <C-a> <Home>
 inoremap <C-e> <End>
+
+" Uppercase a word
+inoremap <C-u> <esc>mzgUiw`za
 " }}}
 
 " Basic settings  {{{
@@ -224,10 +266,13 @@ set wildignore+=*.DS_Store                       " OSX bullshit
 " Command mode history
 set history=2000
 
-" Say no to code folding...
-set foldenable
+" Code folding...
+if g:emir_folding == 1
+  set foldenable
+else
+  set nofoldenable
+endif
 set foldlevelstart=0
-
 " }}}
 
 " Searching  {{{
@@ -235,8 +280,8 @@ set incsearch
 set hlsearch
 set ignorecase
 set smartcase
-nnoremap <Space>q :nohlsearch<CR>
-nnoremap \q :nohlsearch<CR>
+nnoremap <Space>q :nohlsearch<cr>:call clearmatches()<cr>
+nnoremap \q :nohlsearch<cr>:call clearmatches()<cr>
 set noerrorbells
 set visualbell
 set t_vb=
@@ -245,6 +290,11 @@ set gdefault
 " Partial match stuff
 nnoremap * g*<c-o>
 nnoremap # g#<c-o>
+
+" Keep search matches in the middle of the window.
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
 " }}}
 
 " Display of characters  {{{
@@ -259,6 +309,17 @@ augroup trailing
     au InsertEnter * :set listchars-=trail:⌴
     au InsertLeave * :set listchars+=trail:⌴
 augroup END
+
+if g:emir_use_cursorline == 1
+  augroup cline
+      au!
+      au WinLeave,InsertEnter * set nocursorline
+      au WinEnter,InsertLeave * set cursorline
+  augroup END
+  set cursorline
+else
+  set nocursorline
+endif
 " }}}
 
 " Ctags {{{
@@ -297,6 +358,18 @@ inoremap <c-f> <c-x><c-f>
 inoremap <c-]> <c-x><c-]>
 " }}}
 
+" Synstack {{{
+
+" Show the stack of syntax hilighting classes affecting whatever is under the
+" cursor.
+function! SynStack()
+  echo join(map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")'), " > ")
+endfunc
+
+nnoremap <F7> :call SynStack()<CR>
+
+" }}}
+
 " Windows navigation  {{{
 " If more than one tab, ctrl+h and ctrl+l are switching tabs, otherwise switching windows
 function! s:MoveInDirection(dir)
@@ -319,20 +392,20 @@ nnoremap <silent> <C-k> :call <SID>MoveInDirection('k')<cr>
 nnoremap <silent> <C-h> :call <SID>MoveInDirection('h')<cr>
 nnoremap <silent> <C-l> :call <SID>MoveInDirection('l')<cr>
 
-nnoremap <silent> <s-h> :call <SID>MoveInDirection('h')<cr>
-nnoremap <silent> <s-l> :call <SID>MoveInDirection('l')<cr>
+" nnoremap <silent> <s-h> :call <SID>MoveInDirection('h')<cr>
+" nnoremap <silent> <s-l> :call <SID>MoveInDirection('l')<cr>
 " }}}
 
 " Pulse function  {{{
 function! s:PulseLine()
-  setlocal cursorline
+  setlocal nocursorline
   setlocal cursorcolumn
   redraw
   sleep 50 m
-  setlocal nocursorline
+  setlocal cursorline
   setlocal nocursorcolumn
 endfunction
-nnoremap <silent> <leader>p :call <SID>PulseLine()<cr>
+nnoremap <silent> <leader>f :call <SID>PulseLine()<cr>
 " }}}
 
 " Leaders and functional keys  {{{
@@ -344,11 +417,70 @@ nnoremap <leader>h :help <c-r><c-w><cr><c-w>K<c-w>p
 
 nnoremap <F6> :set paste!<cr>
 noremap <leader>p :silent! set paste!<CR>
+
+" open a new vertical split and switch over to it.
+nnoremap <leader>w <C-w>v<C-w>l
+nnoremap <leader>n :tabnew<cr>:Nyancat2<cr>
 " }}}
 
 " Source a line {{{
 vnoremap <leader>S y:execute @@<cr>:echo 'Sourced selection.'<cr>
 nnoremap <leader>S ^vg_y:execute @@<cr>:echo 'Sourced line.'<cr>
+" }}}
+
+" Highlight Word --- leader,1-6 {{{
+"
+" This mini-plugin provides a few mappings for highlighting words temporarily.
+"
+" Sometimes you're looking at a hairy piece of code and would like a certain
+" word or two to stand out temporarily.  You can search for it, but that only
+" gives you one color of highlighting.  Now you can use <leader>N where N is
+" a number from 1-6 to highlight the current word in a specific color.
+
+function! HiInterestingWord(n) " {{{
+    " Save our location.
+    normal! mz
+
+    " Yank the current word into the z register.
+    normal! "zyiw
+
+    " Calculate an arbitrary match ID.  Hopefully nothing else is using it.
+    let mid = 86750 + a:n
+
+    " Clear existing matches, but don't worry if they don't exist.
+    silent! call matchdelete(mid)
+
+    " Construct a literal pattern that has to match at boundaries.
+    let pat = '\V\<' . escape(@z, '\') . '\>'
+
+    " Actually match the words.
+    call matchadd("InterestingWord" . a:n, pat, 1, mid)
+
+    " Move back to our original location.
+    normal! `z
+endfunction " }}}
+
+" Mappings {{{
+
+nnoremap <silent> <leader>1 :call HiInterestingWord(1)<cr>
+nnoremap <silent> <leader>2 :call HiInterestingWord(2)<cr>
+nnoremap <silent> <leader>3 :call HiInterestingWord(3)<cr>
+nnoremap <silent> <leader>4 :call HiInterestingWord(4)<cr>
+nnoremap <silent> <leader>5 :call HiInterestingWord(5)<cr>
+nnoremap <silent> <leader>6 :call HiInterestingWord(6)<cr>
+
+" }}}
+" Default Highlights {{{
+
+hi def InterestingWord1 guifg=#000000 ctermfg=16 guibg=#ffa724 ctermbg=214
+hi def InterestingWord2 guifg=#000000 ctermfg=16 guibg=#aeee00 ctermbg=154
+hi def InterestingWord3 guifg=#000000 ctermfg=16 guibg=#8cffba ctermbg=121
+hi def InterestingWord4 guifg=#000000 ctermfg=16 guibg=#b88853 ctermbg=137
+hi def InterestingWord5 guifg=#000000 ctermfg=16 guibg=#ff9eb8 ctermbg=211
+hi def InterestingWord6 guifg=#000000 ctermfg=16 guibg=#ff2c4b ctermbg=195
+
+" }}}
+
 " }}}
 
 " Some abbreviations, misspellings {{{
@@ -372,11 +504,12 @@ augroup filetype_specific_autogroups
   " Warn me when exceeding 80 char limit
   autocmd FileType python,php match OverLength /\%81v.\+/
 
-  " Auto open the closing brace
-  autocmd FileType php inoremap <buffer> { {<CR>}<C-o><S-o>
+  " Auto open the closing brace (close curly brace)
+  " autocmd FileType php inoremap <buffer> { {<CR>}<C-o><S-o>
 
   " Enter run a php script
-  autocmd FileType php nnoremap <buffer>  :echo system('php '.expand('%').' 2>&1')<CR>
+  autocmd FileType php nnoremap <buffer>  :echo system('php '.expand('%').' 2>&1')<cr>
+  autocmd FileType php nnoremap <buffer> <leader>r :echo system('php ~/www/scripts/emir.php 2>&1')<cr>
 
   autocmd FileType vim setlocal foldmethod=marker
 augroup END

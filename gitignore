@@ -15,3 +15,5 @@ sftp-config.json
 sftp-config.json
 *.swp
 .hhtoken_emir
+scripts/emir.php
+emir.php
