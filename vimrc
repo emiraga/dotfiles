@@ -12,7 +12,6 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-
 " }}}
 
 " Plugins and plugin settings  {{{
@@ -98,11 +97,6 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-abolish'
 " }}}
 
-" delimit mate {{{
-Bundle 'Raimondi/delimitMate'
-let delimitMate_expand_cr = 1
-" }}}
-
 " [DISABLED] multi cursor {{{
 " Bundle 'paradigm/vim-multicursor'
 " }}}
@@ -167,10 +161,6 @@ let g:netrw_winsize=90
 
 " Nyancat {{{
 Bundle 'koron/nyancat-vim'
-" }}}
-
-" [DISABLED] Cute PHP {{{
-" Bundle 'laurentb/vim-cute-php'
 " }}}
 
 "  }}}
@@ -494,6 +484,8 @@ abbreviate adn and
 command! Q q
 command! Wq wq
 command! WQ wq
+command! Bd bd
+command! BD bd
 " }}}
 
 " Filetype specific commands  {{{
@@ -512,6 +504,8 @@ augroup filetype_specific_autogroups
   autocmd FileType php nnoremap <buffer> <leader>r :echo system('php ~/www/scripts/emir.php 2>&1')<cr>
 
   autocmd FileType vim setlocal foldmethod=marker
+
+  autocmd BufReadPost *.tw setlocal filetype=python
 augroup END
 " }}}
 

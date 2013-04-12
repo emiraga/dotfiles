@@ -27,16 +27,16 @@ alias ark="arc"
 
 alias grep="grep --color=auto"
 alias egrep="egrep --color=auto"
-export PATH=~/bin:~/facebook_bin:$PATH:/sbin:/usr/sbin:/usr/local/sbin
+export PATH=~/optbin:~/bin:~/facebook_bin:$PATH:/sbin:/usr/sbin:/usr/local/sbin
 export PATH=/usr/hs/bin:$PATH
 export EDITOR=vim
 export PHABRICATOR_ENV=facebook/emir
 
 _stopped_jobs() {
   num=$(jobs -s | wc -l | sed -e "s/ //g")
-	if [ $num -ne 0 ]; then
-		echo " {J:$num} "
-	fi
+  if [ $num -ne 0 ]; then
+    echo " {J:$num} "
+  fi
 }
 
 export PS1='\[\033[0;32m\][\u:\w $(_dotfiles_scm_info)]$(_stopped_jobs)\$ \[\033[0;37m\]'
@@ -47,6 +47,10 @@ unalias sc
 which htop >/dev/null
 
 alias vimproj='vim `proj`'
+
+vis() {
+  vim `s_no_color $@` -c "/$@"
+}
 
 set completion-query-items 10000
 set completion-ignore-case On
