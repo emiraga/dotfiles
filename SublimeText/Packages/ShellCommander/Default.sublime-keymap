@@ -1,0 +1,5 @@
+[
+  { "keys": ["ctrl+shift+x"], "command": "shell_commander" },
+  { "keys": ["f2"], "command": "shell_commander_run_tests" },
+  { "keys": ["super+f3"], "command": "shell_commander_testing" }
+]
