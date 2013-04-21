@@ -1,0 +1,40 @@
+{
+	"bold_folder_labels": true,
+	"caret_style": "smooth",
+	"color_scheme": "Packages/Color Scheme - Default/Sunburst.tmTheme",
+	"fold_buttons": false,
+	"font_face": "Source Code Pro",
+	"font_options":
+	[
+		"subpixel_antialias",
+		"no_bold"
+	],
+	"font_size": 22.0,
+	"ignored_packages":
+	[
+		"Git",
+		"Unicode Character Highlighter",
+		".DS_Store",
+		"sublimelint",
+		"Vintage",
+		"ZenCoding",
+		"SFTP",
+		"SublimeXdebug",
+		"ASP",
+		"SideBarEnhancements",
+		"Graphviz",
+		"rsub"
+	],
+	"line_padding_bottom": -2,
+	"rulers":
+	[
+		80
+	],
+	"save_on_focus_lost": true,
+	"tab_size": 2,
+	"theme": "Ayin.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"use_tab_stops": true,
+	"word_wrap": true
+}
