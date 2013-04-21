@@ -1,7 +1,7 @@
 {
 	"bold_folder_labels": true,
 	"caret_style": "smooth",
-	"color_scheme": "Packages/Color Scheme - Default/Sunburst.tmTheme",
+	"color_scheme": "Packages/Theme - Nil/Big Duo.tmTheme",
 	"fold_buttons": false,
 	"font_face": "Source Code Pro",
 	"font_options":
@@ -9,23 +9,26 @@
 		"subpixel_antialias",
 		"no_bold"
 	],
-	"font_size": 22.0,
+	"font_size": 14.5,
 	"ignored_packages":
 	[
 		"Git",
 		"Unicode Character Highlighter",
 		".DS_Store",
 		"sublimelint",
+		"rsub",
 		"Vintage",
 		"ZenCoding",
 		"SFTP",
 		"SublimeXdebug",
 		"ASP",
 		"SideBarEnhancements",
-		"Graphviz",
-		"rsub"
+		"Graphviz"
 	],
 	"line_padding_bottom": -2,
+	"python_test_runner":
+	{
+	},
 	"rulers":
 	[
 		80
