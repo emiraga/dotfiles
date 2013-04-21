@@ -2,5 +2,5 @@
 
 arc amend && rebase && git svn dcommit && git co -f master && rebasewait
 
-git branch --merged trunk | grep -v 'master$' | xargs git branch -d
+git branch --merged trunk | grep -v 'master$' | xargs git branch -d 2>/dev/null
 

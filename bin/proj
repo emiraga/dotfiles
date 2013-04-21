@@ -1,3 +1,3 @@
 #!/bin/sh
 
-git show > /tmp/emir-git; git diff >> /tmp/emir-git; cat /tmp/emir-git | sort -u | grep ^+++ | grep -v urimap.php | cut -d '/' -f2-
+git show > /tmp/emir-git; git diff >> /tmp/emir-git; cat /tmp/emir-git | sort -u | grep ^+++ | grep -v urimap.php | grep -v 'dev/null' | cut -d '/' -f2-

@@ -21,20 +21,12 @@ Bundle 'tpope/vim-repeat'
 " }}}
 
 " Status bar -- powerline {{{
-Bundle 'Lokaltog/vim-powerline'
-" Recommended settings from :help Powerline
+" Bundle 'Lokaltog/vim-powerline'
+" " Recommended settings from :help Powerline
 set laststatus=2
 set encoding=utf-8
 set t_Co=256
 set hidden
-" }}}
-
-"\w move faster -- easymotion {{{
-Bundle 'Lokaltog/vim-easymotion'
-" Recommended settings for vim-easymotion
-let g:EasyMotion_leader_key = '\'
-" \w Will go to a next word of choice
-" \j will go down easily
 " }}}
 
 " Ctrl+space Ctrl+P -- ctrlp {{{
@@ -49,14 +41,14 @@ let g:ctrlp_working_path_mode = 'a'
 let g:ctrlp_dotfiles = 0
 " }}}
 
-" space space -- tagbar {{{
-Bundle 'majutsushi/tagbar'
-"# Settings for TagBar
-"let g:tagbar_ctags_bin='/mnt/vol/engshare/admin/scripts/ct'
-let g:tagbar_width=30
-let g:tagbar_autoclose=1
-let g:tagbar_indent=1
-nnoremap <silent> <space><space> :TagbarToggle<CR>/
+" [DISABLED] space space -- tagbar {{{
+" Bundle 'majutsushi/tagbar'
+" "# Settings for TagBar
+" "let g:tagbar_ctags_bin='/mnt/vol/engshare/admin/scripts/ct'
+" let g:tagbar_width=30
+" let g:tagbar_autoclose=1
+" let g:tagbar_indent=1
+" nnoremap <silent> <space><space> :TagbarToggle<CR>/
 " }}}
 
 " [DISABLED] auto-linting -- syntastic {{{
@@ -81,24 +73,12 @@ Bundle 'phleet/vim-arcanist'
 Bundle 'godlygeek/tabular'
 " }}}
 
-" f<char> t<char> multi-line {{{
-Bundle 'dahu/vim-fanfingtastic'
-" }}}
-
-" [DISABLED] Snipets -- snipmate {{{
-" Bundle 'msanders/snipmate.vim'
-" }}}
-
 " visual S, normal cs"', yss<curly> {{{
 Bundle 'tpope/vim-surround'
 " }}}
 
 " help abolish {{{
 Bundle 'tpope/vim-abolish'
-" }}}
-
-" [DISABLED] multi cursor {{{
-" Bundle 'paradigm/vim-multicursor'
 " }}}
 
 " Solarized style {{{ 
@@ -386,18 +366,6 @@ nnoremap <silent> <C-l> :call <SID>MoveInDirection('l')<cr>
 " nnoremap <silent> <s-l> :call <SID>MoveInDirection('l')<cr>
 " }}}
 
-" Pulse function  {{{
-function! s:PulseLine()
-  setlocal nocursorline
-  setlocal cursorcolumn
-  redraw
-  sleep 50 m
-  setlocal cursorline
-  setlocal nocursorcolumn
-endfunction
-nnoremap <silent> <leader>f :call <SID>PulseLine()<cr>
-" }}}
-
 " Leaders and functional keys  {{{
 let mapleader = ' '
 let maplocalleader = "\\"
@@ -408,9 +376,14 @@ nnoremap <leader>h :help <c-r><c-w><cr><c-w>K<c-w>p
 nnoremap <F6> :set paste!<cr>
 noremap <leader>p :silent! set paste!<CR>
 
-" open a new vertical split and switch over to it.
+" 'w' open a new vertical split and switch over to it.
 nnoremap <leader>w <C-w>v<C-w>l
+" 'n'
 nnoremap <leader>n :tabnew<cr>:Nyancat2<cr>
+
+" 'ex' expand to cmd line
+map <Leader>ex :e <C-R>=expand("%")<cr>
+
 " }}}
 
 " Source a line {{{
@@ -502,6 +475,7 @@ augroup filetype_specific_autogroups
   " Enter run a php script
   autocmd FileType php nnoremap <buffer>  :echo system('php '.expand('%').' 2>&1')<cr>
   autocmd FileType php nnoremap <buffer> <leader>r :echo system('php ~/www/scripts/emir.php 2>&1')<cr>
+  autocmd FileType php nnoremap <buffer> <leader>t :echo system('t '.expand('%'))<cr>
 
   autocmd FileType vim setlocal foldmethod=marker
 
