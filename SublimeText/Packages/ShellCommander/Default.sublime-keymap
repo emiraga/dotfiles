@@ -1,5 +1,7 @@
 [
   { "keys": ["ctrl+shift+x"], "command": "shell_commander" },
   { "keys": ["f2"], "command": "shell_commander_run_tests" },
+  { "keys": ["f3"], "command": "shell_commander_hack" },
+  { "keys": ["f5"], "command": "shell_commander_run_emir" },
   { "keys": ["super+f3"], "command": "shell_commander_testing" }
 ]

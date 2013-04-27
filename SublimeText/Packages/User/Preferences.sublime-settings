@@ -12,16 +12,14 @@
 	"font_size": 14.5,
 	"ignored_packages":
 	[
-		"Git",
+		"ASP",
 		"Unicode Character Highlighter",
 		".DS_Store",
-		"sublimelint",
 		"rsub",
 		"Vintage",
 		"ZenCoding",
 		"SFTP",
 		"SublimeXdebug",
-		"ASP",
 		"SideBarEnhancements",
 		"Graphviz"
 	],
@@ -39,5 +37,10 @@
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"use_tab_stops": true,
-	"word_wrap": true
+	"word_wrap": true,
+	"auto_complete_triggers": [
+		{"selector": "text.html", "characters": "<>"},
+		{"selector": "text.php", "characters": "<>"},
+		{"selector": "*.php", "characters": "<>"}
+	]
 }

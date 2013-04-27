@@ -3,8 +3,11 @@
 	"https_proxy": "172.31.255.99:8080",
 	"installed_packages":
 	[
+		"CTags",
 		"Git",
 		"Package Control",
+		"PhpBeautifier",
+		"PhpTidy",
 		"Theme - Nil",
 		"Theme - Soda"
 	]

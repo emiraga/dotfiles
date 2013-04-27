@@ -75,7 +75,7 @@ fi
 #if [ -f /etc/hosts ] ; then
 #       rhosts="$rhosts `cat /etc/hosts | awk '!/(#.*|127.*)/ {print $2}'`"
 #fi
-complete -W "`echo $rhosts`" telnet ssh sftp ftp ping traceroute nslookup dig
+complete -W "`echo $rhosts`" telnet ssh sftp ftp ping traceroute nslookup dig c
 unset rhosts
 
-
+source .bashrc_post_facebook
