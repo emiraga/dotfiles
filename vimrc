@@ -201,7 +201,7 @@ set expandtab
 " When at 3 spaces and I hit >>, go to 4, not 5.
 set shiftround
 
-set mouse=a
+set mouse=
 set autowrite
 set nonumber
 set showmode

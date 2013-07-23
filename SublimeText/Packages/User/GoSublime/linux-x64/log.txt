@@ -1,0 +1,67 @@
+
+** 2013-07-07 18:56:26.448736 **:
+MarGo: Missing required environment variables: GOPATH
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2013-07-10 12:48:13.408132 **:
+MarGo: MarGo build failure
+cmd: `['', 'build', '-v', '-x', '-o', '/home/emir/.config/sublime-text-2/Packages/User/GoSublime/linux-x64/bin/gosublime.margo_r13.07.06-1_go?.exe']`
+stdout: ``
+stderr: ``
+exception: `Cannot find command `go``
+--------------------------------
+
+** 2013-07-10 12:48:13.424138 **:
+MarGo: Missing required environment variables: GOROOT
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2013-07-10 12:48:30.711085 **:
+MarGo: MarGo build failure
+cmd: `['', 'build', '-v', '-x', '-o', '/home/emir/.config/sublime-text-2/Packages/User/GoSublime/linux-x64/bin/gosublime.margo_r13.07.06-1_go?.exe']`
+stdout: ``
+stderr: ``
+exception: `Cannot find command `go``
+--------------------------------
+
+** 2013-07-10 12:48:30.714688 **:
+MarGo: Missing required environment variables: GOROOT
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2013-07-10 12:48:36.644841 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/home/emir/.config/sublime-text-2/Packages/User/GoSublime/linux-x64/bin/gosublime.margo_r13.07.06-1_go?.exe`
+--------------------------------
+
+** 2013-07-10 12:49:02.172991 **:
+MarGo: MarGo build failure
+cmd: `['', 'build', '-v', '-x', '-o', '/home/emir/.config/sublime-text-2/Packages/User/GoSublime/linux-x64/bin/gosublime.margo_r13.07.06-1_go?.exe']`
+stdout: ``
+stderr: ``
+exception: `Cannot find command `go``
+--------------------------------
+
+** 2013-07-10 12:49:02.176355 **:
+MarGo: Missing required environment variables: GOROOT
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2013-07-10 12:49:13.486838 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/home/emir/.config/sublime-text-2/Packages/User/GoSublime/linux-x64/bin/gosublime.margo_r13.07.06-1_go?.exe`
+--------------------------------
+
+** 2013-07-11 16:58:44.716039 **:
+MarGo: MarGo build failure
+cmd: `['', 'build', '-v', '-x', '-o', '/home/emir/.config/sublime-text-2/Packages/User/GoSublime/linux-x64/bin/gosublime.margo_r13.07.06-1_go?.exe']`
+stdout: ``
+stderr: ``
+exception: `Cannot find command `go``
+--------------------------------
+
+** 2013-07-11 16:58:44.729266 **:
+MarGo: Missing required environment variables: GOROOT
+See the `Quirks` section of USAGE.md for info
+--------------------------------

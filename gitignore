@@ -17,3 +17,7 @@ sftp-config.json
 .hhtoken_emir
 scripts/emir.php
 emir.php
+emir.sh
+gopath/
+/gopath/
+./gopath/

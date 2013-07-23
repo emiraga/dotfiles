@@ -4,8 +4,6 @@ if [ -f /etc/bashrc ]; then
   . /etc/bashrc
 fi
 
-source ~/facebook_bashrc
-
 alias g="git"
 alias gc="git commit -a"
 alias gd="git diff"
@@ -32,17 +30,7 @@ export PATH=/usr/hs/bin:$PATH
 export EDITOR=vim
 export PHABRICATOR_ENV=facebook/emir
 
-_stopped_jobs() {
-  num=$(jobs -s | wc -l | sed -e "s/ //g")
-  if [ $num -ne 0 ]; then
-    echo " {J:$num} "
-  fi
-}
-
-export PS1='\[\033[0;32m\][\u:\w $(_dotfiles_scm_info)]$(_stopped_jobs)\$ \[\033[0;37m\]'
-
 source ~/bin/.git.bash
-unalias sc
 
 which htop >/dev/null
 
@@ -52,30 +40,18 @@ vis() {
   vim `s_no_color $@` -c "/$@"
 }
 
+_stopped_jobs() {
+  num=$(jobs -s | wc -l | sed -e "s/ //g")
+  if [ $num -ne 0 ]; then
+    echo " {J:$num} "
+  fi
+}
+
 set completion-query-items 10000
 set completion-ignore-case On
 
 export HISTSIZE=1000000
 export HISTFILESIZE=1000000
 shopt -s histappend
+shopt -s histverify
 
-source .bashautocomplete
-
-# Allow Ctrl+S to be passed into vim
-stty -ixon -ixoff
-
-# fix long line entry wrapping in bash
-shopt -s checkwinsize
-
-# autocomplete ssh
-rhosts=localhost
-if [ -f ~/.ssh/known_hosts ] ; then
-  rhosts="$rhosts `cat ~/.ssh/known_hosts | awk '{print $1}' | sed -e 's/,.*//g'`"
-fi
-#if [ -f /etc/hosts ] ; then
-#       rhosts="$rhosts `cat /etc/hosts | awk '!/(#.*|127.*)/ {print $2}'`"
-#fi
-complete -W "`echo $rhosts`" telnet ssh sftp ftp ping traceroute nslookup dig c
-unset rhosts
-
-source .bashrc_post_facebook

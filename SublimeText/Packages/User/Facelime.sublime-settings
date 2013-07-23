@@ -1,0 +1,68 @@
+{
+  // Hostname (or SSH alias) of development server.
+  "hostname": "2347865389642389",
+
+  // Local path to "www" directory on mounted volume.
+  "www_path": "/home/emir/www",
+
+  // Remote path of "www" directory.
+  "remote_www_path": "2378942893",
+
+  // Path to the "tbgs" script.
+  "tbgs_path": "/home/engshare/admin/scripts/tbgs",
+
+  // Path to the "alitepath" script.
+  "alite_path": "/home/engshare/svnroot/tfb/trunk/www/scripts/bin/alitepath",
+
+  // Path to "arc" binary.
+  "arcanist_path": "/usr/local/bin/arc",
+
+  // Conduit URI.
+  "conduit_uri": "https://phabricator.fb.com/api/",
+
+  // List of search-and-replace operations to apply to queries.
+  "query_replacements": [
+    {
+      "pattern": "^@pm ",
+      "replace": "@providesModule "
+    },
+    {
+      "pattern": "^@pl ",
+      "replace": "@providesLegacy "
+    },
+    {
+      "pattern": "-cx-PUBLIC-([\\w-]+)__([\\w-]+)",
+      "replace": "public/\\1/\\2"
+    },
+    {
+      "pattern": "-cx-PRIVATE-([\\w-]+)__([\\w-]+)",
+      "replace": "\\1/\\2"
+    }
+  ],
+
+  // Path substrings to exclude for search results.
+  "search_blacklist": [
+    "flib/intern/web/haste/conf",
+    "html/css/sprite/autogen",
+    "/third_party/",
+    "/third-party/"
+  ],
+
+  // Interpret '$' at the end of queries as an EOL assertion.
+  "translate_dollar_sign_to_eol": true,
+
+  // Automatically open file if a query only has one result.
+  "auto_open_single_result": true,
+
+  // URL for blaming files in Phabricator.
+  "phabricator_blame_url": "https://phabricator.fb.com/diffusion/E/browse/tfb/trunk/www/{0}?view=blame",
+
+  // URL for file history in Phabriator.
+  "phabricator_history_url": "https://phabricator.fb.com/diffusion/E/history/tfb/trunk/www/{0}",
+
+  // URL for UI Component Explorer.
+  "uice_url": "https://our.intern.facebook.com/intern/ui/{0}?sk={1}",
+
+  // If true, debug messages will be printed to <ctrl+`>.
+  "debug_mode": true
+}

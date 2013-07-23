@@ -3,12 +3,21 @@
 	"https_proxy": "172.31.255.99:8080",
 	"installed_packages":
 	[
+		"AdvancedNewFile",
+		"All Autocomplete",
 		"CTags",
+		"DocBlockr",
+		"Facelime",
 		"Git",
+		"GoSublime",
+		"Limebox",
 		"Package Control",
-		"PhpBeautifier",
-		"PhpTidy",
+		"SearchInProject",
 		"Theme - Nil",
 		"Theme - Soda"
+	],
+	"repositories":
+	[
+		"http://home.fburl.com/~yungsters/facelime/repositories.json"
 	]
 }

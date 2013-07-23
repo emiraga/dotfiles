@@ -2,4 +2,4 @@
 
 br=$( git branch | grep '^ ' | sed 's/^ *//' | grep $1 | head -n 1 )
 
-git co "$br" && git pull --rebase && arc build
+git fetch && git rebase trunk "$br" && arc build
