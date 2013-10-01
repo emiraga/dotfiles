@@ -1,24 +1,33 @@
 {
 	"auto_upgrade_last_run": null,
-	"http_proxy": "172.31.255.99:8080",
-	"https_proxy": "172.31.255.99:8080",
 	"installed_packages":
 	[
 		"AdvancedNewFile",
 		"All Autocomplete",
-		"CTags",
-		"DocBlockr",
-		"Facelime",
+		"AdvancedNewFile",
+		"All Autocomplete",
+		"Auto Semi-Colon",
+		"Browser Refresh",
+		"Chrome Refresh",
+		"ColorPicker",
+		"Emmet",
 		"Git",
 		"GoSublime",
 		"Limebox",
+		"Google Spell Check",
+		"GoSublime",
+		"Goto Documentation",
+		"InsertDate",
+		"Missing Palette Commands",
 		"Package Control",
 		"SearchInProject",
+		"rsub",
+		"SFTP",
+		"SideBarEnhancements",
 		"Theme - Nil",
-		"Theme - Soda"
-	],
-	"repositories":
-	[
-		"http://home.fburl.com/~yungsters/facelime/repositories.json"
+		"Theme - Soda",
+		"TrailingSpaces",
+		"View In Browser",
+		"ZenCoding"
 	]
 }

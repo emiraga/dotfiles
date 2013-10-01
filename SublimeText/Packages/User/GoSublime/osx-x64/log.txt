@@ -1,0 +1,2852 @@
+
+** 2013-06-12 02:22:00.490103 **:
+MarGo: Missing required environment variables: GOPATH
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2013-06-13 08:51:38.999558 **:
+MarGo: Missing required environment variables: GOPATH
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2013-06-13 08:55:50.063101 **:
+MarGo: Missing required environment variables: GOPATH
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+margo: 2013/06/27 00:42:00 broker.go:105: gocode_complete#mg9.autoken.e31b13ae-53ca-4256-9206-6bb2b661fb31 PANIC: interface conversion: interface is nil, not *ast.ChanType
+goroutine 26 [running]:
+main.func·001()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:104 +0xc7
+gosublime.org/gocode.infer_type(0xc20029a7c0, 0xc200a0e740, 0xc20050c7f0, 0xffffffffffffffff, 0x8, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/decl.go:734 +0x665
+gosublime.org/gocode.(*decl).infer_type(0xc2006b4d90, 0x0, 0x0, 0x0)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/decl.go:929 +0x234
+gosublime.org/gocode.(*auto_complete_context).get_candidates_from_set(0xc20012a100, 0xc200bea480, 0x3e1ee0, 0x0, 0xffffffffffffffff, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/autocompletecontext.go:199 +0xb0
+gosublime.org/gocode.(*auto_complete_context).apropos(0xc20012a100, 0xc2000c1f00, 0xa0, 0xa0, 0xc2004104e0, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/autocompletecontext.go:275 +0x289
+gosublime.org/gocode.GoSublimeGocodeComplete(0xc2000c1f00, 0xa0, 0xa0, 0xc2004104e0, 0x51, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/gosublime_gocode_bridge.go:26 +0x8a
+main.(*mGocodeComplete).Call(0xc200410060, 0x0, 0x0, 0x0, 0x0, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/m_gocode.go:123 +0x7ec
+main.(*Broker).call(0xc2000fd770, 0xc2003511e0, 0xc200305a80, 0xc200410060)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:113 +0x9b
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:188 +0xbe
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 1 [syscall]:
+syscall.Syscall()
+	/usr/local/go/src/pkg/syscall/asm_darwin_amd64.s:15 +0x5
+syscall.read(0x0, 0xc20023e000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/syscall/zsyscall_darwin_amd64.go:900 +0x70
+syscall.Read(0x0, 0xc20023e000, 0x1000, 0x1000, 0x7, ...)
+	/usr/local/go/src/pkg/syscall/syscall_unix.go:132 +0x5a
+os.(*File).read(0xc200000000, 0xc20023e000, 0x1000, 0x1000, 0x58b, ...)
+	/usr/local/go/src/pkg/os/file_unix.go:174 +0x60
+os.(*File).Read(0xc200000000, 0xc20023e000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/os/file.go:95 +0x96
+bufio.(*Reader).fill(0xc2000f05a0)
+	/usr/local/go/src/pkg/bufio/bufio.go:79 +0x10c
+bufio.(*Reader).ReadSlice(0xc2000f05a0, 0xa, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/bufio/bufio.go:262 +0x202
+bufio.(*Reader).ReadBytes(0xc2000f05a0, 0xc20025e00a, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/bufio/bufio.go:343 +0xb7
+main.(*Broker).accept(0xc2000fd770, 0xc20025e000, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:128 +0x44
+main.(*Broker).Loop(0xc2000fd770, 0xc200120001)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:213 +0x26e
+main.main()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/main.go:126 +0x9fb
+
+goroutine 2 [syscall]:
+
+goroutine 5 [chan receive]:
+gosublime.org/gocode.func·020()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/utils.go:112 +0x57
+created by gosublime.org/gocode.new_file_reader
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/utils.go:116 +0x9f
+
+goroutine 6 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/pkg/runtime/ztime_darwin_amd64.c:19 +0x2f
+main.func·032()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/oom.go:31 +0x243
+created by main.startOomKiller
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/oom.go:33 +0x64
+
+goroutine 7 [sleep]:
+time.Sleep(0x6fc23ac00)
+	/usr/local/go/src/pkg/runtime/ztime_darwin_amd64.c:19 +0x2f
+main.func·029()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/main.go:115 +0x4b
+created by main.main
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/main.go:124 +0x9b0
+
+goroutine 10 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 11 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 12 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 13 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 14 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 15 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 16 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 17 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 18 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 19 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 20 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 21 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 22 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 23 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 24 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 25 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 27 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 28 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 29 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+
+
+** 2013-06-27 00:42:00.234581 **:
+GsComplete: broker: gocode_complete#mg9.autoken.e31b13ae-53ca-4256-9206-6bb2b661fb31 PANIC
+--------------------------------
+margo: 2013/06/27 00:42:01 broker.go:105: gocode_complete#mg9.autoken.0e5d9468-0a87-482d-b7a2-60363d738e0f PANIC: interface conversion: interface is nil, not *ast.ChanType
+goroutine 27 [running]:
+main.func·001()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:104 +0xc7
+gosublime.org/gocode.infer_type(0xc20029a7c0, 0xc200c4f540, 0xc200cd0cf0, 0xffffffffffffffff, 0x8, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/decl.go:734 +0x665
+gosublime.org/gocode.(*decl).infer_type(0xc200c87e00, 0x0, 0x0, 0x0)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/decl.go:929 +0x234
+gosublime.org/gocode.(*auto_complete_context).get_candidates_from_set(0xc20012a100, 0xc200bea940, 0x3e1ee0, 0x0, 0xffffffffffffffff, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/autocompletecontext.go:199 +0xb0
+gosublime.org/gocode.(*auto_complete_context).apropos(0xc20012a100, 0xc200105370, 0xa3, 0xa3, 0xc2009d87e0, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/autocompletecontext.go:275 +0x289
+gosublime.org/gocode.GoSublimeGocodeComplete(0xc200105370, 0xa3, 0xa3, 0xc2009d87e0, 0x51, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/gosublime_gocode_bridge.go:26 +0x8a
+main.(*mGocodeComplete).Call(0xc2009d86c0, 0x0, 0x0, 0x0, 0x0, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/m_gocode.go:123 +0x7ec
+main.(*Broker).call(0xc2000fd770, 0xc200bfa400, 0xc200305a80, 0xc2009d86c0)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:113 +0x9b
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:188 +0xbe
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 1 [syscall]:
+syscall.Syscall()
+	/usr/local/go/src/pkg/syscall/asm_darwin_amd64.s:15 +0x5
+syscall.read(0x0, 0xc20023e000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/syscall/zsyscall_darwin_amd64.go:900 +0x70
+syscall.Read(0x0, 0xc20023e000, 0x1000, 0x1000, 0x7, ...)
+	/usr/local/go/src/pkg/syscall/syscall_unix.go:132 +0x5a
+os.(*File).read(0xc200000000, 0xc20023e000, 0x1000, 0x1000, 0x58e, ...)
+	/usr/local/go/src/pkg/os/file_unix.go:174 +0x60
+os.(*File).Read(0xc200000000, 0xc20023e000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/os/file.go:95 +0x96
+bufio.(*Reader).fill(0xc2000f05a0)
+	/usr/local/go/src/pkg/bufio/bufio.go:79 +0x10c
+bufio.(*Reader).ReadSlice(0xc2000f05a0, 0xa, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/bufio/bufio.go:262 +0x202
+bufio.(*Reader).ReadBytes(0xc2000f05a0, 0xc20025e00a, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/bufio/bufio.go:343 +0xb7
+main.(*Broker).accept(0xc2000fd770, 0xc20025e000, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:128 +0x44
+main.(*Broker).Loop(0xc2000fd770, 0xc200120001)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:213 +0x26e
+main.main()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/main.go:126 +0x9fb
+
+goroutine 2 [syscall]:
+
+goroutine 5 [chan receive]:
+gosublime.org/gocode.func·020()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/utils.go:112 +0x57
+created by gosublime.org/gocode.new_file_reader
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/utils.go:116 +0x9f
+
+goroutine 6 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/pkg/runtime/ztime_darwin_amd64.c:19 +0x2f
+main.func·032()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/oom.go:31 +0x243
+created by main.startOomKiller
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/oom.go:33 +0x64
+
+goroutine 7 [sleep]:
+time.Sleep(0x6fc23ac00)
+	/usr/local/go/src/pkg/runtime/ztime_darwin_amd64.c:19 +0x2f
+main.func·029()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/main.go:115 +0x4b
+created by main.main
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/main.go:124 +0x9b0
+
+goroutine 10 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 11 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 12 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 13 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 14 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 15 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 16 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 17 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 18 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 19 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 20 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 21 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 22 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 23 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 24 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 25 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 26 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 28 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 29 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+
+
+** 2013-06-27 00:42:01.439899 **:
+GsComplete: broker: gocode_complete#mg9.autoken.0e5d9468-0a87-482d-b7a2-60363d738e0f PANIC
+--------------------------------
+margo: 2013/06/27 00:42:01 broker.go:105: gocode_complete#mg9.autoken.716f2228-2790-4dd1-8c9c-3f84a178cbe2 PANIC: interface conversion: interface is nil, not *ast.ChanType
+goroutine 28 [running]:
+main.func·001()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:104 +0xc7
+gosublime.org/gocode.infer_type(0xc20029a7c0, 0xc200c4f900, 0xc200cdc1d0, 0xffffffffffffffff, 0xdf436, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/decl.go:734 +0x665
+gosublime.org/gocode.(*decl).infer_type(0xc200daf5b0, 0x0, 0x0, 0x0)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/decl.go:929 +0x234
+gosublime.org/gocode.infer_type(0xc20010b740, 0xc20090c360, 0xc200cdc1e0, 0xffffffffffffffff, 0xc20010b740, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/decl.go:710 +0x201
+gosublime.org/gocode.expr_to_decl(0xc20010b740, 0xc20090c360, 0xc200cdc1e0, 0xc20090c360)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/decl.go:565 +0x42
+gosublime.org/gocode.(*auto_complete_context).deduce_cursor_decl(0xc20012a100, 0x10b3928, 0x349b3)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/cursorcontext.go:135 +0xa6
+gosublime.org/gocode.(*auto_complete_context).deduce_cursor_context(0xc20012a100, 0xc2001056e0, 0xa6, 0xa6, 0xa3, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/cursorcontext.go:153 +0x13d
+gosublime.org/gocode.(*auto_complete_context).apropos(0xc20012a100, 0xc2001056e0, 0xa6, 0xa6, 0xc2007791e0, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/autocompletecontext.go:253 +0xfa
+gosublime.org/gocode.GoSublimeGocodeComplete(0xc2001056e0, 0xa6, 0xa6, 0xc2007791e0, 0x51, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/gosublime_gocode_bridge.go:26 +0x8a
+main.(*mGocodeComplete).Call(0xc2007790c0, 0x0, 0x0, 0x0, 0x0, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/m_gocode.go:123 +0x7ec
+main.(*Broker).call(0xc2000fd770, 0xc200c4f960, 0xc200305a80, 0xc2007790c0)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:113 +0x9b
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:188 +0xbe
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 1 [syscall]:
+syscall.Syscall()
+	/usr/local/go/src/pkg/syscall/asm_darwin_amd64.s:14 +0x5
+syscall.read(0x0, 0xc20023e000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/syscall/zsyscall_darwin_amd64.go:900 +0x70
+syscall.Read(0x0, 0xc20023e000, 0x1000, 0x1000, 0x7, ...)
+	/usr/local/go/src/pkg/syscall/syscall_unix.go:132 +0x5a
+os.(*File).read(0xc200000000, 0xc20023e000, 0x1000, 0x1000, 0x591, ...)
+	/usr/local/go/src/pkg/os/file_unix.go:174 +0x60
+os.(*File).Read(0xc200000000, 0xc20023e000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/os/file.go:95 +0x96
+bufio.(*Reader).fill(0xc2000f05a0)
+	/usr/local/go/src/pkg/bufio/bufio.go:79 +0x10c
+bufio.(*Reader).ReadSlice(0xc2000f05a0, 0xa, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/bufio/bufio.go:262 +0x202
+bufio.(*Reader).ReadBytes(0xc2000f05a0, 0xc20025e00a, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/bufio/bufio.go:343 +0xb7
+main.(*Broker).accept(0xc2000fd770, 0xc20025e000, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:128 +0x44
+main.(*Broker).Loop(0xc2000fd770, 0xc200120001)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:213 +0x26e
+main.main()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/main.go:126 +0x9fb
+
+goroutine 2 [syscall]:
+
+goroutine 5 [chan receive]:
+gosublime.org/gocode.func·020()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/utils.go:112 +0x57
+created by gosublime.org/gocode.new_file_reader
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/utils.go:116 +0x9f
+
+goroutine 6 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/pkg/runtime/ztime_darwin_amd64.c:19 +0x2f
+main.func·032()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/oom.go:31 +0x243
+created by main.startOomKiller
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/oom.go:33 +0x64
+
+goroutine 7 [sleep]:
+time.Sleep(0x6fc23ac00)
+	/usr/local/go/src/pkg/runtime/ztime_darwin_amd64.c:19 +0x2f
+main.func·029()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/main.go:115 +0x4b
+created by main.main
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/main.go:124 +0x9b0
+
+goroutine 10 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 11 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 12 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 13 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 14 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 15 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 16 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 17 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 18 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 19 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 20 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 21 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 22 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 23 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 24 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 25 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 26 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 27 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 29 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+
+
+** 2013-06-27 00:42:01.845788 **:
+GsComplete: broker: gocode_complete#mg9.autoken.716f2228-2790-4dd1-8c9c-3f84a178cbe2 PANIC
+--------------------------------
+margo: 2013/06/27 00:42:05 broker.go:105: gocode_complete#mg9.autoken.41cf6c97-7d7b-4214-8109-c0f799b2c84c PANIC: interface conversion: interface is nil, not *ast.ChanType
+goroutine 15 [running]:
+main.func·001()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:104 +0xc7
+gosublime.org/gocode.infer_type(0xc20029a7c0, 0xc200bf8740, 0xc200cdca80, 0xffffffffffffffff, 0xdf436, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/decl.go:734 +0x665
+gosublime.org/gocode.(*decl).infer_type(0xc200c590e0, 0x0, 0x0, 0x0)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/decl.go:929 +0x234
+gosublime.org/gocode.infer_type(0xc20010b740, 0xc20096ed20, 0xc200cdca90, 0xffffffffffffffff, 0xc20010b740, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/decl.go:710 +0x201
+gosublime.org/gocode.expr_to_decl(0xc20010b740, 0xc20096ed20, 0xc200cdca90, 0xc20096ed20)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/decl.go:565 +0x42
+gosublime.org/gocode.(*auto_complete_context).deduce_cursor_decl(0xc20012a100, 0x10a0928, 0x349b3)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/cursorcontext.go:135 +0xa6
+gosublime.org/gocode.(*auto_complete_context).deduce_cursor_context(0xc20012a100, 0xc200105e70, 0xa6, 0xa6, 0xa3, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/cursorcontext.go:153 +0x13d
+gosublime.org/gocode.(*auto_complete_context).apropos(0xc20012a100, 0xc200105e70, 0xa6, 0xa6, 0xc2007799c0, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/autocompletecontext.go:253 +0xfa
+gosublime.org/gocode.GoSublimeGocodeComplete(0xc200105e70, 0xa6, 0xa6, 0xc2007799c0, 0x51, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/gosublime_gocode_bridge.go:26 +0x8a
+main.(*mGocodeComplete).Call(0xc2007796c0, 0x0, 0x0, 0x0, 0x0, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/m_gocode.go:123 +0x7ec
+main.(*Broker).call(0xc2000fd770, 0xc20090c840, 0xc200305a80, 0xc2007796c0)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:113 +0x9b
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:188 +0xbe
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 1 [syscall]:
+syscall.Syscall()
+	/usr/local/go/src/pkg/syscall/asm_darwin_amd64.s:15 +0x5
+syscall.read(0x0, 0xc20023e000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/syscall/zsyscall_darwin_amd64.go:900 +0x70
+syscall.Read(0x0, 0xc20023e000, 0x1000, 0x1000, 0x7, ...)
+	/usr/local/go/src/pkg/syscall/syscall_unix.go:132 +0x5a
+os.(*File).read(0xc200000000, 0xc20023e000, 0x1000, 0x1000, 0x591, ...)
+	/usr/local/go/src/pkg/os/file_unix.go:174 +0x60
+os.(*File).Read(0xc200000000, 0xc20023e000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/os/file.go:95 +0x96
+bufio.(*Reader).fill(0xc2000f05a0)
+	/usr/local/go/src/pkg/bufio/bufio.go:79 +0x10c
+bufio.(*Reader).ReadSlice(0xc2000f05a0, 0xa, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/bufio/bufio.go:262 +0x202
+bufio.(*Reader).ReadBytes(0xc2000f05a0, 0xc20025e00a, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/bufio/bufio.go:343 +0xb7
+main.(*Broker).accept(0xc2000fd770, 0xc20025e000, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:128 +0x44
+main.(*Broker).Loop(0xc2000fd770, 0xc200120001)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:213 +0x26e
+main.main()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/main.go:126 +0x9fb
+
+goroutine 2 [syscall]:
+
+goroutine 5 [chan receive]:
+gosublime.org/gocode.func·020()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/utils.go:112 +0x57
+created by gosublime.org/gocode.new_file_reader
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/utils.go:116 +0x9f
+
+goroutine 6 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/pkg/runtime/ztime_darwin_amd64.c:19 +0x2f
+main.func·032()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/oom.go:31 +0x243
+created by main.startOomKiller
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/oom.go:33 +0x64
+
+goroutine 7 [sleep]:
+time.Sleep(0x6fc23ac00)
+	/usr/local/go/src/pkg/runtime/ztime_darwin_amd64.c:19 +0x2f
+main.func·029()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/main.go:115 +0x4b
+created by main.main
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/main.go:124 +0x9b0
+
+goroutine 10 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 11 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 12 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 13 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 14 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 16 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 17 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 18 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 19 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 20 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 21 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 22 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 23 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 24 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 25 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 26 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 27 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 28 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 29 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+
+
+** 2013-06-27 00:42:05.798173 **:
+GsComplete: broker: gocode_complete#mg9.autoken.41cf6c97-7d7b-4214-8109-c0f799b2c84c PANIC
+--------------------------------
+margo: 2013/06/27 00:42:22 broker.go:105: gocode_complete#mg9.autoken.061f6317-324b-4576-b024-b103fa4869e8 PANIC: interface conversion: interface is nil, not *ast.ChanType
+goroutine 13 [running]:
+main.func·001()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:104 +0xc7
+gosublime.org/gocode.infer_type(0xc20029a7c0, 0xc200d0fa40, 0xc200598f90, 0xffffffffffffffff, 0x8, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/decl.go:734 +0x665
+gosublime.org/gocode.(*decl).infer_type(0xc20080f5b0, 0x0, 0x0, 0x0)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/decl.go:929 +0x234
+gosublime.org/gocode.(*auto_complete_context).get_candidates_from_set(0xc20012a100, 0xc200bef040, 0x3e1ee0, 0x0, 0xffffffffffffffff, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/autocompletecontext.go:199 +0xb0
+gosublime.org/gocode.(*auto_complete_context).apropos(0xc20012a100, 0xc200b12f20, 0xaf, 0xaf, 0xc200d8ea80, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/autocompletecontext.go:275 +0x289
+gosublime.org/gocode.GoSublimeGocodeComplete(0xc200b12f20, 0xaf, 0xaf, 0xc200d8ea80, 0x51, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/gosublime_gocode_bridge.go:26 +0x8a
+main.(*mGocodeComplete).Call(0xc200a4c660, 0x0, 0x0, 0x0, 0x0, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/m_gocode.go:123 +0x7ec
+main.(*Broker).call(0xc2000fd770, 0xc2009d9a00, 0xc200305a80, 0xc200a4c660)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:113 +0x9b
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:188 +0xbe
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 1 [syscall]:
+syscall.Syscall()
+	/usr/local/go/src/pkg/syscall/asm_darwin_amd64.s:15 +0x5
+syscall.read(0x0, 0xc20023e000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/syscall/zsyscall_darwin_amd64.go:900 +0x70
+syscall.Read(0x0, 0xc20023e000, 0x1000, 0x1000, 0x7, ...)
+	/usr/local/go/src/pkg/syscall/syscall_unix.go:132 +0x5a
+os.(*File).read(0xc200000000, 0xc20023e000, 0x1000, 0x1000, 0x59a, ...)
+	/usr/local/go/src/pkg/os/file_unix.go:174 +0x60
+os.(*File).Read(0xc200000000, 0xc20023e000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/os/file.go:95 +0x96
+bufio.(*Reader).fill(0xc2000f05a0)
+	/usr/local/go/src/pkg/bufio/bufio.go:79 +0x10c
+bufio.(*Reader).ReadSlice(0xc2000f05a0, 0xa, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/bufio/bufio.go:262 +0x202
+bufio.(*Reader).ReadBytes(0xc2000f05a0, 0xc20025e00a, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/bufio/bufio.go:343 +0xb7
+main.(*Broker).accept(0xc2000fd770, 0xc20025e000, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:128 +0x44
+main.(*Broker).Loop(0xc2000fd770, 0xc200120001)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:213 +0x26e
+main.main()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/main.go:126 +0x9fb
+
+goroutine 2 [syscall]:
+
+goroutine 5 [chan receive]:
+gosublime.org/gocode.func·020()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/utils.go:112 +0x57
+created by gosublime.org/gocode.new_file_reader
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/utils.go:116 +0x9f
+
+goroutine 6 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/pkg/runtime/ztime_darwin_amd64.c:19 +0x2f
+main.func·032()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/oom.go:31 +0x243
+created by main.startOomKiller
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/oom.go:33 +0x64
+
+goroutine 7 [sleep]:
+time.Sleep(0x6fc23ac00)
+	/usr/local/go/src/pkg/runtime/ztime_darwin_amd64.c:19 +0x2f
+main.func·029()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/main.go:115 +0x4b
+created by main.main
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/main.go:124 +0x9b0
+
+goroutine 10 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 11 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 12 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 14 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 15 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 16 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 17 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 18 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 19 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 20 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 21 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 22 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 23 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 24 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 25 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 26 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 27 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 28 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 29 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+
+
+** 2013-06-27 00:42:22.622318 **:
+GsComplete: broker: gocode_complete#mg9.autoken.061f6317-324b-4576-b024-b103fa4869e8 PANIC
+--------------------------------
+margo: 2013/06/27 00:42:22 broker.go:105: gocode_complete#mg9.autoken.c3f74f2c-6480-4a77-8e24-fe7e6c767e07 PANIC: interface conversion: interface is nil, not *ast.ChanType
+goroutine 19 [running]:
+main.func·001()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:104 +0xc7
+gosublime.org/gocode.infer_type(0xc20029a7c0, 0xc200bf8740, 0xc200cdc940, 0xffffffffffffffff, 0x8, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/decl.go:734 +0x665
+gosublime.org/gocode.(*decl).infer_type(0xc200affe00, 0x0, 0x0, 0x0)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/decl.go:929 +0x234
+gosublime.org/gocode.(*auto_complete_context).get_candidates_from_set(0xc20012a100, 0xc200bef840, 0x3e1ee0, 0x0, 0xffffffffffffffff, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/autocompletecontext.go:199 +0xb0
+gosublime.org/gocode.(*auto_complete_context).apropos(0xc20012a100, 0xc200d202c0, 0xb0, 0xb0, 0xc20096cc00, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/autocompletecontext.go:275 +0x289
+gosublime.org/gocode.GoSublimeGocodeComplete(0xc200d202c0, 0xb0, 0xb0, 0xc20096cc00, 0x51, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/gosublime_gocode_bridge.go:26 +0x8a
+main.(*mGocodeComplete).Call(0xc20096c8a0, 0x0, 0x0, 0x0, 0x0, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/m_gocode.go:123 +0x7ec
+main.(*Broker).call(0xc2000fd770, 0xc200d0f4a0, 0xc200305a80, 0xc20096c8a0)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:113 +0x9b
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:188 +0xbe
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 1 [syscall]:
+syscall.Syscall()
+	/usr/local/go/src/pkg/syscall/asm_darwin_amd64.s:15 +0x5
+syscall.read(0x0, 0xc20023e000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/syscall/zsyscall_darwin_amd64.go:900 +0x70
+syscall.Read(0x0, 0xc20023e000, 0x1000, 0x1000, 0x7, ...)
+	/usr/local/go/src/pkg/syscall/syscall_unix.go:132 +0x5a
+os.(*File).read(0xc200000000, 0xc20023e000, 0x1000, 0x1000, 0x59b, ...)
+	/usr/local/go/src/pkg/os/file_unix.go:174 +0x60
+os.(*File).Read(0xc200000000, 0xc20023e000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/os/file.go:95 +0x96
+bufio.(*Reader).fill(0xc2000f05a0)
+	/usr/local/go/src/pkg/bufio/bufio.go:79 +0x10c
+bufio.(*Reader).ReadSlice(0xc2000f05a0, 0xa, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/bufio/bufio.go:262 +0x202
+bufio.(*Reader).ReadBytes(0xc2000f05a0, 0xc20025e00a, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/bufio/bufio.go:343 +0xb7
+main.(*Broker).accept(0xc2000fd770, 0xc20025e000, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:128 +0x44
+main.(*Broker).Loop(0xc2000fd770, 0xc200120001)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:213 +0x26e
+main.main()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/main.go:126 +0x9fb
+
+goroutine 2 [syscall]:
+
+goroutine 5 [chan receive]:
+gosublime.org/gocode.func·020()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/utils.go:112 +0x57
+created by gosublime.org/gocode.new_file_reader
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/utils.go:116 +0x9f
+
+goroutine 6 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/pkg/runtime/ztime_darwin_amd64.c:19 +0x2f
+main.func·032()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/oom.go:31 +0x243
+created by main.startOomKiller
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/oom.go:33 +0x64
+
+goroutine 7 [sleep]:
+time.Sleep(0x6fc23ac00)
+	/usr/local/go/src/pkg/runtime/ztime_darwin_amd64.c:19 +0x2f
+main.func·029()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/main.go:115 +0x4b
+created by main.main
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/main.go:124 +0x9b0
+
+goroutine 10 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 11 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 12 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 13 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 14 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 15 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 16 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 17 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 18 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 20 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 21 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 22 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 23 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 24 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 25 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 26 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 27 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 28 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 29 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+
+
+** 2013-06-27 00:42:22.758383 **:
+GsComplete: broker: gocode_complete#mg9.autoken.c3f74f2c-6480-4a77-8e24-fe7e6c767e07 PANIC
+--------------------------------
+margo: 2013/06/27 00:42:22 broker.go:105: gocode_complete#mg9.autoken.badd6762-2b98-4f4d-a26d-ce9a090c29c0 PANIC: interface conversion: interface is nil, not *ast.ChanType
+goroutine 20 [running]:
+main.func·001()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:104 +0xc7
+gosublime.org/gocode.infer_type(0xc20029a7c0, 0xc200cdb800, 0xc200cdcfd0, 0xffffffffffffffff, 0x8, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/decl.go:734 +0x665
+gosublime.org/gocode.(*decl).infer_type(0xc20080f5b0, 0x0, 0x0, 0x0)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/decl.go:929 +0x234
+gosublime.org/gocode.(*auto_complete_context).get_candidates_from_set(0xc20012a100, 0xc200beab80, 0x3e1ee0, 0x0, 0xffffffffffffffff, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/autocompletecontext.go:199 +0xb0
+gosublime.org/gocode.(*auto_complete_context).apropos(0xc20012a100, 0xc2005020c0, 0xb1, 0xb1, 0xc20096c720, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/autocompletecontext.go:275 +0x289
+gosublime.org/gocode.GoSublimeGocodeComplete(0xc2005020c0, 0xb1, 0xb1, 0xc20096c720, 0x51, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/gosublime_gocode_bridge.go:26 +0x8a
+main.(*mGocodeComplete).Call(0xc20096c4e0, 0x0, 0x0, 0x0, 0x0, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/m_gocode.go:123 +0x7ec
+main.(*Broker).call(0xc2000fd770, 0xc200c4f640, 0xc200305a80, 0xc20096c4e0)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:113 +0x9b
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:188 +0xbe
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 1 [syscall]:
+syscall.Syscall()
+	/usr/local/go/src/pkg/syscall/asm_darwin_amd64.s:15 +0x5
+syscall.read(0x0, 0xc20023e000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/syscall/zsyscall_darwin_amd64.go:900 +0x70
+syscall.Read(0x0, 0xc20023e000, 0x1000, 0x1000, 0x7, ...)
+	/usr/local/go/src/pkg/syscall/syscall_unix.go:132 +0x5a
+os.(*File).read(0xc200000000, 0xc20023e000, 0x1000, 0x1000, 0x59c, ...)
+	/usr/local/go/src/pkg/os/file_unix.go:174 +0x60
+os.(*File).Read(0xc200000000, 0xc20023e000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/os/file.go:95 +0x96
+bufio.(*Reader).fill(0xc2000f05a0)
+	/usr/local/go/src/pkg/bufio/bufio.go:79 +0x10c
+bufio.(*Reader).ReadSlice(0xc2000f05a0, 0xa, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/bufio/bufio.go:262 +0x202
+bufio.(*Reader).ReadBytes(0xc2000f05a0, 0xc20025e00a, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/bufio/bufio.go:343 +0xb7
+main.(*Broker).accept(0xc2000fd770, 0xc20025e000, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:128 +0x44
+main.(*Broker).Loop(0xc2000fd770, 0xc200120001)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:213 +0x26e
+main.main()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/main.go:126 +0x9fb
+
+goroutine 2 [syscall]:
+
+goroutine 5 [chan receive]:
+gosublime.org/gocode.func·020()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/utils.go:112 +0x57
+created by gosublime.org/gocode.new_file_reader
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/utils.go:116 +0x9f
+
+goroutine 6 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/pkg/runtime/ztime_darwin_amd64.c:19 +0x2f
+main.func·032()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/oom.go:31 +0x243
+created by main.startOomKiller
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/oom.go:33 +0x64
+
+goroutine 7 [sleep]:
+time.Sleep(0x6fc23ac00)
+	/usr/local/go/src/pkg/runtime/ztime_darwin_amd64.c:19 +0x2f
+main.func·029()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/main.go:115 +0x4b
+created by main.main
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/main.go:124 +0x9b0
+
+goroutine 10 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 11 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 12 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 13 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 14 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 15 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 16 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 17 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 18 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 19 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 21 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 22 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 23 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 24 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 25 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 26 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 27 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 28 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 29 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+
+
+** 2013-06-27 00:42:22.877458 **:
+GsComplete: broker: gocode_complete#mg9.autoken.badd6762-2b98-4f4d-a26d-ce9a090c29c0 PANIC
+--------------------------------
+margo: 2013/06/27 00:42:24 broker.go:105: gocode_complete#mg9.autoken.a55537c0-6b5e-484b-be29-ce6964c082fb PANIC: interface conversion: interface is nil, not *ast.ChanType
+goroutine 24 [running]:
+main.func·001()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:104 +0xc7
+gosublime.org/gocode.infer_type(0xc20029a7c0, 0xc20090cdc0, 0xc200cd0d30, 0xffffffffffffffff, 0x8, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/decl.go:734 +0x665
+gosublime.org/gocode.(*decl).infer_type(0xc20080f620, 0x0, 0x0, 0x0)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/decl.go:929 +0x234
+gosublime.org/gocode.(*auto_complete_context).get_candidates_from_set(0xc20012a100, 0xc200bea940, 0x3e1ee0, 0x0, 0xffffffffffffffff, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/autocompletecontext.go:199 +0xb0
+gosublime.org/gocode.(*auto_complete_context).apropos(0xc20012a100, 0xc200d20b00, 0xaf, 0xaf, 0xc20096c780, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/autocompletecontext.go:275 +0x289
+gosublime.org/gocode.GoSublimeGocodeComplete(0xc200d20b00, 0xaf, 0xaf, 0xc20096c780, 0x51, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/gosublime_gocode_bridge.go:26 +0x8a
+main.(*mGocodeComplete).Call(0xc20096c360, 0x0, 0x0, 0x0, 0x0, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/m_gocode.go:123 +0x7ec
+main.(*Broker).call(0xc2000fd770, 0xc20090c0e0, 0xc200305a80, 0xc20096c360)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:113 +0x9b
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:188 +0xbe
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 1 [syscall]:
+syscall.Syscall()
+	/usr/local/go/src/pkg/syscall/asm_darwin_amd64.s:14 +0x5
+syscall.read(0x0, 0xc20023e000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/syscall/zsyscall_darwin_amd64.go:900 +0x70
+syscall.Read(0x0, 0xc20023e000, 0x1000, 0x1000, 0x7, ...)
+	/usr/local/go/src/pkg/syscall/syscall_unix.go:132 +0x5a
+os.(*File).read(0xc200000000, 0xc20023e000, 0x1000, 0x1000, 0x59a, ...)
+	/usr/local/go/src/pkg/os/file_unix.go:174 +0x60
+os.(*File).Read(0xc200000000, 0xc20023e000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/os/file.go:95 +0x96
+bufio.(*Reader).fill(0xc2000f05a0)
+	/usr/local/go/src/pkg/bufio/bufio.go:79 +0x10c
+bufio.(*Reader).ReadSlice(0xc2000f05a0, 0xa, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/bufio/bufio.go:262 +0x202
+bufio.(*Reader).ReadBytes(0xc2000f05a0, 0xc20025e00a, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/bufio/bufio.go:343 +0xb7
+main.(*Broker).accept(0xc2000fd770, 0xc20025e000, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:128 +0x44
+main.(*Broker).Loop(0xc2000fd770, 0xc200120001)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:213 +0x26e
+main.main()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/main.go:126 +0x9fb
+
+goroutine 2 [syscall]:
+
+goroutine 5 [chan receive]:
+gosublime.org/gocode.func·020()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/utils.go:112 +0x57
+created by gosublime.org/gocode.new_file_reader
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/utils.go:116 +0x9f
+
+goroutine 6 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/pkg/runtime/ztime_darwin_amd64.c:19 +0x2f
+main.func·032()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/oom.go:31 +0x243
+created by main.startOomKiller
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/oom.go:33 +0x64
+
+goroutine 7 [sleep]:
+time.Sleep(0x6fc23ac00)
+	/usr/local/go/src/pkg/runtime/ztime_darwin_amd64.c:19 +0x2f
+main.func·029()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/main.go:115 +0x4b
+created by main.main
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/main.go:124 +0x9b0
+
+goroutine 10 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 11 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 12 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 13 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 14 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 15 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 16 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 17 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 18 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 19 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 20 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 21 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 22 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 23 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 25 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 26 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 27 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 28 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 29 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+
+
+** 2013-06-27 00:42:24.629211 **:
+GsComplete: broker: gocode_complete#mg9.autoken.a55537c0-6b5e-484b-be29-ce6964c082fb PANIC
+--------------------------------
+margo: 2013/06/27 00:42:29 broker.go:105: gocode_complete#mg9.autoken.29499429-e5d3-4b8c-aded-b736d3148d0f PANIC: interface conversion: interface is nil, not *ast.ChanType
+goroutine 27 [running]:
+main.func·001()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:104 +0xc7
+gosublime.org/gocode.infer_type(0xc20029a7c0, 0xc200d0f080, 0xc200cdce20, 0xffffffffffffffff, 0x8, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/decl.go:734 +0x665
+gosublime.org/gocode.(*decl).infer_type(0xc20080f5b0, 0x0, 0x0, 0x0)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/decl.go:929 +0x234
+gosublime.org/gocode.(*auto_complete_context).get_candidates_from_set(0xc20012a100, 0xc200ca92c0, 0x3e1ee0, 0x0, 0xffffffffffffffff, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/autocompletecontext.go:199 +0xb0
+gosublime.org/gocode.(*auto_complete_context).apropos(0xc20012a100, 0xc20097c270, 0xc3, 0xc3, 0xc20096ccc0, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/autocompletecontext.go:275 +0x289
+gosublime.org/gocode.GoSublimeGocodeComplete(0xc20097c270, 0xc3, 0xc3, 0xc20096ccc0, 0x51, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/gosublime_gocode_bridge.go:26 +0x8a
+main.(*mGocodeComplete).Call(0xc20096c000, 0x0, 0x0, 0x0, 0x0, ...)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/m_gocode.go:123 +0x7ec
+main.(*Broker).call(0xc2000fd770, 0xc2009c1840, 0xc200305a80, 0xc20096c000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:113 +0x9b
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:188 +0xbe
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 1 [syscall]:
+syscall.Syscall()
+	/usr/local/go/src/pkg/syscall/asm_darwin_amd64.s:15 +0x5
+syscall.read(0x0, 0xc20023e000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/syscall/zsyscall_darwin_amd64.go:900 +0x70
+syscall.Read(0x0, 0xc20023e000, 0x1000, 0x1000, 0x7, ...)
+	/usr/local/go/src/pkg/syscall/syscall_unix.go:132 +0x5a
+os.(*File).read(0xc200000000, 0xc20023e000, 0x1000, 0x1000, 0x5b0, ...)
+	/usr/local/go/src/pkg/os/file_unix.go:174 +0x60
+os.(*File).Read(0xc200000000, 0xc20023e000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/os/file.go:95 +0x96
+bufio.(*Reader).fill(0xc2000f05a0)
+	/usr/local/go/src/pkg/bufio/bufio.go:79 +0x10c
+bufio.(*Reader).ReadSlice(0xc2000f05a0, 0xa, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/bufio/bufio.go:262 +0x202
+bufio.(*Reader).ReadBytes(0xc2000f05a0, 0xc20025e00a, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/bufio/bufio.go:343 +0xb7
+main.(*Broker).accept(0xc2000fd770, 0xc20025e000, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:128 +0x44
+main.(*Broker).Loop(0xc2000fd770, 0xc200120001)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:213 +0x26e
+main.main()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/main.go:126 +0x9fb
+
+goroutine 2 [syscall]:
+
+goroutine 5 [chan receive]:
+gosublime.org/gocode.func·020()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/utils.go:112 +0x57
+created by gosublime.org/gocode.new_file_reader
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/something_borrowed/src/gosublime.org/gocode/utils.go:116 +0x9f
+
+goroutine 6 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/pkg/runtime/ztime_darwin_amd64.c:19 +0x2f
+main.func·032()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/oom.go:31 +0x243
+created by main.startOomKiller
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/oom.go:33 +0x64
+
+goroutine 7 [sleep]:
+time.Sleep(0x6fc23ac00)
+	/usr/local/go/src/pkg/runtime/ztime_darwin_amd64.c:19 +0x2f
+main.func·029()
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/main.go:115 +0x4b
+created by main.main
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/main.go:124 +0x9b0
+
+goroutine 10 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 11 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 12 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 13 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 14 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 15 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 16 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 17 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 18 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 19 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 20 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 21 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 22 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 23 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 24 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 25 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 26 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 28 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+goroutine 29 [chan receive]:
+main.(*Broker).worker(0xc2000fd770, 0xc2000f1bc0, 0xc20025e000)
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:187 +0x5b
+created by main.(*Broker).Loop
+	/Users/emir/Library/Application Support/Sublime Text 2/Packages/GoSublime/margo9/broker.go:209 +0x235
+
+
+
+** 2013-06-27 00:42:29.791853 **:
+GsComplete: broker: gocode_complete#mg9.autoken.29499429-e5d3-4b8c-aded-b736d3148d0f PANIC
+--------------------------------
+
+** 2013-08-01 21:53:14.485900 **:
+MarGo: MarGo build failure
+cmd: `['', 'build', '-v', '-x', '-o', '/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe']`
+stdout: ``
+stderr: ``
+exception: `Cannot find command `go``
+--------------------------------
+
+** 2013-08-01 21:53:14.589699 **:
+MarGo: Missing required environment variables: GOROOT
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2013-08-03 21:02:04.449433 **:
+MarGo: MarGo build failure
+cmd: `['', 'build', '-v', '-x', '-o', '/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe']`
+stdout: ``
+stderr: ``
+exception: `Cannot find command `go``
+--------------------------------
+
+** 2013-08-03 21:02:04.477332 **:
+MarGo: Missing required environment variables: GOROOT
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2013-08-03 22:51:10.405653 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:51:47.681549 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:51:48.796008 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:51:58.208346 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:00.711210 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:01.714449 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:03.219128 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:03.277516 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:03.278268 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:52:04.756605 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:04.757298 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:52:04.954560 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:04.955252 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:52:05.084230 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:05.084943 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:52:06.227431 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:06.660129 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:06.660826 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:52:07.735128 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:08.169217 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:08.169963 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:52:09.238638 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:09.716991 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:09.717709 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:52:09.818460 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:09.819102 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:52:10.084944 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:10.085640 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:52:11.242859 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:11.860191 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:11.860882 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:52:13.248355 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:15.756012 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:16.760068 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:17.765021 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:18.768233 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:19.189279 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:19.189971 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:52:19.777641 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:21.783530 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:22.786856 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:24.290827 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:24.493435 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:24.494123 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:52:25.294400 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:27.802269 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:29.807358 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:30.011700 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:30.012387 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:52:30.810212 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:32.779064 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:32.779750 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:52:34.344800 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:36.849929 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:38.677308 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:38.678000 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:52:39.858344 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:40.981246 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:40.981953 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:52:41.610522 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:41.611202 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:52:42.011951 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:42.012642 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:52:42.196781 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:42.197471 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:52:42.867674 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:42.988260 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:42.988971 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:52:43.211335 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:43.212022 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:52:44.373108 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:45.877760 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:48.886002 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:52.180462 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:52.181158 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:52:52.894771 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:52:53.779148 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:03.919575 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:06.930166 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:11.449742 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:15.963655 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:17.469799 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:18.133517 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:18.134216 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:53:19.476067 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:20.479571 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:21.490776 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:24.364863 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:24.365634 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:53:25.475957 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:25.476646 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:53:25.716060 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:25.716849 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:53:25.852126 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:25.852817 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:53:26.117434 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:26.118122 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:53:27.006375 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:28.013392 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:29.964746 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:29.965440 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:53:31.395167 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:31.524236 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:33.528497 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:36.536246 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:38.537754 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:40.676004 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:40.676670 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:53:42.553696 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:43.101058 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:43.101716 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:53:44.604151 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:44.604843 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:53:46.062969 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:47.567068 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:48.569861 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:52.579918 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:54.756675 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:54.757340 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:53:55.403702 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:53:55.587635 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:54:06.112973 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:54:06.309558 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:54:06.310255 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:54:08.371133 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:54:08.622476 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:54:14.643751 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:54:15.647344 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:54:16.650463 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:54:18.155253 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:54:21.164930 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:54:24.667992 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:54:24.668689 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:54:26.180442 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:54:27.123699 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:54:27.124377 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:54:28.687297 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:54:31.692622 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:54:32.883718 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:54:33.198427 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:54:42.727492 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:54:43.299208 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:54:50.746916 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:54:54.755990 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:54:55.758703 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:54:58.770866 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:55:02.278280 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:55:03.957005 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:55:03.957687 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 22:55:05.285576 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:55:06.288853 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:55:10.805904 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:55:13.311158 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:55:13.588649 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:55:14.404715 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:55:31.859262 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:55:33.363422 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:55:33.811553 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:55:43.887180 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:55:45.390154 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:55:48.404944 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:55:50.412437 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:55:52.331794 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:55:52.919193 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:56:00.438728 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:56:02.944474 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:56:03.949320 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 22:56:04.212419 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:08:27.589068 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:08:30.095165 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:08:39.059547 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:08:39.616310 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:09:14.604475 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:09:14.605158 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 23:09:14.817910 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:09:14.818604 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 23:09:14.946829 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:09:14.947521 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 23:09:15.077429 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:09:15.078125 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 23:09:16.200008 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:09:17.020515 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:09:17.021216 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 23:09:17.314486 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:09:17.315170 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 23:09:18.206801 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:09:18.377910 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:09:18.378603 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 23:09:18.540717 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:09:18.541412 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 23:09:19.210881 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:09:23.219979 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:09:26.227573 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:09:28.232605 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:09:28.948083 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:09:28.948793 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 23:09:29.736369 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:09:31.241896 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:09:32.036023 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:09:32.036715 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 23:09:33.247159 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:09:34.248897 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:09:34.409334 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:09:34.410028 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 23:09:35.252277 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:09:35.827862 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:09:35.828543 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 23:09:37.257963 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:09:43.211521 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:09:43.212214 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 23:09:44.277210 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:10:01.817766 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:10:03.323403 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:10:05.205199 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:10:05.205947 **:
+GsComplete: Abort. Cannot start MarGo
+--------------------------------
+
+** 2013-08-03 23:10:06.338123 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:10:07.343452 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:10:08.195736 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:10:10.923738 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:10:11.355538 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:10:20.259795 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:10:20.377590 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:10:40.930484 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:10:41.219444 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:10:50.339604 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:10:50.699978 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:11:00.955695 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
+
+** 2013-08-03 23:11:01.228676 **:
+MarGo: Cannot start MarGo:
+Can't find the MarGo binary at `/Users/emir/Library/Application Support/Sublime Text 2/Packages/User/GoSublime/osx-x64/bin/gosublime.margo_r13.07.23-1_go?.exe`
+--------------------------------
