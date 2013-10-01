@@ -24,7 +24,7 @@
 		"subpixel_antialias",
 		"no_bold"
 	],
-	"font_size": 14.5,
+	"font_size": 13.5,
 	"ignored_packages":
 	[
 		"AdvancedNewFile",

@@ -9,6 +9,7 @@
 	st = status --untracked-files=no
 	sh = show --word-diff --color
 	di = diff --word-diff --color
+	id = diff --word-diff --color
 	rb = rebase
 	undo = reset --soft HEAD@{1}
 

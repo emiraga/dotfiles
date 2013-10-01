@@ -21,3 +21,7 @@ emir.sh
 gopath/
 /gopath/
 ./gopath/
+scrooge/src/.classpath
+scrooge/src/.gitignore
+.classpath
+.gitignore

@@ -7,7 +7,6 @@ fi
 alias g="git"
 alias gc="git commit -a"
 alias gd="git diff"
-alias gca="git commit -a --amend"
 alias gl="git log --decorate --color --graph --pretty=format:'%Cgreen%h%Creset%Cred%d %Creset%s %Cblue(%an, %ar, %cn, %cr)'"
 alias gl2="git log --decorate --color --graph --stat --pretty=format:'%Cgreen%h%Creset%Cred%d %Creset%s %Cblue(%an, %ar, %cn, %cr)'"
 alias gup="git fetch; git rebase origin/master;"
@@ -46,6 +45,20 @@ _stopped_jobs() {
     echo " {J:$num} "
   fi
 }
+
+function hgup() {
+  hg pull
+  hg rebase -d master
+  hg update
+}
+
+function hgupall() {
+  hg pull
+  for bookmark in $(hg bookmarks | awk '{ print $(NF-1) }'); do
+    hg update $bookmark && hg rebase -d master
+  done
+}
+
 
 set completion-query-items 10000
 set completion-ignore-case On

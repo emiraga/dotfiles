@@ -65,3 +65,81 @@ exception: `Cannot find command `go``
 MarGo: Missing required environment variables: GOROOT
 See the `Quirks` section of USAGE.md for info
 --------------------------------
+
+** 2013-07-30 20:14:46.050635 **:
+MarGo: MarGo build failure
+cmd: `['', 'build', '-v', '-x', '-o', '/home/emir/.config/sublime-text-2/Packages/User/GoSublime/linux-x64/bin/gosublime.margo_r13.07.06-1_go?.exe']`
+stdout: ``
+stderr: ``
+exception: `Cannot find command `go``
+--------------------------------
+
+** 2013-07-30 20:14:46.074816 **:
+MarGo: Missing required environment variables: GOROOT
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2013-08-08 13:11:52.728704 **:
+MarGo: MarGo build failure
+cmd: `['', 'build', '-v', '-x', '-o', '/home/emir/.config/sublime-text-2/Packages/User/GoSublime/linux-x64/bin/gosublime.margo_r13.07.06-1_go?.exe']`
+stdout: ``
+stderr: ``
+exception: `Cannot find command `go``
+--------------------------------
+
+** 2013-08-08 13:11:52.745446 **:
+MarGo: Missing required environment variables: GOROOT
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2013-08-08 16:03:17.012172 **:
+MarGo: MarGo build failed
+cmd: `['', 'build', '-v', '-x', '-o', 'gosublime.margo_r13.07.29-1_go?.exe', 'gosubli.me/margo']`
+stdout: ``
+stderr: ``
+exception: `Cannot find command `go``
+--------------------------------
+
+** 2013-08-08 16:03:17.348599 **:
+MarGo: Missing required environment variables: GOROOT
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2013-08-09 17:53:08.807895 **:
+MarGo: MarGo build failed
+cmd: `['', 'build', '-v', '-x', '-o', 'gosublime.margo_r13.07.29-1_go?.exe', 'gosubli.me/margo']`
+stdout: ``
+stderr: ``
+exception: `Cannot find command `go``
+--------------------------------
+
+** 2013-08-09 17:53:08.830649 **:
+MarGo: Missing required environment variables: GOROOT
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2013-08-17 17:34:00.677914 **:
+MarGo: MarGo build failed
+cmd: `['', 'build', '-v', '-x', '-o', 'gosublime.margo_r13.07.29-1_go?.exe', 'gosubli.me/margo']`
+stdout: ``
+stderr: ``
+exception: `Cannot find command `go``
+--------------------------------
+
+** 2013-08-17 17:34:00.703637 **:
+MarGo: Missing required environment variables: GOROOT
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2013-08-17 17:35:07.353124 **:
+MarGo: MarGo build failed
+cmd: `['', 'build', '-v', '-x', '-o', 'gosublime.margo_r13.07.29-1_go?.exe', 'gosubli.me/margo']`
+stdout: ``
+stderr: ``
+exception: `Cannot find command `go``
+--------------------------------
+
+** 2013-08-17 17:35:07.359848 **:
+MarGo: Missing required environment variables: GOROOT
+See the `Quirks` section of USAGE.md for info
+--------------------------------

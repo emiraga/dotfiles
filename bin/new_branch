@@ -1,3 +1,12 @@
 #!/bin/sh
 
-git fetch && git rebase trunk master && git co -b $1 && arc build
+if [ -z "$1" ]; then
+  echo 'need branch name'
+  exit 1
+fi
+
+if git show &>/dev/null; then
+  git fetch && git rebase trunk master && git co -b $1 && arc build
+else
+  hg bookmark -r master $1 && hg update $1 && arc pull && arc build
+fi

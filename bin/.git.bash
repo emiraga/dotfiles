@@ -32,9 +32,17 @@ function glhf {
   git log $flags --pretty=format:'%Cred%h%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --stat=150,150 trunk..$1 2>/dev/null
 }
 
+function gg {
+  if git show &>/dev/null; then
+    gg2
+  else
+    hg sl
+  fi
+}
+
 # Usage: gg <options>
 # Lists each branch and its commits ahead of trunk.
-function gg {
+function gg2 {
   local GRAY="\033[1;30m"
   local YELLOW="\033[1;33m"
   local AUTO="\033[0m"
