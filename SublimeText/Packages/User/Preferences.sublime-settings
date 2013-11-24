@@ -24,7 +24,7 @@
 		"subpixel_antialias",
 		"no_bold"
 	],
-	"font_size": 17.5,
+	"font_size": 15.5,
 	"ignored_packages":
 	[
 		"AdvancedNewFile",
@@ -37,7 +37,6 @@
 		"SFTP",
 		"Theme - Nil",
 		"SublimeXdebug",
-		"Graphviz",
 		"SideBarEnhancements",
 		"Chrome Refresh",
 		"Graphviz",

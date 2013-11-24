@@ -1,6 +1,6 @@
 {
   "env": {
     "PATH": "/usr/local/go/bin/:$PATH",
-    "GOPATH": "/Users/emir/src/fft"
+    "GOPATH": "/Users/emir/src/go/workspace"
   }
 }
