@@ -52,9 +52,9 @@ let g:ctrlp_dotfiles = 0
 " }}}
 
 " [DISABLED] auto-linting -- syntastic {{{
-" Bundle 'Syntastic'
+Bundle 'Syntastic'
 " # Settings for Syntastic, "installed pyflakes"
-" let g:syntastic_enable_highlighting=1
+let g:syntastic_enable_highlighting=1
 " }}}
 
 " Ack {{{

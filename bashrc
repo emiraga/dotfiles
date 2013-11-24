@@ -16,10 +16,10 @@ alias hl="hphpd -h localhost"
 alias dstat="dstat -ta"
 alias ad="arc diff --amend-all --verbatim --skip-binaries"
 alias ab="arc build"
+alias ap="arc pull"
 alias adp="arc diff --only --skip-binaries"
 alias tracet="sudo strace -e write -s 200 -p"
 
-alias a="arc"
 alias ark="arc"
 
 alias grep="grep --color=auto"
