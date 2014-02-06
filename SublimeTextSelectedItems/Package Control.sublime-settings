@@ -1,0 +1,8 @@
+{
+	"installed_packages":
+	[
+		"Package Control"
+	],
+	"http_proxy": "fwdproxy.any:8080",
+	"https_proxy": "fwdproxy.any:8080"
+}

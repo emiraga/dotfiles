@@ -29,6 +29,8 @@ export PATH=/usr/hs/bin:$PATH
 export EDITOR=vim
 export PHABRICATOR_ENV=facebook/emir
 
+alias h?="history | grep"
+
 source ~/bin/.git.bash
 
 which htop >/dev/null

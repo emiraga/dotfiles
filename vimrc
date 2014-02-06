@@ -36,7 +36,7 @@ nnoremap <C-Space> :CtrlPBuffer<CR>
 nnoremap <C-@> :CtrlPBuffer<CR>
 let g:ctrlp_match_window_bottom = 1
 let g:ctrlp_match_window_reversed = 0
-let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp|pyc|wav|mp3|ogg|blend)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|__init__\.py'
+let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp|pyc|wav|mp3|ogg|blend)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
 let g:ctrlp_working_path_mode = 'a'
 let g:ctrlp_dotfiles = 0
 " }}}
@@ -51,10 +51,17 @@ let g:ctrlp_dotfiles = 0
 " nnoremap <silent> <space><space> :TagbarToggle<CR>/
 " }}}
 
-" [DISABLED] auto-linting -- syntastic {{{
-Bundle 'Syntastic'
-" # Settings for Syntastic, "installed pyflakes"
+" auto-linting -- syntastic {{{
+" Bundle 'Syntastic'
+" # Settings for Syntastic
+let g:syntastic_mode_map = { 'mode': 'passive', "active_filetypes": ["python"], "passive_filetypes": [] }
 let g:syntastic_enable_highlighting=1
+let g:syntastic_python_checkers=['pylint', 'pyflakes', 'python', 'pep8']
+
+" 1) unrecognized imports
+" 2) missing docstring
+" 3) too few public methods
+let g:syntastic_python_pylint_args="--disable=F0401,C0111,R0903 -f parseable -r n -i y"
 " }}}
 
 " Ack {{{
@@ -467,7 +474,7 @@ highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
 augroup filetype_specific_autogroups
   autocmd!
   " Warn me when exceeding 80 char limit
-  autocmd FileType python,php match OverLength /\%81v.\+/
+  " autocmd FileType python,php match OverLength /\%81v.\+/
 
   " Auto open the closing brace (close curly brace)
   " autocmd FileType php inoremap <buffer> { {<CR>}<C-o><S-o>
