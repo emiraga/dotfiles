@@ -76,7 +76,7 @@
 		"Graphviz",
 		"CTags",
 		"Goto Documentation",
-		"SearchInProject"
+		"SearchInProject",
 		"PyV8",
 		"Emmet",
 		"SublimeLinter"
