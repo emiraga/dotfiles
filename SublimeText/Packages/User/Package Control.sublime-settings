@@ -15,6 +15,7 @@
 		"GoSublime",
 		"Goto Documentation",
 		"InsertDate",
+		"Limebox",
 		"Missing Palette Commands",
 		"Package Control",
 		"rsub",
@@ -22,9 +23,16 @@
 		"SFTP",
 		"SideBarEnhancements",
 		"Theme - Nil",
+		"Theme - Phoenix",
 		"Theme - Soda",
+		"Theme - Spacegray",
 		"TrailingSpaces",
 		"View In Browser",
 		"ZenCoding"
+	],
+	"repositories":
+	[
+		"http://home.fburl.com/~frantic/limebox/repositories.json",
+		"http://home.fburl.com/~frantic/limebox/repositories.json"
 	]
 }

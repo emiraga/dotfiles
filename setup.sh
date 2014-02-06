@@ -12,13 +12,20 @@ done
 rm -f ~/bin
 ln -nfs $dotfiles/bin ~/bin
 
-mkdir -p ~/.vim/bundle
-cp -fsrv $dotfiles/vim/* ~/.vim/
+if [ $(uname) == "Darwin" ]; then
+  echo "Using MAC"
+  ln -nfs $dotfiles/inputrc_macosx
+fi
 
-test -d ~/.vim/bundle/vundle || git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+if [ $(uname) == "Linux" ]; then
+  mkdir -p ~/.vim/bundle
+  cp -fsrv $dotfiles/vim/* ~/.vim/
 
-test -e ~/facebook_php.php && ln -nfs ~/facebook_php.php ~/.vim/template.php
+  test -d ~/.vim/bundle/vundle || git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
-test -r ~/facebook_vim.txt && source ~/facebook_vim.txt
+  test -e ~/facebook_php.php && ln -nfs ~/facebook_php.php ~/.vim/template.php
+
+  test -r ~/facebook_vim.txt && source ~/facebook_vim.txt
+fi
 
 echo Done

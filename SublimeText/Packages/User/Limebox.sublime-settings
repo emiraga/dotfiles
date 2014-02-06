@@ -1,28 +1,6 @@
 {
-    "lint_on_save": true,
-
-    "host": "localhost",
-    "proj": "~/www",
-
-    // Lint file $1 and collect lint results in easy-to-parse format
-    "lint": ["bash", "-c", "cd $proj && /mnt/vol/engshare/devtools/facebook/bin/arc lint --lintall --output 'compiler' | grep $1"],
-
-    // Perform The Big Grep Search
-    "big_grep": ["/mnt/vol/engshare/admin/scripts/$1", "--stripdir", "--", "$2"],
-
-    // Gets the list of remote files
-    // The list is usually very big, so we use -S none to turn off ControlMaster on SSH
-    "lsfiles": ["asjdkfhklsjdfhjkldsfhdsjkfh"],
-
-    // Creates new file $1 on remote box
-    "create": ["sjdfklsjfkljsdfkldsjfl"],
-
-    // Downloads remote file $1 to $2
-    "load": ["sdfgssdfsfdfgsdfgsdfg"],
-
-    // Uploads content of local file $1 to remote file $2
-    "push": ["dfsdfsfsgdfgsdfgdsgf"],
-
-    // GREP through tags-file to find specified tag $1
-    "tags": ["sdkjlfhslkdjfhlskjfhsdjklfh"]
+  "host": "dev",
+  "proj": "~/www",
+  "lint_on_save": false,
+  "grep_engine": "fbgs"
 }

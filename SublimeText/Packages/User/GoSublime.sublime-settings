@@ -1,6 +1,7 @@
 {
   "env": {
     "PATH": "/usr/local/go/bin/:$PATH",
-    "GOPATH": "/Users/emir/src/go/workspace"
-  }
+    "GOPATH": "/Users/emir/src/go/gotest/wrk1:/Users/emir/src/go/gotest/wrk2"
+  },
+  "shell": ["/bin/echo", "$CMD", ">>", "/tmp/1"]
 }
