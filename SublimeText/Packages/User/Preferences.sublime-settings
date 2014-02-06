@@ -18,6 +18,19 @@
 	"caret_style": "smooth",
 	"color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
 	"fold_buttons": false,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"_build",
+		"_bin",
+		"_gopath",
+		"third-party",
+		"externals",
+		"third-party2"
+	],
 	"font_face": "Source Code Pro",
 	"font_options":
 	[
@@ -39,9 +52,16 @@
 		"ASP",
 		"ZenCoding",
 		"Auto Semi-Colon",
+		"ZenCoding",
+		"Theme - Soda",
 		"SFTP",
 		"Theme - Nil",
 		"Google Spell Check",
+		"SublimeXdebug",
+		"Graphviz",
+		"SublimeXdebug",
+		"Graphviz",
+		"sublime-arcanist",
 		"SideBarEnhancements",
 		"Chrome Refresh",
 		"Emmet",
@@ -56,8 +76,10 @@
 		"Graphviz",
 		"CTags",
 		"Goto Documentation",
-		"PyV8",
 		"SearchInProject"
+		"PyV8",
+		"Emmet",
+		"SublimeLinter"
 	],
 	"line_padding_bottom": -2,
 	"python_test_runner":

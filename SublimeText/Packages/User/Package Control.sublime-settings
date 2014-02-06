@@ -1,5 +1,7 @@
 {
 	"auto_upgrade_last_run": null,
+	"http_proxy": "fwdproxy.any:8080",
+	"https_proxy": "fwdproxy.any:8080",
 	"installed_packages":
 	[
 		"AdvancedNewFile",
@@ -9,8 +11,11 @@
 		"Chrome Refresh",
 		"ColorPicker",
 		"CTags",
+		"DocBlockr",
 		"Emmet",
+		"Facelime",
 		"Git",
+		"GitGutter",
 		"Google Spell Check",
 		"GoSublime",
 		"Goto Documentation",
@@ -32,7 +37,6 @@
 	],
 	"repositories":
 	[
-		"http://home.fburl.com/~frantic/limebox/repositories.json",
 		"http://home.fburl.com/~frantic/limebox/repositories.json"
 	]
 }
