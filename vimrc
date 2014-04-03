@@ -68,6 +68,10 @@ let g:syntastic_python_pylint_args="--disable=F0401,C0111,R0903 -f parseable -r 
 Bundle 'mileszs/ack.vim'
 " }}}
 
+" Gocode {{{
+Bundle 'Blackrush/vim-gocode'
+" }}}
+
 " gcc comment/uncomment stuff {{{
 Bundle 'tpope/vim-commentary'
 " }}}
@@ -242,6 +246,11 @@ set wildignore+=*.DS_Store                       " OSX bullshit
 
 " Command mode history
 set history=2000
+
+augroup au_go_group
+  autocmd!
+  autocmd FileType go set noexpandtab
+augroup END
 
 " Code folding...
 if g:emir_folding == 1

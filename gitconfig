@@ -5,6 +5,7 @@
 [alias]
 	br = branch -v
 	co = checkout
+	cp = cherry-pick
 	ci = commit
 	st = status --untracked-files=no
 	sh = show --word-diff --color
