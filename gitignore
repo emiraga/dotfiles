@@ -25,3 +25,6 @@ scrooge/src/.classpath
 scrooge/src/.gitignore
 .classpath
 .gitignore
+.merlin
+/home/emir/fbcode/.merlin
+/data/users/emir/fbcode/.merlin

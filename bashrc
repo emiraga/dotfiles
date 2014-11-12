@@ -15,7 +15,8 @@ alias cfh="cmf --fix --head"
 alias hl="hphpd -h localhost"
 alias dstat="dstat -ta"
 alias ad="arc diff --amend-all --verbatim --skip-binaries"
-alias ab="arc build"
+# alias ab="arc build"
+alias ab="hh build ."
 alias ap="arc pull"
 alias adp="arc diff --only --skip-binaries"
 alias tracet="sudo strace -e write -s 200 -p"
@@ -27,7 +28,6 @@ alias egrep="egrep --color=auto"
 export PATH=~/optbin:~/bin:~/facebook_bin:$PATH:/sbin:/usr/sbin:/usr/local/sbin
 export PATH=/usr/hs/bin:$PATH
 export EDITOR=vim
-export PHABRICATOR_ENV=facebook/emir
 
 alias h?="history | grep"
 
@@ -69,4 +69,5 @@ export HISTSIZE=1000000
 export HISTFILESIZE=1000000
 shopt -s histappend
 shopt -s histverify
+export PHABRICATOR_ENV=custom/emir
 

@@ -36,7 +36,7 @@ function gg {
   if git show &>/dev/null; then
     gg2
   else
-    hg sl
+    hg il
   fi
 }
 

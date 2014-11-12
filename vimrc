@@ -16,12 +16,23 @@ Bundle 'gmarik/vundle'
 
 " Plugins and plugin settings  {{{
 
+" ocaml {{{
+Bundle 'scrooloose/syntastic.git'
+Bundle 'tpope/vim-sensible.git'
+set rtp+=/usr/local/share/ocamlmerlin/vim
+let g:syntastic_ocaml_checkers = ['merlin']
+let g:syntastic_auto_jump = 0
+map <buffer> <C-t> :TypeOf<return>
+map <buffer> <C-n> :GrowEnclosing<return>
+imap <buffer> <C-t> <esc>:TypeOf<return>a
+" }}}
+
 " Dot command, more power {{{
 Bundle 'tpope/vim-repeat'
 " }}}
 
 " Status bar -- powerline {{{
-" Bundle 'Lokaltog/vim-powerline'
+Bundle 'Lokaltog/powerline'
 " " Recommended settings from :help Powerline
 set laststatus=2
 set encoding=utf-8
@@ -54,7 +65,7 @@ let g:ctrlp_dotfiles = 0
 " auto-linting -- syntastic {{{
 " Bundle 'Syntastic'
 " # Settings for Syntastic
-let g:syntastic_mode_map = { 'mode': 'passive', "active_filetypes": ["python"], "passive_filetypes": [] }
+let g:syntastic_mode_map = { 'mode': 'active', "active_filetypes": ["python", "ocaml"], "passive_filetypes": [] }
 let g:syntastic_enable_highlighting=1
 let g:syntastic_python_checkers=['pylint', 'pyflakes', 'python', 'pep8']
 
@@ -157,7 +168,7 @@ Bundle 'koron/nyancat-vim'
 "  }}}
 
 " Facebook master  {{{
-source $HOME/.vimrc.facebook
+" source $HOME/.vimrc.facebook
 "  }}}
 
 " Keyboard hacks (movement)  {{{
@@ -184,7 +195,7 @@ cnoremap <C-n> <Down>
 
 " Escape from input via jj 00
 inoremap jj <ESC>
-inoremap 00 <ESC>:wa<cr>0
+" inoremap 00 <ESC>:wa<cr>0
 
 " (Hopefully) removes the delay when hitting esc in insert mode
 " set noesckeys " this has some weirdness with arrow keys
