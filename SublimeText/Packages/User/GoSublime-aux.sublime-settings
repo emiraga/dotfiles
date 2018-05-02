@@ -1,5 +1,10 @@
 {
-	"ann": "a13.12.26-1",
-	"install_version": "r13.12.26-1",
-	"version": "r13.12.26-1"
+	"9o.hist./Users/emir/src/go/workspace/src/github.com/emiraga/cavestory":
+	[
+		"help",
+		"go run main.go"
+	],
+	"ann": "a14.02.25-1",
+	"install_version": "r13.12.26-3",
+	"version": "r13.12.26-3"
 }

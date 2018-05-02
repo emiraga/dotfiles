@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fileLog>
+<createdFiles>
+<entry name=".install4j/i4j_extf_4_69g5ss_yklgyb.png" shared="false" uninstallMode="2"/>
+<entry name="JDownloader2.app/Contents/PkgInfo" shared="false" uninstallMode="1"/>
+<entry name=".install4j/i4j_extf_7_69g5ss_1pcd4ys.png" shared="false" uninstallMode="2"/>
+<entry name="JDownloader Uninstaller.app/Contents/MacOS/JavaApplicationStub" shared="false" uninstallMode="1"/>
+<entry name=".install4j/stats.properties" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_5_69g5ss_14qfchv.png" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4jparams.conf" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4jruntime.jar" shared="false" uninstallMode="2"/>
+<entry name="JDownloader2.app/Contents/Resources/i4jlauncher.config" shared="false" uninstallMode="1"/>
+<entry name="/Users/emir/Applications/JDownloader2.app" shared="false" uninstallMode="0"/>
+<entry name=".install4j/autoUninstall.0" shared="false" uninstallMode="0"/>
+<entry name=".install4j/i4j_extf_8_69g5ss_jbdzbb.png" shared="false" uninstallMode="2"/>
+<entry name=".install4j/user/tafel_herz.png" shared="false" uninstallMode="2"/>
+<entry name="JDownloader Uninstaller.app/Contents/Info.plist" shared="false" uninstallMode="1"/>
+<entry name=".install4j/user/paysafecard_large.png" shared="false" uninstallMode="2"/>
+<entry name=".install4j/response.varfile" shared="false" uninstallMode="0"/>
+<entry name="JDownloader2.app/Contents/_CodeSignature/CodeResources" shared="false" uninstallMode="1"/>
+<entry name=".install4j/MessagesDefault" shared="false" uninstallMode="2"/>
+<entry name="/Applications/JDownloader2.app" shared="false" uninstallMode="0"/>
+<entry name="JDownloader Uninstaller.app/Contents/Resources/app.icns" shared="false" uninstallMode="1"/>
+<entry name=".install4j/inst_jre.cfg" shared="false" uninstallMode="1"/>
+<entry name="JDownloader Uninstaller.app/Contents/Resources/i4jlauncher.config" shared="false" uninstallMode="1"/>
+<entry name="JDownloader Uninstaller.app/Contents/_CodeSignature/CodeResources" shared="false" uninstallMode="1"/>
+<entry name=".install4j/i4j_extf_9_69g5ss_1kdboqw.ico" shared="false" uninstallMode="2"/>
+<entry name=".install4j/Messages.bundle/Contents/Resources/de.lproj/Localizable.strings" shared="false" uninstallMode="1"/>
+<entry name="JDownloader2.app/Contents/Info.plist" shared="false" uninstallMode="1"/>
+<entry name=".install4j/user/bitcoin_large.png" shared="false" uninstallMode="2"/>
+<entry name=".install4j/user/paypal_large.png" shared="false" uninstallMode="2"/>
+<entry name="JDownloader2.app/Contents/vmoptions.txt" shared="false" uninstallMode="0"/>
+<entry name=".install4j/i4j_extf_6_69g5ss_1jb375m.png" shared="false" uninstallMode="2"/>
+<entry name=".install4j/user/add.png" shared="false" uninstallMode="2"/>
+<entry name=".install4j/user.jar" shared="false" uninstallMode="2"/>
+<entry name="JDownloader Uninstaller.app/Contents/PkgInfo" shared="false" uninstallMode="1"/>
+<entry name=".install4j/i4j_extf_0_69g5ss.utf8" shared="false" uninstallMode="2"/>
+<entry name=".install4j/install.prop" shared="false" uninstallMode="0"/>
+<entry name=".install4j/i4j_extf_3_69g5ss.utf8" shared="false" uninstallMode="2"/>
+<entry name="JDownloader.jar" shared="false" uninstallMode="1"/>
+<entry name=".install4j/install4j" shared="false" uninstallMode="2"/>
+<entry name="JDownloader2.app/Contents/Resources/app.icns" shared="false" uninstallMode="1"/>
+<entry name=".install4j/installation.log" shared="false" uninstallMode="0"/>
+<entry name=".install4j/Messages.bundle/Contents/Resources/en.lproj/Localizable.strings" shared="false" uninstallMode="1"/>
+<entry name=".install4j/i4j_extf_1_69g5ss.utf8" shared="false" uninstallMode="2"/>
+<entry name="JDownloader2.app/Contents/MacOS/JavaApplicationStub" shared="false" uninstallMode="1"/>
+<entry name=".install4j/user/proxyVole.jar" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_2_69g5ss.utf8" shared="false" uninstallMode="2"/>
+</createdFiles>
+<createdDirs>
+<entry name="/Users/emir/src/dotfiles/bin/JDownloader 2.0/.install4j" shared="false" uninstallMode="2"/>
+<entry name="/Users/emir/Desktop/JDownloader2" shared="false" uninstallMode="0"/>
+</createdDirs>
+</fileLog>

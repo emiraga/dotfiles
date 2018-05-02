@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<autoUninstall>
+<action className="com.install4j.runtime.beans.actions.desktop.AddToDockAction">
+<property name="executable" value="/Users/emir/bin/JDownloader 2.0/JDownloader2.app/"/>
+</action>
+<action className="com.install4j.runtime.beans.actions.desktop.RegisterAddRemoveAction"/>
+</autoUninstall>

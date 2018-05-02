@@ -1,0 +1,8 @@
+------------------------Thread: 42:org.jdownloader.plugins.controller.host.HostPluginController.log-----------------------
+--ID:42TS:1511134517858-11/19/17 3:35:17 PM -  [org.jdownloader.plugins.controller.host.HostPluginController(init)] -> HostPluginController: init
+--ID:42TS:1511134519306-11/19/17 3:35:19 PM -  [org.jdownloader.plugins.controller.PluginScannerNIO(scan)] -> @PluginController(NIO): scan took 1446ms for 1314
+--ID:42TS:1511134520148-11/19/17 3:35:20 PM -  [org.jdownloader.plugins.controller.host.HostPluginController(init)] -> @HostPluginController: update took 2289ms for 3360
+--ID:42TS:1511134520151-11/19/17 3:35:20 PM -  [org.jdownloader.plugins.controller.host.HostPluginController(init)] -> @HostPluginController: sort took 3ms for 3360
+--ID:42TS:1511134520151-11/19/17 3:35:20 PM -  [org.jdownloader.plugins.controller.host.HostPluginController(init)] -> @HostPlugin replaced:DailyMotionCom@37544|2:37544 with DailyMotionComV2@37544|3:37544
+--ID:42TS:1511134520152-11/19/17 3:35:20 PM -  [org.jdownloader.plugins.controller.host.HostPluginController(init)] -> @HostPluginController: mapping took 1ms for 3360
+--ID:42TS:1511134520152-11/19/17 3:35:20 PM -  [org.jdownloader.plugins.controller.host.HostPluginController(init)] -> @HostPluginController: init took 2294ms for 3358

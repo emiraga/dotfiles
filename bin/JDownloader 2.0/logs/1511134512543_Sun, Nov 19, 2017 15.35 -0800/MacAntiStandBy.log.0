@@ -1,0 +1,8 @@
+------------------------Thread: 72:MacAntiStandBy.log-----------------------
+--ID:72TS:1511134535738-11/19/17 3:35:35 PM -  [org.jdownloader.extensions.antistandby.MacAntiStandBy(createProcess)] -> Call pmset nodile
+--ID:72TS:1511134535743-11/19/17 3:35:35 PM -  [org.jdownloader.extensions.antistandby.MacAntiStandBy(enableAntiStandby)] -> JDAntiStandby: Start
+--ID:72TS:1511134540743-11/19/17 3:35:40 PM -  [org.jdownloader.extensions.antistandby.MacAntiStandBy(enableAntiStandby)] -> JDAntiStandby: Stop
+--ID:72TS:1511134545743-11/19/17 3:35:45 PM -  [org.jdownloader.extensions.antistandby.MacAntiStandBy(createProcess)] -> Call pmset nodile
+--ID:72TS:1511134545746-11/19/17 3:35:45 PM -  [org.jdownloader.extensions.antistandby.MacAntiStandBy(enableAntiStandby)] -> JDAntiStandby: Start
+--ID:72TS:1511134560754-11/19/17 3:36:00 PM -  [org.jdownloader.extensions.antistandby.MacAntiStandBy(enableAntiStandby)] -> JDAntiStandby: Stop
+--ID:72TS:1511134560754-11/19/17 3:36:00 PM -  [org.jdownloader.extensions.antistandby.MacAntiStandBy(run)] -> JDAntiStandby: Terminated

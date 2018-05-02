@@ -71,3 +71,14 @@ shopt -s histappend
 shopt -s histverify
 export PHABRICATOR_ENV=custom/emir
 
+# OPAM configuration
+. /Users/emir/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+
+export NVM_DIR="/Users/emir/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+PATH="/Users/emir/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/Users/emir/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/Users/emir/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/Users/emir/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/emir/perl5"; export PERL_MM_OPT;

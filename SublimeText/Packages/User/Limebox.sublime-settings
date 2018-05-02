@@ -1,6 +1,6 @@
 {
   "host": "dev",
-  "proj": "~/www",
+  "proj": "~/projects/hypershell",
   "lint_on_save": false,
   "grep_engine": "fbgs"
 }

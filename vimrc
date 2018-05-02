@@ -154,6 +154,7 @@ endif
 
 " Netrw {{{
 filetype plugin indent on " required!
+filetype indent on
 
 "# Settings for fucking awesome netrw
 let g:netrw_liststyle=3

@@ -1,0 +1,11 @@
+{
+  "gocode_bin": "/Users/emir/src/go/workspace/bin/gocode",
+  "gofmt_bin": "gofmt",
+  // "gofmt_bin": "/usr/local/go/bin/gofmt",
+  "arguments": [],
+
+  "remote_extra_arguments": ["-addr=10.5.138.87:5904", "-sock=tcp"],
+
+  "remote_path_find": ".*\\/\\.limebox",
+  "remote_path_replace": "/data/users/emir/fbcode"
+}

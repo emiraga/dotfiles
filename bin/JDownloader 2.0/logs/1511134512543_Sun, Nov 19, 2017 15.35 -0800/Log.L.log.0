@@ -1,0 +1,607 @@
+------------------------Thread: 1:Log.L.log-----------------------
+--ID:1TS:1511134512986-11/19/17 3:35:12 PM -  [org.appwork.utils.Application(setApplication)] -> Application Root: /Users/emir/src/dotfiles/bin/JDownloader 2.0
+--ID:1TS:1511134513070-11/19/17 3:35:13 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.update.lastchance.LastChanceConfig.json
+--ID:1TS:1511134513070-11/19/17 3:35:13 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.update.lastchance.LastChanceConfig|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.update.lastchance.LastChanceConfig
+--ID:1TS:1511134513175-11/19/17 3:35:13 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.updatev2.UpdateSettings.json
+--ID:1TS:1511134513175-11/19/17 3:35:13 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.updatev2.UpdateSettings|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.updatev2.UpdateSettings
+--ID:1TS:1511134513201-11/19/17 3:35:13 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> Load JSon Storage from Classpath url: jar:file:/Users/emir/src/dotfiles/bin/JDownloader%202.0/JDownloader.jar!/cfg/updateclient/Setup.json
+--ID:1TS:1511134513211-11/19/17 3:35:13 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/updateclient/Setup.json
+--ID:1TS:1511134513211-11/19/17 3:35:13 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.appwork.updatesys.client.Setup|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/updateclient/Setup
+--ID:1TS:1511134513246-11/19/17 3:35:13 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.settings.InternetConnectionSettings.json
+--ID:1TS:1511134513247-11/19/17 3:35:13 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.updatev2.InternetConnectionSettings|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.settings.InternetConnectionSettings
+--ID:1TS:1511134513265-11/19/17 3:35:13 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> Load JSon Storage from Classpath url: jar:file:/Users/emir/src/dotfiles/bin/JDownloader%202.0/JDownloader.jar!/cfg/updateclient/HttpSettings.json
+--ID:1TS:1511134513266-11/19/17 3:35:13 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/updateclient/HttpSettings.json
+--ID:1TS:1511134513266-11/19/17 3:35:13 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.appwork.updatesys.client.defaultimpl.http.UpdateHttpClientOptions|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/updateclient/HttpSettings
+--ID:1TS:1511134513272-11/19/17 3:35:13 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/ProxySelector.json
+--ID:1TS:1511134513272-11/19/17 3:35:13 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.appwork.updatesys.client.defaultimpl.http.ProxySelectorSettings|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/ProxySelector
+--ID:1TS:1511134513288-11/19/17 3:35:13 PM -  [org.appwork.storage.config.handler.ListHandler(readObject)] -> Read Config(URL): jar:file:/Users/emir/src/dotfiles/bin/JDownloader%202.0/JDownloader.jar!/cfg/updateclient/Setup.updateservers.json
+--ID:1TS:1511134513291-11/19/17 3:35:13 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/update/versioninfo/JD/extensions.json
+--ID:1TS:1511134513292-11/19/17 3:35:13 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.appwork.updatesys.client.extensions.ExtensionsStorage|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/update/versioninfo/JD/extensions
+--ID:1TS:1511134513294-11/19/17 3:35:13 PM -  [org.appwork.storage.config.handler.ListHandler(readObject)] -> Read Config(File): /Users/emir/src/dotfiles/bin/JDownloader 2.0/update/versioninfo/JD/extensions.installed.json
+--ID:1TS:1511134513294-11/19/17 3:35:13 PM -  [org.appwork.storage.config.handler.ListHandler(readObject)] -> Read Config(File): /Users/emir/src/dotfiles/bin/JDownloader 2.0/update/versioninfo/JD/extensions.requestedinstalls.json
+--ID:1TS:1511134513295-11/19/17 3:35:13 PM -  [org.appwork.storage.config.handler.ListHandler(readObject)] -> Read Config(File): /Users/emir/src/dotfiles/bin/JDownloader 2.0/update/versioninfo/JD/extensions.requesteduninstalls.json
+--ID:1TS:1511134513302-11/19/17 3:35:13 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/update/versioninfo/JD/org.appwork.updatesys.client.tracker.TrackConfig.json
+--ID:1TS:1511134513302-11/19/17 3:35:13 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.appwork.updatesys.client.tracker.TrackConfig|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/update/versioninfo/JD/org.appwork.updatesys.client.tracker.TrackConfig
+--ID:1TS:1511134513308-11/19/17 3:35:13 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/update/versioninfo/JDU/extensions.json
+--ID:1TS:1511134513308-11/19/17 3:35:13 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.appwork.updatesys.client.extensions.ExtensionsStorage|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/update/versioninfo/JDU/extensions
+--ID:1TS:1511134513308-11/19/17 3:35:13 PM -  [org.appwork.storage.config.handler.ListHandler(readObject)] -> Read Config(File): /Users/emir/src/dotfiles/bin/JDownloader 2.0/update/versioninfo/JDU/extensions.installed.json
+--ID:1TS:1511134513309-11/19/17 3:35:13 PM -  [org.appwork.storage.config.handler.ListHandler(readObject)] -> Read Config(File): /Users/emir/src/dotfiles/bin/JDownloader 2.0/update/versioninfo/JDU/extensions.requestedinstalls.json
+--ID:1TS:1511134513309-11/19/17 3:35:13 PM -  [org.appwork.storage.config.handler.ListHandler(readObject)] -> Read Config(File): /Users/emir/src/dotfiles/bin/JDownloader 2.0/update/versioninfo/JDU/extensions.requesteduninstalls.json
+--ID:1TS:1511134513311-11/19/17 3:35:13 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/update/versioninfo/JDU/org.appwork.updatesys.client.tracker.TrackConfig.json
+--ID:1TS:1511134513311-11/19/17 3:35:13 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.appwork.updatesys.client.tracker.TrackConfig|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/update/versioninfo/JDU/org.appwork.updatesys.client.tracker.TrackConfig
+--ID:1TS:1511134513333-11/19/17 3:35:13 PM -  [org.appwork.utils.Application(setApplication)] -> Application Root: /Users/emir/src/dotfiles/bin/JDownloader 2.0
+--ID:1TS:1511134513350-11/19/17 3:35:13 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.settings.GraphicalUserInterfaceSettings.json
+--ID:1TS:1511134513350-11/19/17 3:35:13 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.settings.GraphicalUserInterfaceSettings|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.settings.GraphicalUserInterfaceSettings
+--ID:1TS:1511134513383-11/19/17 3:35:13 PM -  [org.appwork.txtresource.TranslationHandler(createTranslationResource)] -> Load Translation file:/Users/emir/src/dotfiles/bin/JDownloader%202.0/translations/org/jdownloader/gui/translate/GuiTranslation.en.lng
+--ID:1TS:1511134513799-11/19/17 3:35:13 PM -  [org.appwork.utils.logging2.extmanager.ExtLogManager(getLogger)] -> Ignored: disabled
+--ID:1TS:1511134513836-11/19/17 3:35:13 PM -  [org.appwork.utils.logging2.extmanager.ExtLogManager(getLogger)] -> Ignored: jdk.internal.dynalink.support.Guards
+------------------------Thread: 26:Log.L.log-----------------------
+--ID:26TS:1511134514221-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch$1(run)] -> Try to disable AppNap
+--ID:26TS:1511134514222-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch$1(run)] -> MAC Bundle Identifier: org.jdownloader.launcher
+------------------------Thread: 1:Log.L.log-----------------------
+--ID:1TS:1511134514256-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> LOG_INIT_DONE=2 instances
+--ID:1TS:1511134514256-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> apple.laf.useScreenMenuBar=true
+--ID:1TS:1511134514256-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> awt.toolkit=sun.lwawt.macosx.LWCToolkit
+--ID:1TS:1511134514256-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> classloader_00000000=org.jdownloader.update.launcher.ClassLoaderExtensionImpl
+--ID:1TS:1511134514256-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> classloader_00000001=org.jdownloader.update.launcher.CL2
+--ID:1TS:1511134514256-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> com.apple.mrj.application.apple.menu.about.name=JDownloader
+--ID:1TS:1511134514256-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> exe4j.moduleName=/Users/emir/src/dotfiles/bin/JDownloader 2.0/JDownloader2.app
+--ID:1TS:1511134514256-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> file.encoding=UTF-8
+--ID:1TS:1511134514256-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> file.encoding.pkg=sun.io
+--ID:1TS:1511134514256-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> file.separator=/
+--ID:1TS:1511134514256-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16
+--ID:1TS:1511134514256-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> ftpStyle=new
+--ID:1TS:1511134514256-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> gopherProxySet=false
+--ID:1TS:1511134514257-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16
+--ID:1TS:1511134514257-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> i4j.jreBundle=/Library/Internet Plug-Ins/JavaAppletPlugin.plugin
+--ID:1TS:1511134514257-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> i4j.ownBundlePath=/Users/emir/src/dotfiles/bin/JDownloader 2.0/JDownloader2.app
+--ID:1TS:1511134514257-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> install4j.appDir=/Users/emir/src/dotfiles/bin/JDownloader 2.0/
+--ID:1TS:1511134514257-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> install4j.exeDir=/Users/emir/src/dotfiles/bin/JDownloader 2.0/
+--ID:1TS:1511134514257-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> install4j.launcherId=7561
+--ID:1TS:1511134514257-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> install4j.swt=false
+--ID:1TS:1511134514257-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> java.awt.graphicsenv=sun.awt.CGraphicsEnvironment
+--ID:1TS:1511134514257-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> java.awt.printerjob=sun.lwawt.macosx.CPrinterJob
+--ID:1TS:1511134514257-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> java.class.path=/Users/emir/src/dotfiles/bin/JDownloader 2.0/JDownloader2.app/../.install4j/i4jruntime.jar:/Users/emir/src/dotfiles/bin/JDownloader 2.0/JDownloader2.app/../JDownloader.jar
+--ID:1TS:1511134514257-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> java.class.version=52.0
+--ID:1TS:1511134514257-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> java.endorsed.dirs=/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/endorsed
+--ID:1TS:1511134514257-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> java.ext.dirs=/Users/emir/Library/Java/Extensions:/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+--ID:1TS:1511134514257-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> java.home=/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home
+--ID:1TS:1511134514257-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> java.io.tmpdir=/var/folders/p0/1yy6w6md5j11blf8p0_zfqt0r07vrv/T/
+--ID:1TS:1511134514257-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> java.library.path=/Users/emir/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+--ID:1TS:1511134514257-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> java.net.preferIPv4Stack=true
+--ID:1TS:1511134514257-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> java.runtime.name=Java(TM) SE Runtime Environment
+--ID:1TS:1511134514257-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> java.runtime.version=1.8.0_144-b01
+--ID:1TS:1511134514257-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> java.specification.name=Java Platform API Specification
+--ID:1TS:1511134514257-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> java.specification.vendor=Oracle Corporation
+--ID:1TS:1511134514258-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> java.specification.version=1.8
+--ID:1TS:1511134514258-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> java.util.Arrays.useLegacyMergeSort=true
+--ID:1TS:1511134514258-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> java.util.logging.manager=org.appwork.utils.logging2.extmanager.ExtLogManager
+--ID:1TS:1511134514258-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> java.vendor=Oracle Corporation
+--ID:1TS:1511134514258-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> java.vendor.url=http://java.oracle.com/
+--ID:1TS:1511134514258-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+--ID:1TS:1511134514258-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> java.version=1.8.0_144
+--ID:1TS:1511134514258-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> java.vm.info=mixed mode
+--ID:1TS:1511134514258-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+--ID:1TS:1511134514258-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> java.vm.specification.name=Java Virtual Machine Specification
+--ID:1TS:1511134514258-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> java.vm.specification.vendor=Oracle Corporation
+--ID:1TS:1511134514258-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> java.vm.specification.version=1.8
+--ID:1TS:1511134514258-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> java.vm.vendor=Oracle Corporation
+--ID:1TS:1511134514258-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> java.vm.version=25.144-b01
+--ID:1TS:1511134514258-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> jd.randomNumber=-7607894821487528765
+--ID:1TS:1511134514258-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> jd.revision.appworkutilsrevision=3009
+--ID:1TS:1511134514258-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> jd.revision.jdbrowserrevision=38195
+--ID:1TS:1511134514258-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> jd.revision.jdclosedrevision=406
+--ID:1TS:1511134514258-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> jd.revision.jdownloaderrevision=38241
+--ID:1TS:1511134514258-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> jd.revision.jdownloaderserveroptionsrevision=3413
+--ID:1TS:1511134514258-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> jd.revision.jdownloaderupdaterrevision=4137
+--ID:1TS:1511134514259-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> jd.revision.myjdownloaderclientrevision=38102
+--ID:1TS:1511134514259-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> jd.revision.updateclientv2revision=630
+--ID:1TS:1511134514259-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> k=0dd0ecf7f742873d745106adea00b64a
+--ID:1TS:1511134514259-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> line.separator=
+
+--ID:1TS:1511134514259-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> org.jdownloader.revision=JDownloader2(Beta)
+--ID:1TS:1511134514259-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> os.arch=x86_64
+--ID:1TS:1511134514259-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> os.name=Mac OS X
+--ID:1TS:1511134514259-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> os.version=10.12.6
+--ID:1TS:1511134514259-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> path.separator=:
+--ID:1TS:1511134514259-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> pid=787bd3ef6a47b45c263d07ca82399818
+--ID:1TS:1511134514259-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16
+--ID:1TS:1511134514259-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> sun.arch.data.model=64
+--ID:1TS:1511134514259-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> sun.awt.enableExtraMouseButtons=true
+--ID:1TS:1511134514259-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> sun.boot.class.path=/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/resources.jar:/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/rt.jar:/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/sunrsasign.jar:/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/jsse.jar:/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/jce.jar:/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/charsets.jar:/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/jfr.jar:/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/classes
+--ID:1TS:1511134514259-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> sun.boot.library.path=/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib
+--ID:1TS:1511134514259-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> sun.cpu.endian=little
+--ID:1TS:1511134514259-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> sun.cpu.isalist=
+--ID:1TS:1511134514259-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> sun.font.fontmanager=sun.font.CFontManager
+--ID:1TS:1511134514259-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> sun.io.unicode.encoding=UnicodeBig
+--ID:1TS:1511134514259-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> sun.java.command=com.install4j.runtime.launcher.MacLauncher
+--ID:1TS:1511134514259-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> sun.java.launcher=SUN_STANDARD
+--ID:1TS:1511134514259-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> sun.jnu.encoding=UTF-8
+--ID:1TS:1511134514259-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+--ID:1TS:1511134514260-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> sun.os.patch.level=unknown
+--ID:1TS:1511134514260-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> sun.swing.enableImprovedDragGesture=true
+--ID:1TS:1511134514260-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> uid=1_GLaNtGIxaAq9Xf7OCEu+EgmA4pRqgHMFnl0Ry/e9BDA=
+--ID:1TS:1511134514260-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> uls=e67b37b0a2993c034019594c8527bf9ca7318bdca8de683e5ccf8e00dfbc737cc4a1794d954dc02dc3820d179cd82dcf
+--ID:1TS:1511134514260-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> user.country=US
+--ID:1TS:1511134514260-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> user.country.format=BA
+--ID:1TS:1511134514260-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> user.dir=/Users/emir/src/dotfiles/bin/JDownloader 2.0
+--ID:1TS:1511134514260-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> user.home=/Users/emir
+--ID:1TS:1511134514260-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> user.language=en
+--ID:1TS:1511134514260-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> user.name=emir
+--ID:1TS:1511134514260-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> user.timezone=America/Los_Angeles
+--ID:1TS:1511134514260-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> JavaVersion=18144001
+--ID:1TS:1511134514260-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> VMArgs: [-Dfile.encoding=UTF-8, -Dinstall4j.launcherId=7561, -Dinstall4j.swt=false, -Dexe4j.moduleName=/Users/emir/src/dotfiles/bin/JDownloader 2.0/JDownloader2.app, -Xmx512m, -Di4j.ownBundlePath=/Users/emir/src/dotfiles/bin/JDownloader 2.0/JDownloader2.app, -Di4j.jreBundle=/Library/Internet Plug-Ins/JavaAppletPlugin.plugin]
+--ID:1TS:1511134514260-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> MaxMemory=477626368bytes (455Megabytes)
+--ID:1TS:1511134514260-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> JDownloader2
+--ID:1TS:1511134514263-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(mainStart)] -> Jared Version(34065)
+--ID:1TS:1511134514263-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch(go)] -> Initialize JDownloader2
+------------------------Thread: 26:Log.L.log-----------------------
+--ID:26TS:1511134514337-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch$1(run)] -> Disable App Nap
+--ID:26TS:1511134514457-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch$1(run)] -> App Defaults: 
+{
+    NSAppSleepDisabled = 1;
+}
+------------------------Thread: 21:Log.L.log-----------------------
+--ID:21TS:1511134514458-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch$9(edtRun)] -> LAF INIT
+------------------------Thread: 1:Log.L.log-----------------------
+--ID:1TS:1511134514458-11/19/17 3:35:14 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.settings.SilentModeSettings.json
+--ID:1TS:1511134514458-11/19/17 3:35:14 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.settings.SilentModeSettings|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.settings.SilentModeSettings
+------------------------Thread: 29:Log.L.log-----------------------
+--ID:29TS:1511134514459-11/19/17 3:35:14 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.settings.GeneralSettings.json
+--ID:29TS:1511134514459-11/19/17 3:35:14 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.settings.GeneralSettings|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.settings.GeneralSettings
+------------------------Thread: 21:Log.L.log-----------------------
+--ID:21TS:1511134514463-11/19/17 3:35:14 PM -  [jd.gui.swing.laf.LookAndFeelController(setUIManager)] -> Use Look & Feel: org.jdownloader.gui.laf.jddefault.JDDefaultLookAndFeel
+--ID:21TS:1511134514466-11/19/17 3:35:14 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/laf/JDDefaultLookAndFeel.json
+--ID:21TS:1511134514466-11/19/17 3:35:14 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.updatev2.gui.LAFSettings|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/laf/JDDefaultLookAndFeel
+------------------------Thread: 29:Log.L.log-----------------------
+--ID:29TS:1511134514480-11/19/17 3:35:14 PM -  [jd.SecondLevelLaunch$8(run)] -> Use 'JSSE' for default SSLSocketStreamFactory!
+------------------------Thread: 21:Log.L.log-----------------------
+--ID:21TS:1511134514510-11/19/17 3:35:14 PM -  [org.appwork.swing.synthetica.SyntheticaHelper(load)] -> LaF init: org.jdownloader.gui.laf.jddefault.JDDefaultLookAndFeel
+--ID:21TS:1511134514512-11/19/17 3:35:14 PM -  [org.appwork.txtresource.TranslationHandler(createTranslationResource)] -> Load Translation file:/Users/emir/src/dotfiles/bin/JDownloader%202.0/translations/org/appwork/swing/synthetica/LanguageFileSetup.en.lng
+--ID:21TS:1511134514527-11/19/17 3:35:14 PM -  [org.appwork.utils.logging2.extmanager.ExtLogManager(getLogger)] -> Ignored: de.javasoft.plaf.synthetica.SyntheticaLookAndFeel
+--ID:21TS:1511134514536-11/19/17 3:35:14 PM -  [org.jdownloader.gui.laf.jddefault.JDDefaultLookAndFeel(load)] -> Custom LAF XML: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/laf/JDDefaultLookAndFeel.xml
+--ID:21TS:1511134514705-11/19/17 3:35:14 PM -  [org.appwork.utils.logging2.extmanager.ExtLogManager(getLogger)] -> Ignored: de.javasoft.plaf.synthetica.painter.ImagePainter
+--ID:21TS:1511134517019-11/19/17 3:35:17 PM -  [org.appwork.swing.synthetica.SyntheticaHelper(load)] -> LAF Init duration: 2509ms
+--ID:21TS:1511134517021-11/19/17 3:35:17 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/ExtTooltipSettings_default.json
+--ID:21TS:1511134517021-11/19/17 3:35:17 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.appwork.swing.components.tooltips.config.ExtTooltipSettings|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/ExtTooltipSettings_default
+--ID:21TS:1511134517022-11/19/17 3:35:17 PM -  [jd.gui.swing.laf.LookAndFeelController(setUIManager)] -> LAF init: 2559
+--ID:21TS:1511134517022-11/19/17 3:35:17 PM -  [jd.SecondLevelLaunch$12(edtRun)] -> InitGUI->3413
+--ID:21TS:1511134517103-11/19/17 3:35:17 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/jd.controlling.captcha.CaptchaSettings.json
+--ID:21TS:1511134517103-11/19/17 3:35:17 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:jd.controlling.captcha.CaptchaSettings|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/jd.controlling.captcha.CaptchaSettings
+--ID:21TS:1511134517154-11/19/17 3:35:17 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/jd.controlling.reconnect.ReconnectConfig.json
+--ID:21TS:1511134517154-11/19/17 3:35:17 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:jd.controlling.reconnect.ReconnectConfig|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/jd.controlling.reconnect.ReconnectConfig
+--ID:21TS:1511134517412-11/19/17 3:35:17 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> Read Config: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/ExtTable_downloadstable3.json
+--ID:21TS:1511134517460-11/19/17 3:35:17 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/menus_v2/DownloadTabBottomBar.json
+--ID:21TS:1511134517460-11/19/17 3:35:17 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.controlling.contextmenu.ContextMenuConfigInterface|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/menus_v2/DownloadTabBottomBar
+--ID:21TS:1511134517485-11/19/17 3:35:17 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.gui.jdtrayicon.TrayExtension.json
+--ID:21TS:1511134517486-11/19/17 3:35:17 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.gui.jdtrayicon.TrayConfig|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.gui.jdtrayicon.TrayExtension
+--ID:21TS:1511134517487-11/19/17 3:35:17 PM -  [org.appwork.txtresource.TranslationHandler(createTranslationResource)] -> Load Translation file:/Users/emir/src/dotfiles/bin/JDownloader%202.0/translations/org/jdownloader/gui/jdtrayicon/translate/TrayiconTranslation.en.lng
+--ID:21TS:1511134517497-11/19/17 3:35:17 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.controlling.filter.LinkFilterSettings.json
+--ID:21TS:1511134517497-11/19/17 3:35:17 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.controlling.filter.LinkFilterSettings|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.controlling.filter.LinkFilterSettings
+--ID:21TS:1511134517501-11/19/17 3:35:17 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.api.myjdownloader.MyJDownloaderSettings.json
+--ID:21TS:1511134517501-11/19/17 3:35:17 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.api.myjdownloader.MyJDownloaderSettings|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.api.myjdownloader.MyJDownloaderSettings
+--ID:21TS:1511134517504-11/19/17 3:35:17 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.settings.AccountSettings.json
+--ID:21TS:1511134517505-11/19/17 3:35:17 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.settings.AccountSettings|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.settings.AccountSettings
+--ID:21TS:1511134517510-11/19/17 3:35:17 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.phantomjs.PhantomJSConfig.json
+--ID:21TS:1511134517510-11/19/17 3:35:17 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.phantomjs.PhantomJSConfig|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.phantomjs.PhantomJSConfig
+--ID:21TS:1511134517512-11/19/17 3:35:17 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/jd.controlling.linkchecker.LinkCheckerConfig.json
+--ID:21TS:1511134517512-11/19/17 3:35:17 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:jd.controlling.linkchecker.LinkCheckerConfig|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/jd.controlling.linkchecker.LinkCheckerConfig
+--ID:21TS:1511134517513-11/19/17 3:35:17 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/jd.controlling.linkcrawler.LinkCrawlerConfig.json
+--ID:21TS:1511134517513-11/19/17 3:35:17 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:jd.controlling.linkcrawler.LinkCrawlerConfig|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/jd.controlling.linkcrawler.LinkCrawlerConfig
+--ID:21TS:1511134517516-11/19/17 3:35:17 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.gui.views.linkgrabber.addlinksdialog.LinkgrabberSettings.json
+--ID:21TS:1511134517516-11/19/17 3:35:17 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.gui.views.linkgrabber.addlinksdialog.LinkgrabberSettings|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.gui.views.linkgrabber.addlinksdialog.LinkgrabberSettings
+--ID:21TS:1511134517526-11/19/17 3:35:17 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/jd.controlling.linkcollector.LinkCollectorConfig.json
+--ID:21TS:1511134517526-11/19/17 3:35:17 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:jd.controlling.linkcollector.LinkCollectorConfig|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/jd.controlling.linkcollector.LinkCollectorConfig
+--ID:21TS:1511134517528-11/19/17 3:35:17 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.api.RemoteAPIConfig.json
+--ID:21TS:1511134517528-11/19/17 3:35:17 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.api.RemoteAPIConfig|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.api.RemoteAPIConfig
+--ID:21TS:1511134517531-11/19/17 3:35:17 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.controlling.packagizer.PackagizerSettings.json
+--ID:21TS:1511134517531-11/19/17 3:35:17 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.controlling.packagizer.PackagizerSettings|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.controlling.packagizer.PackagizerSettings
+--ID:21TS:1511134517533-11/19/17 3:35:17 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.controlling.ffmpeg.FFmpegSetup.json
+--ID:21TS:1511134517533-11/19/17 3:35:17 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.controlling.ffmpeg.FFmpegSetup|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.controlling.ffmpeg.FFmpegSetup
+--ID:21TS:1511134517539-11/19/17 3:35:17 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.jdserv.stats.StatsManagerConfigV2.json
+--ID:21TS:1511134517539-11/19/17 3:35:17 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.jdserv.stats.StatsManagerConfigV2|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.jdserv.stats.StatsManagerConfigV2
+--ID:21TS:1511134517541-11/19/17 3:35:17 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.gui.shortcuts.ShortcutSettings.json
+--ID:21TS:1511134517541-11/19/17 3:35:17 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.gui.shortcuts.ShortcutSettings|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.gui.shortcuts.ShortcutSettings
+--ID:21TS:1511134517545-11/19/17 3:35:17 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.settings.RtmpdumpSettings.json
+--ID:21TS:1511134517545-11/19/17 3:35:17 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.settings.RtmpdumpSettings|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.settings.RtmpdumpSettings
+--ID:21TS:1511134517547-11/19/17 3:35:17 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.appwork.utils.swing.dialog.ExtFileSystemViewSettings.json
+--ID:21TS:1511134517547-11/19/17 3:35:17 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.appwork.utils.swing.dialog.ExtFileSystemViewSettings|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.appwork.utils.swing.dialog.ExtFileSystemViewSettings
+--ID:21TS:1511134517548-11/19/17 3:35:17 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/jd.controlling.faviconcontroller.FavIconsConfig.json
+--ID:21TS:1511134517548-11/19/17 3:35:17 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:jd.controlling.faviconcontroller.FavIconsConfig|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/jd.controlling.faviconcontroller.FavIconsConfig
+--ID:21TS:1511134517550-11/19/17 3:35:17 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.settings.SoundSettings.json
+--ID:21TS:1511134517550-11/19/17 3:35:17 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.settings.SoundSettings|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.settings.SoundSettings
+--ID:21TS:1511134517552-11/19/17 3:35:17 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.gui.notify.gui.BubbleNotifyConfig.json
+--ID:21TS:1511134517553-11/19/17 3:35:17 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.gui.notify.gui.BubbleNotifyConfig|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.gui.notify.gui.BubbleNotifyConfig
+--ID:21TS:1511134517595-11/19/17 3:35:17 PM -  [org.appwork.txtresource.TranslationHandler(createTranslationResource)] -> Load Translation file:/Users/emir/src/dotfiles/bin/JDownloader%202.0/translations/org/jdownloader/translate/JdownloaderTranslation.en.lng
+--ID:21TS:1511134517685-11/19/17 3:35:17 PM -  [jd.SecondLevelLaunch$12(edtRun)] -> GUIDONE->4075
+------------------------Thread: 1:Log.L.log-----------------------
+--ID:1TS:1511134517856-11/19/17 3:35:17 PM -  [jd.gui.swing.MacOSApplicationAdapter$1(run)] -> MacOS FullScreen Support activated
+--ID:1TS:1511134517869-11/19/17 3:35:17 PM -  [jd.SecondLevelLaunch(go)] -> Initialisation finished
+------------------------Thread: 43:Log.L.log-----------------------
+--ID:43TS:1511134517870-11/19/17 3:35:17 PM -  [org.appwork.utils.Application(getJarFile)] -> jar:file:/Users/emir/src/dotfiles/bin/JDownloader%202.0/JDownloader.jar!/org/appwork/Counter.class
+------------------------Thread: 21:Log.L.log-----------------------
+--ID:21TS:1511134518024-11/19/17 3:35:18 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> Read Config: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/ExtTable_LinkGrabberTableModel.json
+--ID:21TS:1511134518045-11/19/17 3:35:18 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/menus_v2/LinkgrabberTabBottomBar.json
+--ID:21TS:1511134518045-11/19/17 3:35:18 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.controlling.contextmenu.ContextMenuConfigInterface|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/menus_v2/LinkgrabberTabBottomBar
+------------------------Thread: 1:Log.L.log-----------------------
+--ID:1TS:1511134518077-11/19/17 3:35:18 PM -  [jd.SecondLevelLaunch(go)] -> fileChooserComboBoxFolders 2
+------------------------Thread: 21:Log.L.log-----------------------
+--ID:21TS:1511134518111-11/19/17 3:35:18 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> Read Config: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/ExtTable_FilterTableModel.json
+--ID:21TS:1511134518152-11/19/17 3:35:18 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> Read Config: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/quickfilters.json
+--ID:21TS:1511134518186-11/19/17 3:35:18 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/menus_v2/LinkgrabberContext.json
+--ID:21TS:1511134518186-11/19/17 3:35:18 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.controlling.contextmenu.ContextMenuConfigInterface|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/menus_v2/LinkgrabberContext
+------------------------Thread: 42:Log.L.log-----------------------
+--ID:42TS:1511134520385-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /session = interface org.appwork.utils.net.httpserver.session.LoginAPIInterface
+--ID:42TS:1511134520392-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /events = interface org.appwork.remoteapi.events.EventsAPIInterface
+--ID:42TS:1511134520397-11/19/17 3:35:20 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.api.captcha.CaptchaMyJDownloaderRemoteSolverSettings.json
+--ID:42TS:1511134520397-11/19/17 3:35:20 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.api.captcha.CaptchaMyJDownloaderRemoteSolverSettings|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.api.captcha.CaptchaMyJDownloaderRemoteSolverSettings
+--ID:42TS:1511134520402-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /captcha = interface org.jdownloader.api.captcha.CaptchaAPI
+--ID:42TS:1511134520404-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /captchaforward = interface org.jdownloader.captcha.api.CaptchaForwarderAPIInterface
+--ID:42TS:1511134520405-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /jd = interface org.jdownloader.api.jd.JDAPI
+--ID:42TS:1511134520407-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /downloads = interface org.jdownloader.api.downloads.DownloadsAPI
+------------------------Thread: 21:Log.L.log-----------------------
+--ID:21TS:1511134520411-11/19/17 3:35:20 PM -  [org.appwork.txtresource.TranslationHandler(createTranslationResource)] -> Load Translation file:/Users/emir/src/dotfiles/bin/JDownloader%202.0/translations/org/appwork/utils/locale/AWUTranslation.en.lng
+------------------------Thread: 42:Log.L.log-----------------------
+--ID:42TS:1511134520416-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /downloadsV2 = interface org.jdownloader.api.downloads.v2.DownloadsAPIV2
+--ID:42TS:1511134520418-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /downloadcontroller = interface org.jdownloader.api.downloads.v2.DownloadWatchdogAPI
+--ID:42TS:1511134520420-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /config = interface org.jdownloader.api.config.AdvancedConfigManagerAPI
+--ID:42TS:1511134520427-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /toolbar = interface org.jdownloader.api.toolbar.JDownloaderToolBarAPI
+--ID:42TS:1511134520431-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /accounts = interface org.jdownloader.api.accounts.AccountAPI
+--ID:42TS:1511134520433-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /accountsV2 = interface org.jdownloader.api.accounts.v2.AccountAPIV2
+--ID:42TS:1511134520436-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /system = interface org.jdownloader.api.system.SystemAPI
+--ID:42TS:1511134520438-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /linkcollector = interface org.jdownloader.api.linkcollector.LinkCollectorAPI
+--ID:42TS:1511134520449-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /linkgrabberv2 = interface org.jdownloader.api.linkcollector.v2.LinkCollectorAPIV2
+--ID:42TS:1511134520452-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /content = interface org.jdownloader.api.content.ContentAPI
+--ID:42TS:1511134520454-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /contentV2 = interface org.jdownloader.api.content.v2.ContentAPIV2
+--ID:42TS:1511134520456-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /ui = interface org.jdownloader.api.ui.UIAPI
+--ID:42TS:1511134520458-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /polling = interface org.jdownloader.api.polling.PollingAPI
+--ID:42TS:1511134520460-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /extraction = interface org.jdownloader.api.extraction.ExtractionAPI
+--ID:42TS:1511134520461-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /linkcrawler = interface org.jdownloader.api.linkcrawler.LinkCrawlerAPI
+--ID:42TS:1511134520463-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /plugins = interface org.jdownloader.api.plugins.PluginsAPI
+--ID:42TS:1511134520466-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace / = interface org.jdownloader.api.cnl2.Cnl2APIBasics
+--ID:42TS:1511134520468-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /flash = interface org.jdownloader.api.cnl2.Cnl2APIFlash
+--ID:42TS:1511134520476-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /downloadevents = interface org.jdownloader.api.downloads.DownloadControllerEventPublisherInterface
+--ID:42TS:1511134520478-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /extensions = interface org.jdownloader.api.extensions.ExtensionsAPI
+--ID:42TS:1511134520479-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /update = interface org.jdownloader.api.update.UpdateAPI
+--ID:42TS:1511134520492-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /device = interface org.jdownloader.api.device.DeviceAPI
+--ID:42TS:1511134520493-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /reconnect = interface org.jdownloader.api.reconnect.ReconnectAPI
+--ID:42TS:1511134520497-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /log = interface org.jdownloader.api.logs.LogAPI
+--ID:42TS:1511134520501-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /dialogs = interface org.jdownloader.api.dialog.DialogApiInterface
+------------------------Thread: 63:Log.L.log-----------------------
+--ID:63TS:1511134520503-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace / = interface org.jdownloader.api.cnl2.Cnl2APIBasics
+--ID:63TS:1511134520504-11/19/17 3:35:20 PM -  [org.appwork.remoteapi.RemoteAPI(register)] -> Try to register API namespace /flash = interface org.jdownloader.api.cnl2.Cnl2APIFlash
+------------------------Thread: 68:Log.L.log-----------------------
+--ID:68TS:1511134520510-11/19/17 3:35:20 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.captcha.v2.solver.jac.JACSolverConfig.json
+--ID:68TS:1511134520510-11/19/17 3:35:20 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.captcha.v2.solver.jac.JACSolverConfig|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.captcha.v2.solver.jac.JACSolverConfig
+------------------------Thread: 42:Log.L.log-----------------------
+--ID:42TS:1511134520513-11/19/17 3:35:20 PM -  [jd.controlling.DelayWriteController(init)] -> DelayWriteMode: AUTO
+--ID:42TS:1511134520513-11/19/17 3:35:20 PM -  [jd.controlling.DelayWriteController(init)] -> DelayedWrites disabled!
+------------------------Thread: 68:Log.L.log-----------------------
+--ID:68TS:1511134520519-11/19/17 3:35:20 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.captcha.v2.solver.dbc.DeathByCaptchaSettings.json
+--ID:68TS:1511134520519-11/19/17 3:35:20 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.captcha.v2.solver.dbc.DeathByCaptchaSettings|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.captcha.v2.solver.dbc.DeathByCaptchaSettings
+--ID:68TS:1511134520519-11/19/17 3:35:20 PM -  [org.appwork.storage.config.handler.StorageHandler(parseInterface)] -> Overridden Config Key found public abstract boolean org.jdownloader.captcha.v2.solver.dbc.DeathByCaptchaSettings.isEnabled()<-->public abstract boolean org.jdownloader.captcha.v2.ChallengeSolverConfig.isEnabled()
+--ID:68TS:1511134520527-11/19/17 3:35:20 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.captcha.v2.solver.imagetyperz.ImageTyperzConfigInterface.json
+--ID:68TS:1511134520527-11/19/17 3:35:20 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.captcha.v2.solver.imagetyperz.ImageTyperzConfigInterface|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.captcha.v2.solver.imagetyperz.ImageTyperzConfigInterface
+--ID:68TS:1511134520527-11/19/17 3:35:20 PM -  [org.appwork.storage.config.handler.StorageHandler(parseInterface)] -> Overridden Config Key found public abstract boolean org.jdownloader.captcha.v2.solver.imagetyperz.ImageTyperzConfigInterface.isEnabled()<-->public abstract boolean org.jdownloader.captcha.v2.ChallengeSolverConfig.isEnabled()
+--ID:68TS:1511134520532-11/19/17 3:35:20 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.captcha.v2.solver.cheapcaptcha.CheapCaptchaConfigInterface.json
+--ID:68TS:1511134520532-11/19/17 3:35:20 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.captcha.v2.solver.cheapcaptcha.CheapCaptchaConfigInterface|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.captcha.v2.solver.cheapcaptcha.CheapCaptchaConfigInterface
+--ID:68TS:1511134520532-11/19/17 3:35:20 PM -  [org.appwork.storage.config.handler.StorageHandler(parseInterface)] -> Overridden Config Key found public abstract boolean org.jdownloader.captcha.v2.solver.cheapcaptcha.CheapCaptchaConfigInterface.isEnabled()<-->public abstract boolean org.jdownloader.captcha.v2.ChallengeSolverConfig.isEnabled()
+--ID:68TS:1511134520536-11/19/17 3:35:20 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.captcha.v2.solver.captchasolutions.CaptchaSolutionsConfigInterface.json
+--ID:68TS:1511134520536-11/19/17 3:35:20 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.captcha.v2.solver.captchasolutions.CaptchaSolutionsConfigInterface|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.captcha.v2.solver.captchasolutions.CaptchaSolutionsConfigInterface
+--ID:68TS:1511134520536-11/19/17 3:35:20 PM -  [org.appwork.storage.config.handler.StorageHandler(parseInterface)] -> Overridden Config Key found public abstract boolean org.jdownloader.captcha.v2.solver.captchasolutions.CaptchaSolutionsConfigInterface.isEnabled()<-->public abstract boolean org.jdownloader.captcha.v2.ChallengeSolverConfig.isEnabled()
+--ID:68TS:1511134520541-11/19/17 3:35:20 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.captcha.v2.solver.twocaptcha.TwoCaptchaConfigInterface.json
+--ID:68TS:1511134520541-11/19/17 3:35:20 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.captcha.v2.solver.twocaptcha.TwoCaptchaConfigInterface|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.captcha.v2.solver.twocaptcha.TwoCaptchaConfigInterface
+--ID:68TS:1511134520541-11/19/17 3:35:20 PM -  [org.appwork.storage.config.handler.StorageHandler(parseInterface)] -> Overridden Config Key found public abstract boolean org.jdownloader.captcha.v2.solver.twocaptcha.TwoCaptchaConfigInterface.isEnabled()<-->public abstract boolean org.jdownloader.captcha.v2.ChallengeSolverConfig.isEnabled()
+--ID:68TS:1511134520547-11/19/17 3:35:20 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.captcha.v2.solver.antiCaptchaCom.AntiCaptchaComConfigInterface.json
+--ID:68TS:1511134520547-11/19/17 3:35:20 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.captcha.v2.solver.antiCaptchaCom.AntiCaptchaComConfigInterface|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.captcha.v2.solver.antiCaptchaCom.AntiCaptchaComConfigInterface
+--ID:68TS:1511134520547-11/19/17 3:35:20 PM -  [org.appwork.storage.config.handler.StorageHandler(parseInterface)] -> Overridden Config Key found public abstract boolean org.jdownloader.captcha.v2.solver.antiCaptchaCom.AntiCaptchaComConfigInterface.isEnabled()<-->public abstract boolean org.jdownloader.captcha.v2.ChallengeSolverConfig.isEnabled()
+--ID:68TS:1511134520554-11/19/17 3:35:20 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.captcha.v2.solver.endcaptcha.EndCaptchaConfigInterface.json
+--ID:68TS:1511134520554-11/19/17 3:35:20 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.captcha.v2.solver.endcaptcha.EndCaptchaConfigInterface|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.captcha.v2.solver.endcaptcha.EndCaptchaConfigInterface
+--ID:68TS:1511134520554-11/19/17 3:35:20 PM -  [org.appwork.storage.config.handler.StorageHandler(parseInterface)] -> Overridden Config Key found public abstract boolean org.jdownloader.captcha.v2.solver.endcaptcha.EndCaptchaConfigInterface.isEnabled()<-->public abstract boolean org.jdownloader.captcha.v2.ChallengeSolverConfig.isEnabled()
+--ID:68TS:1511134520564-11/19/17 3:35:20 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.captcha.v2.solver.solver9kw.Captcha9kwSettings.json
+--ID:68TS:1511134520564-11/19/17 3:35:20 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.captcha.v2.solver.solver9kw.Captcha9kwSettings|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.captcha.v2.solver.solver9kw.Captcha9kwSettings
+--ID:68TS:1511134520566-11/19/17 3:35:20 PM -  [org.appwork.storage.config.handler.StorageHandler(parseInterface)] -> Overridden Config Key found public abstract boolean org.jdownloader.captcha.v2.solver.solver9kw.Captcha9kwSettings.isEnabled()<-->public abstract boolean org.jdownloader.captcha.v2.ChallengeSolverConfig.isEnabled()
+--ID:68TS:1511134520583-11/19/17 3:35:20 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.captcha.v2.solver.gui.DialogCaptchaSolverConfig.json
+--ID:68TS:1511134520583-11/19/17 3:35:20 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.captcha.v2.solver.gui.DialogCaptchaSolverConfig|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.captcha.v2.solver.gui.DialogCaptchaSolverConfig
+--ID:68TS:1511134520589-11/19/17 3:35:20 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.captcha.v2.solver.browser.BrowserCaptchaSolverConfig.json
+--ID:68TS:1511134520589-11/19/17 3:35:20 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.captcha.v2.solver.browser.BrowserCaptchaSolverConfig|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.captcha.v2.solver.browser.BrowserCaptchaSolverConfig
+------------------------Thread: 64:Log.L.log-----------------------
+--ID:64TS:1511134520716-11/19/17 3:35:20 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.extensions.antistandby.AntiStandbyExtension.json
+--ID:64TS:1511134520716-11/19/17 3:35:20 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.extensions.antistandby.AntiStandbyConfig|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.extensions.antistandby.AntiStandbyExtension
+--ID:64TS:1511134520717-11/19/17 3:35:20 PM -  [org.appwork.txtresource.TranslationHandler(createTranslationResource)] -> Load Translation file:/Users/emir/src/dotfiles/bin/JDownloader%202.0/translations/org/jdownloader/extensions/antistandby/translate/AntistandbyTranslation.en.lng
+--ID:64TS:1511134520743-11/19/17 3:35:20 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.extensions.extraction.ExtractionExtension.json
+--ID:64TS:1511134520743-11/19/17 3:35:20 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.extensions.extraction.ExtractionConfig|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.extensions.extraction.ExtractionExtension
+--ID:64TS:1511134520749-11/19/17 3:35:20 PM -  [org.appwork.txtresource.TranslationHandler(createTranslationResource)] -> Load Translation file:/Users/emir/src/dotfiles/bin/JDownloader%202.0/translations/org/jdownloader/extensions/extraction/translate/ExtractionTranslation.en.lng
+--ID:64TS:1511134520799-11/19/17 3:35:20 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/menus_v2/DownloadTableContext.json
+--ID:64TS:1511134520799-11/19/17 3:35:20 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.controlling.contextmenu.ContextMenuConfigInterface|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/menus_v2/DownloadTableContext
+--ID:64TS:1511134520801-11/19/17 3:35:20 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/menus_v2/MainMenu.json
+--ID:64TS:1511134520801-11/19/17 3:35:20 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.controlling.contextmenu.ContextMenuConfigInterface|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/menus_v2/MainMenu
+--ID:64TS:1511134520802-11/19/17 3:35:20 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/menus_v2/MainToolbar.json
+--ID:64TS:1511134520802-11/19/17 3:35:20 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.controlling.contextmenu.ContextMenuConfigInterface|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/menus_v2/MainToolbar
+--ID:64TS:1511134520805-11/19/17 3:35:20 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.extensions.growl.GrowlExtension.json
+--ID:64TS:1511134520805-11/19/17 3:35:20 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.extensions.growl.GrowlConfig|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.extensions.growl.GrowlExtension
+--ID:64TS:1511134520807-11/19/17 3:35:20 PM -  [org.appwork.txtresource.TranslationHandler(createTranslationResource)] -> Load Translation file:/Users/emir/src/dotfiles/bin/JDownloader%202.0/translations/org/jdownloader/extensions/growl/translate/GrowlTranslation.en.lng
+--ID:64TS:1511134520812-11/19/17 3:35:20 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.extensions.shutdown.ShutdownExtension.json
+--ID:64TS:1511134520812-11/19/17 3:35:20 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.jdownloader.extensions.shutdown.ShutdownConfig|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/org.jdownloader.extensions.shutdown.ShutdownExtension
+--ID:64TS:1511134520813-11/19/17 3:35:20 PM -  [org.appwork.txtresource.TranslationHandler(createTranslationResource)] -> Load Translation file:/Users/emir/src/dotfiles/bin/JDownloader%202.0/translations/org/jdownloader/extensions/shutdown/translate/ShutdownTranslation.en.lng
+------------------------Thread: 21:Log.L.log-----------------------
+--ID:21TS:1511134520814-11/19/17 3:35:20 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> Read Config: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/ExtTable_ExtractionJobTableModel4.json
+------------------------Thread: 74:Log.L.log-----------------------
+--ID:74TS:1511134520838-11/19/17 3:35:20 PM -  [org.appwork.txtresource.TranslationHandler(createTranslationResource)] -> Load Translation file:/Users/emir/src/dotfiles/bin/JDownloader%202.0/translations/org/jdownloader/updatev2/UpdaterTranslation.en.lng
+------------------------Thread: 21:Log.L.log-----------------------
+--ID:21TS:1511134520872-11/19/17 3:35:20 PM -  [org.jdownloader.extensions.LazyExtension(getClassLoader)] -> Use /Users/emir/src/dotfiles/bin/JDownloader 2.0/extensions/AntiShutdown.jar classloader
+--ID:21TS:1511134520872-11/19/17 3:35:20 PM -  [org.appwork.txtresource.TranslateResource(readDefaults)] -> Default missing for: public abstract java.lang.String org.jdownloader.gui.translate.GuiTranslation.action_help_tooltip()
+--ID:21TS:1511134520873-11/19/17 3:35:20 PM -  [org.appwork.txtresource.TranslateResource(readDefaults)] -> Default missing for: public abstract java.lang.String org.jdownloader.gui.translate.GuiTranslation.action_changelog_tooltip()
+--ID:21TS:1511134521006-11/19/17 3:35:21 PM -  [org.appwork.txtresource.TranslateResource(readDefaults)] -> Default missing for: public abstract java.lang.String org.jdownloader.gui.translate.GuiTranslation.action_addcontainer_tooltip()
+------------------------Thread: 81:Log.L.log-----------------------
+--ID:81TS:1511134525516-11/19/17 3:35:25 PM -  [org.appwork.txtresource.TranslationHandler(createTranslationResource)] -> Load Translation file:/Users/emir/src/dotfiles/bin/JDownloader%202.0/translations/org/jdownloader/api/cnl2/translate/ExternInterfaceTranslation.en.lng
+--ID:81TS:1511134525517-11/19/17 3:35:25 PM -  [org.appwork.utils.swing.dialog.ConfirmDialog(<init>)] -> Dialog    [Allow it!][Deny access!]
+flag:  0
+title: External request from Mozilla/5.0  Chrome/62.0.3202.94 Safari/537.36!
+msg:   
+An external application tries to add links
+------------------------Thread: 21:Log.L.log-----------------------
+--ID:21TS:1511134525517-11/19/17 3:35:25 PM -  [org.appwork.utils.swing.dialog.AbstractDialog$8(runInEDT)] -> Force Dummy Init
+--ID:21TS:1511134525522-11/19/17 3:35:25 PM -  [org.appwork.utils.swing.dialog.AbstractDialog$11(runInEDT)] -> Reset Dummy Info
+--ID:21TS:1511134525523-11/19/17 3:35:25 PM -  [org.appwork.utils.swing.dialog.AbstractDialog(displayDialog)] -> Display Dialog: dialog_External_request_from_Mozilla_5_0__Chrome_62_0_3202_94_Safari_537_36__An_external_application_tries_to_add_links
+--ID:21TS:1511134525551-11/19/17 3:35:25 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/RememberRelativeLocator-0d32619a081cf7ea49e7a682d0d55b6a.json
+--ID:21TS:1511134525551-11/19/17 3:35:25 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.appwork.utils.swing.dialog.LocationStorage|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/RememberRelativeLocator-0d32619a081cf7ea49e7a682d0d55b6a
+--ID:21TS:1511134528084-11/19/17 3:35:28 PM -  [org.appwork.utils.swing.dialog.AbstractDialog(actionPerformed)] -> Answer: Button<OK:Allow it!>
+------------------------Thread: 35:Log.L.log-----------------------
+--ID:35TS:1511134533160-11/19/17 3:35:33 PM -  [org.appwork.controlling.StateMachine(forceState)] -> jd.controlling.downloadcontroller.DownloadWatchDog@1091b562 State changed IDLE--1(772393453) -> RUNNING--1(199976616)
+------------------------Thread: 21:Log.L.log-----------------------
+--ID:21TS:1511134536771-11/19/17 3:35:36 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> Read Config: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/FILECHOOSER.ejs
+------------------------Thread: 95:Log.L.log-----------------------
+--ID:95TS:1511134539123-11/19/17 3:35:39 PM -  [org.appwork.controlling.StateMachine(forceState)] -> jd.controlling.downloadcontroller.DownloadWatchDog@1091b562 State changed RUNNING--1(199976616) -> STOPPING--1(703868060)
+------------------------Thread: 103:Log.L.log-----------------------
+--ID:103TS:1511134539126-11/19/17 3:35:39 PM -  [org.appwork.controlling.StateMachine(forceState)] -> jd.controlling.downloadcontroller.DownloadWatchDog@1091b562 State changed STOPPING--1(703868060) -> STOPPED_STATE--1(1991114220)
+--ID:103TS:1511134543822-11/19/17 3:35:43 PM -  [org.appwork.controlling.StateMachine(reset)] -> jd.controlling.downloadcontroller.DownloadWatchDog@1091b562 State changed (reset) STOPPED_STATE--1(1991114220) -> IDLE--1(772393453)
+--ID:103TS:1511134543823-11/19/17 3:35:43 PM -  [org.appwork.controlling.StateMachine(forceState)] -> jd.controlling.downloadcontroller.DownloadWatchDog@1091b562 State changed IDLE--1(772393453) -> RUNNING--1(199976616)
+------------------------Thread: 21:Log.L.log-----------------------
+--ID:21TS:1511134555664-11/19/17 3:35:55 PM -  [org.appwork.utils.swing.dialog.ConfirmDialog(<init>)] -> Dialog    [Delete][Cancel]
+flag:  1000000000
+title: Are you sure?
+msg:   
+Are you sure that you want to do this:
+Delete Selected Links
+
+1 Links(s) to delete
+0 Files(0 B) on Disk
+Links left in Downloadlist: 0
+--ID:21TS:1511134555665-11/19/17 3:35:55 PM -  [org.appwork.utils.swing.dialog.AbstractDialog$8(runInEDT)] -> Force Dummy Init
+--ID:21TS:1511134555665-11/19/17 3:35:55 PM -  [org.appwork.utils.swing.dialog.AbstractDialog$11(runInEDT)] -> Reset Dummy Info
+--ID:21TS:1511134555665-11/19/17 3:35:55 PM -  [org.appwork.utils.swing.dialog.AbstractDialog$8(runInEDT)] -> Force Dummy Init
+--ID:21TS:1511134555665-11/19/17 3:35:55 PM -  [org.appwork.utils.swing.dialog.AbstractDialog$11(runInEDT)] -> Reset Dummy Info
+--ID:21TS:1511134555665-11/19/17 3:35:55 PM -  [org.appwork.utils.swing.dialog.AbstractDialog(displayDialog)] -> Display Dialog: dialog_Are_you_sure__Are_you_sure_that_you_want_to_do_this___Delete_Selected_Links____1_Links_s__to_delete__0_Files_0_B__on_Disk__Links_left_in_Downloadlist__0
+--ID:21TS:1511134555689-11/19/17 3:35:55 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/RememberRelativeLocator-729a51874fe901b092899e9e8b31c97a.json
+--ID:21TS:1511134555689-11/19/17 3:35:55 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.appwork.utils.swing.dialog.LocationStorage|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/RememberRelativeLocator-729a51874fe901b092899e9e8b31c97a
+--ID:21TS:1511134556838-11/19/17 3:35:56 PM -  [org.appwork.utils.swing.dialog.AbstractDialog(actionPerformed)] -> Answer: Button<OK:Delete>
+--ID:21TS:1511134558098-11/19/17 3:35:58 PM -  [org.appwork.utils.swing.dialog.ConfirmDialog(<init>)] -> Dialog    [Exit JDownloader][null]
+flag:  11000100000
+title: Closing JDownloader...
+msg:   
+Please choose between 
+   - Exit JDownloader (Cancel all running processes)
+   - Minimize to Taskbar (Downloads will continue)
+   - Hide in System Tray (Downloads will continue in the background)
+--ID:21TS:1511134558099-11/19/17 3:35:58 PM -  [org.appwork.utils.swing.dialog.AbstractDialog$8(runInEDT)] -> Force Dummy Init
+--ID:21TS:1511134558099-11/19/17 3:35:58 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> Read Config: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/Dialogs.json
+--ID:21TS:1511134558099-11/19/17 3:35:58 PM -  [org.appwork.utils.swing.dialog.AbstractDialog$11(runInEDT)] -> Reset Dummy Info
+--ID:21TS:1511134558099-11/19/17 3:35:58 PM -  [org.appwork.utils.swing.dialog.AbstractDialog(displayDialog)] -> Display Dialog: dialog_Closing_JDownloader____Please_choose_between________Exit_JDownloader__Cancel_all_running_processes________Minimize_to_Taskbar__Downloads_will_continue________Hide_in_System_Tray__Downloads_will_continue_in_the_background_
+--ID:21TS:1511134558122-11/19/17 3:35:58 PM -  [org.appwork.storage.JsonKeyValueStorage(<init>)] -> CFG File does not exist: /Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/RememberRelativeLocator-d38b7bd8020d320abc096faa81f5a02f.json
+--ID:21TS:1511134558122-11/19/17 3:35:58 PM -  [org.appwork.storage.config.handler.StorageHandler(<init>)] -> Init StorageHandler for Interface:org.appwork.utils.swing.dialog.LocationStorage|Path:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/RememberRelativeLocator-d38b7bd8020d320abc096faa81f5a02f
+--ID:21TS:1511134559676-11/19/17 3:35:59 PM -  [org.appwork.utils.swing.dialog.AbstractDialog(actionPerformed)] -> Answer: Button<OK:Exit JDownloader>
+------------------------Thread: 118:Log.L.log-----------------------
+--ID:118TS:1511134559680-11/19/17 3:35:59 PM -  [org.appwork.shutdown.ShutdownController(requestShutdown)] -> No Vetos
+--ID:118TS:1511134559680-11/19/17 3:35:59 PM -  [org.appwork.shutdown.ShutdownController(requestShutdown)] -> Fire onShutDownEvents
+--ID:118TS:1511134559680-11/19/17 3:35:59 PM -  [org.appwork.shutdown.ShutdownController(requestShutdown)] -> Call onShutdown: jd.controlling.downloadcontroller.DownloadWatchDog@1091b562
+--ID:118TS:1511134559680-11/19/17 3:35:59 PM -  [org.appwork.shutdown.ShutdownController(requestShutdown)] -> Call onShutdown done: jd.controlling.downloadcontroller.DownloadWatchDog@1091b562
+--ID:118TS:1511134559680-11/19/17 3:35:59 PM -  [org.appwork.shutdown.ShutdownController(requestShutdown)] -> Call onShutdown: jd.controlling.linkcollector.LinkCollector@441b90e7
+--ID:118TS:1511134559680-11/19/17 3:35:59 PM -  [org.appwork.shutdown.ShutdownController(requestShutdown)] -> Call onShutdown done: jd.controlling.linkcollector.LinkCollector@441b90e7
+--ID:118TS:1511134559680-11/19/17 3:35:59 PM -  [org.appwork.shutdown.ShutdownController(requestShutdown)] -> Call onShutdown: org.jdownloader.extensions.antistandby.AntiStandbyExtension@32fec096
+--ID:118TS:1511134559680-11/19/17 3:35:59 PM -  [org.appwork.shutdown.ShutdownController(requestShutdown)] -> Call onShutdown done: org.jdownloader.extensions.antistandby.AntiStandbyExtension@32fec096
+--ID:118TS:1511134559680-11/19/17 3:35:59 PM -  [org.appwork.shutdown.ShutdownController(requestShutdown)] -> Call onShutdown: org.jdownloader.extensions.extraction.ExtractionExtension$3@3106c0ba
+--ID:118TS:1511134559680-11/19/17 3:35:59 PM -  [org.appwork.shutdown.ShutdownController(requestShutdown)] -> Call onShutdown done: org.jdownloader.extensions.extraction.ExtractionExtension$3@3106c0ba
+--ID:118TS:1511134559680-11/19/17 3:35:59 PM -  [org.appwork.shutdown.ShutdownController(requestShutdown)] -> Create ExitThread
+--ID:118TS:1511134559680-11/19/17 3:35:59 PM -  [org.appwork.shutdown.ShutdownController(requestShutdown)] -> Wait
+------------------------Thread: 120:Log.L.log-----------------------
+--ID:120TS:1511134559681-11/19/17 3:35:59 PM -  [org.appwork.shutdown.ShutdownController$3(run)] -> Exit Now: Code: 0
+------------------------Thread: 130:Log.L.log-----------------------
+--ID:130TS:1511134561853-11/19/17 3:36:01 PM -  [org.appwork.controlling.StateMachine(forceState)] -> jd.controlling.downloadcontroller.DownloadWatchDog@1091b562 State changed RUNNING--1(199976616) -> STOPPING--1(703868060)
+--ID:130TS:1511134561853-11/19/17 3:36:01 PM -  [org.appwork.controlling.StateMachine(forceState)] -> jd.controlling.downloadcontroller.DownloadWatchDog@1091b562 State changed STOPPING--1(703868060) -> STOPPED_STATE--1(1991114220)
+------------------------Thread: 136:Log.L.log-----------------------
+--ID:136TS:1511134564742-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:purevolume.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_purevolume.com.ejs
+--ID:136TS:1511134564743-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:kika.de|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_kika.de.ejs
+--ID:136TS:1511134564744-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:videonest.net|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_videonest.net.ejs
+--ID:136TS:1511134564746-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:raptu.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_raptu.com.ejs
+--ID:136TS:1511134564747-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:video.yandex.ru|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_video.yandex.ru.ejs
+--ID:136TS:1511134564749-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:dplay.dk|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_dplay.dk.ejs
+--ID:136TS:1511134564750-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:vevo.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_vevo.com.ejs
+--ID:136TS:1511134564750-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:facebook.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_facebook.com.ejs
+--ID:136TS:1511134564751-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:redbull.tv|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_redbull.tv.ejs
+--ID:136TS:1511134564752-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:samepage.io|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_samepage.io.ejs
+--ID:136TS:1511134564753-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:fileshark.pl|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_fileshark.pl.ejs
+--ID:136TS:1511134564753-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:fakehub.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_fakehub.com.ejs
+--ID:136TS:1511134564755-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:mdr.de|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_mdr.de.ejs
+--ID:136TS:1511134564756-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:keep2share.cc|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_keep2share.cc.ejs
+--ID:136TS:1511134564757-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:massengeschmack.tv|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_massengeschmack.tv.ejs
+--ID:136TS:1511134564757-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:pan.baidu.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_pan.baidu.com.ejs
+--ID:136TS:1511134564758-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:deviantart.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_deviantart.com.ejs
+--ID:136TS:1511134564759-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:cloud.mail.ru|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_cloud.mail.ru.ejs
+--ID:136TS:1511134564760-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:sta.sh|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_sta.sh.ejs
+--ID:136TS:1511134564761-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:DirectHTTP|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_DirectHTTP.ejs
+--ID:136TS:1511134564763-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:powvideo.net|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_powvideo.net.ejs
+--ID:136TS:1511134564764-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:flowhot.info|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_flowhot.info.ejs
+--ID:136TS:1511134564766-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:filesflash.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_filesflash.com.ejs
+--ID:136TS:1511134564767-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:emuparadise.me|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_emuparadise.me.ejs
+--ID:136TS:1511134564767-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:ortofiles.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_ortofiles.com.ejs
+--ID:136TS:1511134564768-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:moddb.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_moddb.com.ejs
+--ID:136TS:1511134564769-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:thevideo.me|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_thevideo.me.ejs
+--ID:136TS:1511134564770-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:smoozed.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_smoozed.com.ejs
+--ID:136TS:1511134564770-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:clicknupload.org|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_clicknupload.org.ejs
+--ID:136TS:1511134564771-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:disk.yandex.net|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_disk.yandex.net.ejs
+--ID:136TS:1511134564772-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:filer.net|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_filer.net.ejs
+--ID:136TS:1511134564772-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:tube8.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_tube8.com.ejs
+--ID:136TS:1511134564773-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:yuvutu.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_yuvutu.com.ejs
+--ID:136TS:1511134564774-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:filecrypt.cc|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_filecrypt.cc.ejs
+--ID:136TS:1511134564774-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:phoenix.de|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_phoenix.de.ejs
+--ID:136TS:1511134564775-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:solidfiles.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_solidfiles.com.ejs
+--ID:136TS:1511134564776-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:nos.nl|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_nos.nl.ejs
+--ID:136TS:1511134564776-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:oboom.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_oboom.com.ejs
+--ID:136TS:1511134564777-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:dailymotion.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_dailymotion.com.ejs
+--ID:136TS:1511134564778-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:newgrounds.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_newgrounds.com.ejs
+--ID:136TS:1511134564779-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:bluefishtv.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_bluefishtv.com.ejs
+--ID:136TS:1511134564779-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:noisetrade.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_noisetrade.com.ejs
+--ID:136TS:1511134564780-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:rapidgator.net|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_rapidgator.net.ejs
+--ID:136TS:1511134564781-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:depositfiles.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_depositfiles.com.ejs
+--ID:136TS:1511134564782-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:spankbang.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_spankbang.com.ejs
+--ID:136TS:1511134564782-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:tivi.de|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_tivi.de.ejs
+--ID:136TS:1511134564783-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:filesmonster.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_filesmonster.com.ejs
+--ID:136TS:1511134564784-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:trailers.apple.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_trailers.apple.com.ejs
+--ID:136TS:1511134564785-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:vkontakte.ru|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_vkontakte.ru.ejs
+--ID:136TS:1511134564786-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:tlc.de|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_tlc.de.ejs
+--ID:136TS:1511134564787-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:streamratio.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_streamratio.com.ejs
+--ID:136TS:1511134564787-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:vidtome.co|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_vidtome.co.ejs
+--ID:136TS:1511134564788-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:it.dplay.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_it.dplay.com.ejs
+--ID:136TS:1511134564789-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:cinema.arte.tv|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_cinema.arte.tv.ejs
+--ID:136TS:1511134564790-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:minhateca.com.br|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_minhateca.com.br.ejs
+--ID:136TS:1511134564791-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:swrmediathek.de|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_swrmediathek.de.ejs
+--ID:136TS:1511134564792-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:video.fc2.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_video.fc2.com.ejs
+--ID:136TS:1511134564792-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:photos.google.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_photos.google.com.ejs
+--ID:136TS:1511134564794-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:bitporno.sx|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_bitporno.sx.ejs
+--ID:136TS:1511134564797-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:instagram.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_instagram.com.ejs
+--ID:136TS:1511134564798-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:downloadani.me|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_downloadani.me.ejs
+--ID:136TS:1511134564799-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:porn.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_porn.com.ejs
+--ID:136TS:1511134564800-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:grab8.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_grab8.com.ejs
+--ID:136TS:1511134564801-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:gamemaps.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_gamemaps.com.ejs
+--ID:136TS:1511134564802-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:directhttp|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_directhttp.ejs
+--ID:136TS:1511134564803-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:load.to|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_load.to.ejs
+--ID:136TS:1511134564804-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:huaban.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_huaban.com.ejs
+--ID:136TS:1511134564805-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:onedrive.live.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_onedrive.live.com.ejs
+--ID:136TS:1511134564806-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:youporn.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_youporn.com.ejs
+--ID:136TS:1511134564807-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:wicked.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_wicked.com.ejs
+--ID:136TS:1511134564808-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:hitfile.net|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_hitfile.net.ejs
+--ID:136TS:1511134564808-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:imagefap.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_imagefap.com.ejs
+--ID:136TS:1511134564809-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:pinterest.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_pinterest.com.ejs
+--ID:136TS:1511134564810-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:vshare.eu|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_vshare.eu.ejs
+--ID:136TS:1511134564812-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:bangbros.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_bangbros.com.ejs
+--ID:136TS:1511134564814-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:video2brain.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_video2brain.com.ejs
+--ID:136TS:1511134564815-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:fernsehkritik.tv|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_fernsehkritik.tv.ejs
+--ID:136TS:1511134564816-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:shahid.mbc.net|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_shahid.mbc.net.ejs
+--ID:136TS:1511134564817-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:vodlocker.city|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_vodlocker.city.ejs
+--ID:136TS:1511134564818-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:catshare.net|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_catshare.net.ejs
+--ID:136TS:1511134564820-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:orf.at|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_orf.at.ejs
+--ID:136TS:1511134564821-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:parelliconnect.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_parelliconnect.com.ejs
+--ID:136TS:1511134564822-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:bing.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_bing.com.ejs
+--ID:136TS:1511134564823-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:ex-load.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_ex-load.com.ejs
+--ID:136TS:1511134564824-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:twitch.tv|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_twitch.tv.ejs
+--ID:136TS:1511134564825-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:easybytez.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_easybytez.com.ejs
+--ID:136TS:1511134564826-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:digitalplayground.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_digitalplayground.com.ejs
+--ID:136TS:1511134564827-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:file.al|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_file.al.ejs
+--ID:136TS:1511134564829-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:nicovideo.jp|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_nicovideo.jp.ejs
+--ID:136TS:1511134564830-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:jamendo.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_jamendo.com.ejs
+--ID:136TS:1511134564831-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:datafile.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_datafile.com.ejs
+--ID:136TS:1511134564832-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:dplay.se|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_dplay.se.ejs
+--ID:136TS:1511134564832-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:hentai-foundry.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_hentai-foundry.com.ejs
+--ID:136TS:1511134564833-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:youwatch.org|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_youwatch.org.ejs
+--ID:136TS:1511134564834-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:nitroflare.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_nitroflare.com.ejs
+--ID:136TS:1511134564835-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:rapidrar.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_rapidrar.com.ejs
+--ID:136TS:1511134564836-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:prem.link|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_prem.link.ejs
+--ID:136TS:1511134564837-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:tvtotal.prosieben.de|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_tvtotal.prosieben.de.ejs
+--ID:136TS:1511134564838-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:uptostream.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_uptostream.com.ejs
+--ID:136TS:1511134564838-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:uloz.to|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_uloz.to.ejs
+--ID:136TS:1511134564839-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:animalplanet.de|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_animalplanet.de.ejs
+--ID:136TS:1511134564840-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:weltderwunder.de|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_weltderwunder.de.ejs
+--ID:136TS:1511134564841-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:sputnik.de|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_sputnik.de.ejs
+--ID:136TS:1511134564841-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:redtube.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_redtube.com.ejs
+--ID:136TS:1511134564842-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:soundcloud.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_soundcloud.com.ejs
+--ID:136TS:1511134564843-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:turbobit.net|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_turbobit.net.ejs
+--ID:136TS:1511134564843-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:softpedia.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_softpedia.com.ejs
+--ID:136TS:1511134564844-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:vidto.me|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_vidto.me.ejs
+--ID:136TS:1511134564845-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:animalplanet.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_animalplanet.com.ejs
+--ID:136TS:1511134564846-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:uploaded.to|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_uploaded.to.ejs
+--ID:136TS:1511134564847-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:video.cnbc.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_video.cnbc.com.ejs
+--ID:136TS:1511134564848-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:highporn.net|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_highporn.net.ejs
+--ID:136TS:1511134564849-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:gorillavid.in|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_gorillavid.in.ejs
+--ID:136TS:1511134564850-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:nowvideo.to|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_nowvideo.to.ejs
+--ID:136TS:1511134564851-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:xhamster.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_xhamster.com.ejs
+--ID:136TS:1511134564852-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:mega.co.nz|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_mega.co.nz.ejs
+--ID:136TS:1511134564853-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:youjizz.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_youjizz.com.ejs
+--ID:136TS:1511134564854-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:publish2.me|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_publish2.me.ejs
+--ID:136TS:1511134564855-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:reverbnation.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_reverbnation.com.ejs
+--ID:136TS:1511134564856-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:save.tv|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_save.tv.ejs
+--ID:136TS:1511134564856-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:gamer.nl|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_gamer.nl.ejs
+--ID:136TS:1511134564857-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:naughtyamerica.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_naughtyamerica.com.ejs
+--ID:136TS:1511134564858-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:sexyhub.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_sexyhub.com.ejs
+--ID:136TS:1511134564859-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:upsto.re|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_upsto.re.ejs
+--ID:136TS:1511134564860-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:playvid.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_playvid.com.ejs
+--ID:136TS:1511134564861-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:mediafire.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_mediafire.com.ejs
+--ID:136TS:1511134564863-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:premium.to|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_premium.to.ejs
+--ID:136TS:1511134564864-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:up.media1fire.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_up.media1fire.com.ejs
+--ID:136TS:1511134564865-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:discovery.de|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_discovery.de.ejs
+--ID:136TS:1511134564866-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:uptobox.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_uptobox.com.ejs
+--ID:136TS:1511134564866-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:share-links.biz|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_share-links.biz.ejs
+--ID:136TS:1511134564867-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:megacrypter|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_megacrypter.ejs
+--ID:136TS:1511134564868-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:theoperaplatform.eu|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_theoperaplatform.eu.ejs
+--ID:136TS:1511134564869-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:bandcamp.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_bandcamp.com.ejs
+--ID:136TS:1511134564869-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:tusfiles.net|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_tusfiles.net.ejs
+--ID:136TS:1511134564870-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:filejoker.net|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_filejoker.net.ejs
+--ID:136TS:1511134564871-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:backin.net|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_backin.net.ejs
+--ID:136TS:1511134564871-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:ndr.de|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_ndr.de.ejs
+--ID:136TS:1511134564872-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:filetrip.net|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_filetrip.net.ejs
+--ID:136TS:1511134564873-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:e-hentai.org|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_e-hentai.org.ejs
+--ID:136TS:1511134564873-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:ted.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_ted.com.ejs
+--ID:136TS:1511134564874-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:pornfile.cz|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_pornfile.cz.ejs
+--ID:136TS:1511134564875-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:pcloud.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_pcloud.com.ejs
+--ID:136TS:1511134564875-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:exclusiveloader.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_exclusiveloader.com.ejs
+--ID:136TS:1511134564876-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:creative.arte.tv|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_creative.arte.tv.ejs
+--ID:136TS:1511134564877-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:storagely.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_storagely.com.ejs
+--ID:136TS:1511134564878-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:tnaflix.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_tnaflix.com.ejs
+--ID:136TS:1511134564879-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:discovery.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_discovery.com.ejs
+--ID:136TS:1511134564880-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:freakshare.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_freakshare.com.ejs
+--ID:136TS:1511134564880-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:concert.arte.tv|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_concert.arte.tv.ejs
+--ID:136TS:1511134564881-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:fantasymassage.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_fantasymassage.com.ejs
+--ID:136TS:1511134564883-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:premiumize.me|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_premiumize.me.ejs
+--ID:136TS:1511134564884-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:info.arte.tv|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_info.arte.tv.ejs
+--ID:136TS:1511134564885-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:prembox.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_prembox.com.ejs
+--ID:136TS:1511134564886-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:filerio.in|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_filerio.in.ejs
+--ID:136TS:1511134564888-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:flickr.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_flickr.com.ejs
+--ID:136TS:1511134564889-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:4shared.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_4shared.com.ejs
+--ID:136TS:1511134564889-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:imgur.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_imgur.com.ejs
+--ID:136TS:1511134564890-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:future.arte.tv|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_future.arte.tv.ejs
+--ID:136TS:1511134564891-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:music.163.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_music.163.com.ejs
+--ID:136TS:1511134564892-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:koofile.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_koofile.com.ejs
+--ID:136TS:1511134564892-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:exclusivefaile.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_exclusivefaile.com.ejs
+--ID:136TS:1511134564893-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:vimeo.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_vimeo.com.ejs
+--ID:136TS:1511134564894-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:fileboom.me|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_fileboom.me.ejs
+--ID:136TS:1511134564895-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:tvnow.de|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_tvnow.de.ejs
+--ID:136TS:1511134564896-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:imdb.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_imdb.com.ejs
+--ID:136TS:1511134564897-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:xtube.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_xtube.com.ejs
+--ID:136TS:1511134564897-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:upstore.net|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_upstore.net.ejs
+--ID:136TS:1511134564898-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:rd-fs.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_rd-fs.com.ejs
+--ID:136TS:1511134564899-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:cliphunter.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_cliphunter.com.ejs
+--ID:136TS:1511134564900-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:tezfiles.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_tezfiles.com.ejs
+--ID:136TS:1511134564901-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:trilulilu.ro|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_trilulilu.ro.ejs
+--ID:136TS:1511134564902-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:u.115.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_u.115.com.ejs
+--ID:136TS:1511134564903-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:chomikuj.pl|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_chomikuj.pl.ejs
+--ID:136TS:1511134564903-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:bbc.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_bbc.com.ejs
+--ID:136TS:1511134564904-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:dmax.de|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_dmax.de.ejs
+--ID:136TS:1511134564905-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:arte.tv|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_arte.tv.ejs
+--ID:136TS:1511134564906-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:ok.ru|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_ok.ru.ejs
+--ID:136TS:1511134564906-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:tlc.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_tlc.com.ejs
+--ID:136TS:1511134564907-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:myspass.de|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_myspass.de.ejs
+--ID:136TS:1511134564908-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:xvideos.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_xvideos.com.ejs
+--ID:136TS:1511134564909-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:bloomberg.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_bloomberg.com.ejs
+--ID:136TS:1511134564909-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:realitykings.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_realitykings.com.ejs
+--ID:136TS:1511134564910-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:pornhub.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_pornhub.com.ejs
+--ID:136TS:1511134564911-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:scribd.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_scribd.com.ejs
+--ID:136TS:1511134564912-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:rapidu.net|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_rapidu.net.ejs
+--ID:136TS:1511134564912-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:sendspace.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_sendspace.com.ejs
+--ID:136TS:1511134564913-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:uploading.site|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_uploading.site.ejs
+--ID:136TS:1511134564914-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:hulkload.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_hulkload.com.ejs
+--ID:136TS:1511134564915-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:vidzi.tv|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_vidzi.tv.ejs
+--ID:136TS:1511134564916-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:onlinetvrecorder.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_onlinetvrecorder.com.ejs
+--ID:136TS:1511134564917-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:openload.co|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_openload.co.ejs
+--ID:136TS:1511134564918-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:xnxx.com|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_xnxx.com.ejs
+--ID:136TS:1511134564919-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:share-online.biz|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_share-online.biz.ejs
+--ID:136TS:1511134564919-11/19/17 3:36:04 PM -  [jd.config.SubConfiguration(save)] -> Save Name:bigfile.to|SetMark:0|File:/Users/emir/src/dotfiles/bin/JDownloader 2.0/cfg/subconf_bigfile.to.ejs

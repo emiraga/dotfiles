@@ -1,0 +1,9 @@
+#install4j response file for JDownloader 2.0
+#Sun Nov 19 15:35:12 PST 2017
+createDesktopLinkAction$Boolean=true
+executeLauncherAction$Boolean=true
+addToDockAction$Boolean=true
+sys.languageId=en
+sys.adminRights$Boolean=false
+sys.installationDir=/Users/emir/bin/JDownloader 2.0
+createQuicklaunchIconAction$Boolean=true

@@ -1,0 +1,29 @@
+------------------------Thread: 21:jd.controlling.downloadcontroller.DownloadWatchDog.log-----------------------
+--ID:21TS:1511134517157-11/19/17 3:35:17 PM -  [jd.controlling.downloadcontroller.DownloadWatchDog(<init>)] -> USE_AVAILABLE_ACCOUNTS: true
+------------------------Thread: 35:jd.controlling.downloadcontroller.DownloadWatchDog.log-----------------------
+--ID:35TS:1511134533164-11/19/17 3:35:33 PM -  [jd.controlling.downloadcontroller.DownloadWatchDog$25(execute)] -> DownloadWatchDog: start
+------------------------Thread: 95:jd.controlling.downloadcontroller.DownloadWatchDog.log-----------------------
+--ID:95TS:1511134533199-11/19/17 3:35:33 PM -  [jd.controlling.downloadcontroller.DownloadWatchDog(attach)] -> Start new Download: Use Premium: true Host:DownloadCandidate:8d6b65f9.096f.46a1.97f8.f7273413105d@directhttp|Host directhttp|Account:Plugin:directhttp|Version:38214|Type:NONE|Account:null|Proxy:Direct
+------------------------Thread: 92:jd.controlling.downloadcontroller.DownloadWatchDog.log-----------------------
+--ID:92TS:1511134533206-11/19/17 3:35:33 PM -  [jd.controlling.downloadcontroller.DownloadWatchDog$26(run)] -> Download To(Unsafe): /Users/emir/Downloads/Night Game Course _ Pulling Mastery/8d6b65f9.096f.46a1.97f8.f7273413105d
+------------------------Thread: 95:jd.controlling.downloadcontroller.DownloadWatchDog.log-----------------------
+--ID:95TS:1511134534022-11/19/17 3:35:34 PM -  [jd.controlling.downloadcontroller.DownloadWatchDog(setFinalLinkStatus)] -> DownloadCandidate:8d6b65f9.096f.46a1.97f8.f7273413105d@directhttp|Host directhttp|Account:Plugin:directhttp|Version:38214|Type:NONE|Account:null|Proxy:Direct->CONNECTION_ISSUES
+--ID:95TS:1511134534032-11/19/17 3:35:34 PM -  [jd.controlling.downloadcontroller.DownloadWatchDog(setFinalLinkStatus)] -> DownloadCandidate:8d6b65f9.096f.46a1.97f8.f7273413105d@directhttp|Host directhttp|Account:Plugin:directhttp|Version:38214|Type:NONE|Account:null|Proxy:Direct->CONNECTION_ISSUES
+--ID:95TS:1511134539124-11/19/17 3:35:39 PM -  [jd.controlling.downloadcontroller.DownloadWatchDog$34(run)] -> DownloadWatchDog: stopping
+--ID:95TS:1511134539126-11/19/17 3:35:39 PM -  [jd.controlling.downloadcontroller.DownloadWatchDog$34(run)] -> DownloadWatchDog: stopped
+------------------------Thread: 103:jd.controlling.downloadcontroller.DownloadWatchDog.log-----------------------
+--ID:103TS:1511134543823-11/19/17 3:35:43 PM -  [jd.controlling.downloadcontroller.DownloadWatchDog$25(execute)] -> DownloadWatchDog: start
+------------------------Thread: 107:jd.controlling.downloadcontroller.DownloadWatchDog.log-----------------------
+--ID:107TS:1511134543825-11/19/17 3:35:43 PM -  [jd.controlling.downloadcontroller.DownloadWatchDog(attach)] -> Start new Download: Use Premium: true Host:DownloadCandidate:8d6b65f9.096f.46a1.97f8.f7273413105d@directhttp|Host directhttp|Account:Plugin:directhttp|Version:38214|Type:NONE|Account:null|Proxy:Direct
+------------------------Thread: 92:jd.controlling.downloadcontroller.DownloadWatchDog.log-----------------------
+--ID:92TS:1511134543826-11/19/17 3:35:43 PM -  [jd.controlling.downloadcontroller.DownloadWatchDog$26(run)] -> Download To(Unsafe): /Users/emir/Downloads/Night Game Course _ Pulling Mastery/8d6b65f9.096f.46a1.97f8.f7273413105d
+------------------------Thread: 107:jd.controlling.downloadcontroller.DownloadWatchDog.log-----------------------
+--ID:107TS:1511134544577-11/19/17 3:35:44 PM -  [jd.controlling.downloadcontroller.DownloadWatchDog(setFinalLinkStatus)] -> DownloadCandidate:8d6b65f9.096f.46a1.97f8.f7273413105d@directhttp|Host directhttp|Account:Plugin:directhttp|Version:38214|Type:NONE|Account:null|Proxy:Direct->CONNECTION_ISSUES
+--ID:107TS:1511134544579-11/19/17 3:35:44 PM -  [jd.controlling.downloadcontroller.DownloadWatchDog(setFinalLinkStatus)] -> DownloadCandidate:8d6b65f9.096f.46a1.97f8.f7273413105d@directhttp|Host directhttp|Account:Plugin:directhttp|Version:38214|Type:NONE|Account:null|Proxy:Direct->CONNECTION_ISSUES
+--ID:107TS:1511134558098-11/19/17 3:35:58 PM -  [jd.controlling.downloadcontroller.DownloadWatchDog$34(run)] -> Wait at least 3745 for new ActivationRequests
+--ID:107TS:1511134559351-11/19/17 3:35:59 PM -  [jd.controlling.downloadcontroller.DownloadWatchDog$34(run)] -> Wait at least 2492 for new ActivationRequests
+--ID:107TS:1511134560601-11/19/17 3:36:00 PM -  [jd.controlling.downloadcontroller.DownloadWatchDog$34(run)] -> Wait at least 1242 for new ActivationRequests
+--ID:107TS:1511134561853-11/19/17 3:36:01 PM -  [jd.controlling.downloadcontroller.DownloadWatchDog$34(run)] -> Wait at least 0 for new ActivationRequests
+--ID:107TS:1511134561853-11/19/17 3:36:01 PM -  [jd.controlling.downloadcontroller.DownloadWatchDog$34(run)] -> Waited 5010 but no new ActivationRequests are available->Stop DownloadWatchDog
+--ID:107TS:1511134561853-11/19/17 3:36:01 PM -  [jd.controlling.downloadcontroller.DownloadWatchDog$34(run)] -> DownloadWatchDog: stopping
+--ID:107TS:1511134561853-11/19/17 3:36:01 PM -  [jd.controlling.downloadcontroller.DownloadWatchDog$34(run)] -> DownloadWatchDog: stopped

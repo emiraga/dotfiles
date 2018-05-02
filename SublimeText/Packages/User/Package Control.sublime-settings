@@ -1,7 +1,5 @@
 {
 	"auto_upgrade_last_run": null,
-	"http_proxy": "fwdproxy.any:8080",
-	"https_proxy": "fwdproxy.any:8080",
 	"installed_packages":
 	[
 		"AdvancedNewFile",
@@ -13,12 +11,12 @@
 		"CTags",
 		"DocBlockr",
 		"Emmet",
-		"Facelime",
 		"Git",
 		"GitGutter",
 		"Google Spell Check",
 		"GoSublime",
 		"Goto Documentation",
+		"Inc-Dec-Value",
 		"InsertDate",
 		"Limebox",
 		"Missing Palette Commands",
@@ -27,6 +25,8 @@
 		"SearchInProject",
 		"SFTP",
 		"SideBarEnhancements",
+		"SublimeClang",
+		"SublimeCodeIntel",
 		"Theme - Nil",
 		"Theme - Phoenix",
 		"Theme - Soda",

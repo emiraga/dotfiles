@@ -1,0 +1,5 @@
+------------------------Thread: 83:org.jdownloader.plugins.controller.crawler.CrawlerPluginController.log-----------------------
+--ID:83TS:1511134528132-11/19/17 3:35:28 PM -  [org.jdownloader.plugins.controller.crawler.CrawlerPluginController(init)] -> CrawlerPluginController: init
+--ID:83TS:1511134528506-11/19/17 3:35:28 PM -  [org.jdownloader.plugins.controller.PluginScannerNIO(scan)] -> @PluginController(NIO): scan took 372ms for 729
+--ID:83TS:1511134528676-11/19/17 3:35:28 PM -  [org.jdownloader.plugins.controller.crawler.CrawlerPluginController(init)] -> @CrawlerPluginController: update took 542ms for 1119
+--ID:83TS:1511134528676-11/19/17 3:35:28 PM -  [org.jdownloader.plugins.controller.crawler.CrawlerPluginController(init)] -> @CrawlerPluginController: init took 543ms for 1119
