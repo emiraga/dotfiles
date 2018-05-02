@@ -4,6 +4,8 @@ if [ -f /etc/bashrc ]; then
   . /etc/bashrc
 fi
 
+export INPUTRC=~/.inputrc
+
 alias g="git"
 alias gc="git commit -a"
 alias gd="git diff"
@@ -15,8 +17,7 @@ alias cfh="cmf --fix --head"
 alias hl="hphpd -h localhost"
 alias dstat="dstat -ta"
 alias ad="arc diff --amend-all --verbatim --skip-binaries"
-# alias ab="arc build"
-alias ab="hh build ."
+alias ab="arc build"
 alias ap="arc pull"
 alias adp="arc diff --only --skip-binaries"
 alias tracet="sudo strace -e write -s 200 -p"

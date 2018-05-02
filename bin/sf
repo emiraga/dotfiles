@@ -1,3 +1,0 @@
-#!/bin/sh
-
-s "function $1[^_A-Za-z]"

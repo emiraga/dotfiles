@@ -30,3 +30,8 @@
 	helper = cache --timeout=14400
 [push]
 	default = simple
+
+[http]
+	proxy = fwdproxy:8080
+[https]
+	proxy = fwdproxy:8080

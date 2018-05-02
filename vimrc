@@ -195,7 +195,7 @@ cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
 
 " Escape from input via jj 00
-inoremap jj <ESC>
+" inoremap jj <ESC>
 " inoremap 00 <ESC>:wa<cr>0
 
 " (Hopefully) removes the delay when hitting esc in insert mode
