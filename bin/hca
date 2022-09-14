@@ -1,1 +1,8 @@
-gca
+#!/bin/bash
+
+if git show &>/dev/null; then
+  git commit -a --amend
+else
+  hg commit --amend -A
+fi
+

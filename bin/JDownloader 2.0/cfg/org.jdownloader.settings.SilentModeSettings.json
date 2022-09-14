@@ -1,6 +1,0 @@
-{
-  "manualenabled" : false,
-  "autoresetonstartupenabled" : true,
-  "autosilentmodeinidlestate" : 0,
-  "autotrigger" : "NEVER"
-}

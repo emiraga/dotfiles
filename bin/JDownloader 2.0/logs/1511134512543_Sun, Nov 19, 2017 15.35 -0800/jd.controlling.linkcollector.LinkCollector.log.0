@@ -1,4 +1,0 @@
-------------------------Thread: 61:jd.controlling.linkcollector.LinkCollector.log-----------------------
---ID:61TS:1511134520362-11/19/17 3:35:20 PM -  [jd.controlling.linkcollector.LinkCollector(findAvailableCollectorLists)] -> Collect Lists
---ID:61TS:1511134520364-11/19/17 3:35:20 PM -  [jd.controlling.linkcollector.LinkCollector(findAvailableCollectorLists)] -> Lists: []
---ID:61TS:1511134520364-11/19/17 3:35:20 PM -  [jd.controlling.linkcollector.LinkCollector$16(run)] -> CollectorList empty!

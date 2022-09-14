@@ -1,6 +1,0 @@
-------------------------Thread: 64:ExtractionExtension.log-----------------------
---ID:64TS:1511134520775-11/19/17 3:35:20 PM -  [org.jdownloader.extensions.extraction.multi.Multi(checkLibraries)] -> Try Lib IDs: [Mac-x86_64]
---ID:64TS:1511134520775-11/19/17 3:35:20 PM -  [org.jdownloader.extensions.extraction.multi.Multi(initLibrary)] -> Try Lib ID: Mac-x86_64
---ID:64TS:1511134520775-11/19/17 3:35:20 PM -  [org.jdownloader.extensions.extraction.multi.Multi(initLibrary)] -> Try Lib Path: /Users/emir/src/dotfiles/bin/JDownloader 2.0/tmp/7zip->true
---ID:64TS:1511134520798-11/19/17 3:35:20 PM -  [org.jdownloader.extensions.extraction.multi.Multi(isAvailable)] -> Supported SevenZipJBinding|Version=4.65|RAR5=false|CPU_ARCH=X86|OS_FAM=MAC|OS=MAC_SIERRA|64Bit_JVM=true|64Bit_ARCH=true
---ID:64TS:1511134520804-11/19/17 3:35:20 PM -  [org.jdownloader.extensions.AbstractExtension(init)] -> Init Duration: 49
